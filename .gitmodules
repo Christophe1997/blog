@@ -1,0 +1,8 @@
+[submodule "themes/hugo-primer"]
+	path = themes/hugo-primer
+	url = https://github.com/qqhann/hugo-primer.git
+	branch = master
+[submodule "public"]
+	path = public
+	url = https://github.com/Christophe1997/christophe1997.github.io.git
+	branch = master

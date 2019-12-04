@@ -1,0 +1,8 @@
+#+STARTUP: content
+#+hugo_base_dir: ../
+#+hugo_section: ../content/posts
+#+filetags: @杂项
+#+hugo_auto_set_lastmod: t
+
+* 杂项
+
