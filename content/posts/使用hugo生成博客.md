@@ -1,9 +1,10 @@
 +++
-title = "使用hugo生成博客                                               :Hugo:Org-mode:"
+title = "使用hugo生成博客"
 author = ["christophe"]
 date = 2019-12-05T20:29:00+08:00
 lastmod = 2019-12-05T20:31:52+08:00
 categories = ["杂项"]
+tags = ["Hugo", "Org-mode"]
 draft = false
 +++
 
