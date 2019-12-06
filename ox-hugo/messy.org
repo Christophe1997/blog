@@ -6,7 +6,7 @@
 #+hugo_locale: zh-cn
 
 * 杂项
-** DONE 使用hugo生成博客                                               :Hugo:Org-mode:
+** DONE 使用hugo生成博客                                      :Hugo:Orgmode:
    CLOSED: [2019-12-05 Thu 20:29]
   :PROPERTIES:
   :EXPORT_FILE_NAME: 使用hugo生成博客
