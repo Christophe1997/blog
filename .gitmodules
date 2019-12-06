@@ -1,6 +1,6 @@
 [submodule "themes/hugo-primer"]
 	path = themes/hugo-primer
-	url = https://github.com/qqhann/hugo-primer.git
+	url = https://github.com/Christophe1997/hugo-primer
 	branch = master
 [submodule "public"]
 	path = public
