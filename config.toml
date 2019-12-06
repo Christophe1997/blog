@@ -10,7 +10,7 @@ summaryLength = 70
 # Code pen
 pygmentsCodeFences = true
 pygmentsUseClasses = true
-googleAnalytics = ""
+googleAnalytics = "UA-112755173-3"
 
 # Enter a copyright notice to display in the site footer.
 # To display a copyright symbol, type `&copy;`.
