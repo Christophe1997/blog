@@ -2,8 +2,8 @@
 title = "使用hugo生成博客"
 author = ["christophe"]
 date = 2019-12-05T20:29:00+08:00
-lastmod = 2019-12-06T19:39:55+08:00
-tags = ["Hugo", "Orgmode"]
+lastmod = 2019-12-07T13:49:49+08:00
+tags = ["Hugo", "Org-mode"]
 categories = ["杂项"]
 draft = false
 +++
