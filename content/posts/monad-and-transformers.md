@@ -1,8 +1,8 @@
 ---
-title: monad and transformers
+title: Monad and Transformers
 date: 2019-04-06 20:26:43
 categories: 
-- language concepts
+- Language concepts
 tags:
 - Haskell
 ---

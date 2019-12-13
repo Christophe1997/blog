@@ -1,5 +1,5 @@
 ---
-title: some ubuntu installing problems
+title: 一些Ubuntu安装问题
 date: 2018-04-28 21:11:36
 categories:
 - 杂项
@@ -17,7 +17,7 @@ problems I met while reinstalling the OS.
 
 I installed the 16.04 OS just the same as what I done before: burned the IOS to USB, started the computer, and do what the OS suggested to do.
 
-## soft lockup ##
+## Soft Lockup ##
 The first thing I met was what called soft lockup, like below
 ```
  watchdog: BUG: soft lockup cpu#0 stuck for 23s.
@@ -36,7 +36,7 @@ GRUB's configuration.
 
 So in conclusion, what you need to do is add `nomodeset` to kernel boot configure.
 
-## PCIe Bus error ##
+## PCIe Bus Error ##
 After I solved the problem above, finally I was led to a __NEW PROBLEM__:( The PCIe Bus 
 error actually appeared before the soft lockup, it was solved by _askubuntu_, just add
 `pci=noaer` to the kernel boot config, which I explained at soft lockup.
@@ -62,7 +62,7 @@ permanet, just for one boot until you installed the nvidia drivers.
 device behaviour.
 
 
-### Ubuntu and Windows time difference ###
+### Ubuntu and Windows Time Difference ###
 Operating systems store and retrieve the time in the hardware clock located on your motherland so
 that it can keep track of the time even when the system does not have power. Most operating system(Linux,
 Unix, MacOS) store the time on the hardware clock as UTC by default, though some system(notably Microsoft 

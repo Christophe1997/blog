@@ -1,8 +1,8 @@
 ---
-title: string algorithms
+title: 字符串处理算法
 date: 2018-05-07 21:18:59
 categories:
-- algorithm
+- Algorithm
 tags:
 - Java
 ---

@@ -1,10 +1,10 @@
 ---
-title: "git cheat sheet"
+title: "Git Cheat Sheet"
 date: 2018-03-11T13:07:40
 categories:
 - 杂项
 tags:
-- cheat sheet
+- Cheat sheet
 - Git
 ---
 

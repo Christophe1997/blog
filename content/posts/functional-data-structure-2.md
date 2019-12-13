@@ -1,14 +1,14 @@
 ---
-title: "functional data structure 2"
+title: "Functional Data Structure 2"
 date: 2018-07-24T15:54:24
 categories: 
-- notes
+- Notes
 tags:
 - OCaml
 - Functional
 ---
 
-## amortization ##
+## Amortization ##
 Implementations with good amortized bounds are often simpler and faster than implementations with comparable worst-case
 bounds. Given a sequence of operations, we may wish to know the running time of the entire sequence, but not care about
 the running time of any individual operation.
@@ -29,7 +29,7 @@ $$ \sum_{i=1}^j a_i \geq \sum_{i=1}^j t_i $$
 for any j. The difference between the accumulated amortized costs and the accumulated actual costs is called the _accumulated
  savings_. Thus, the accumulated amortized costs are an upper bound on the accumulated actual costs whenever the accumulated
  saving is non-negative.
- 
+
 Amortization allows for occasional operations to have actual costs that exceed their amortized costs, such operations are
 called _expensive_, while the operations whose actual costs are less than their amortized costs are called _cheap_. It's
 easy to see that expensive operations decrease the accumulated saving and cheap operations increase it. The key to proving
@@ -60,7 +60,7 @@ $$ \sum_{i=1}^j t_i = \sum_{i=1}^j a_i + \Phi(d_0) - \Phi(d_j) $$
 Provided $\Phi$ is chosen in such a way that $\Phi(d_0)$ is zero and $\Phi(d_j)$ is non-negative, then we conclude that
 the accumulated amoritized costs are an upper bound on the accumulated actual costs.
 
-### queue ###
+### Queue ###
 We illustrate the banker's and physicist's methods by analyzing a simple functional implementation of the FIFO queue 
 abstraction as:
 ```ocaml
@@ -121,7 +121,7 @@ that does not reverse the rear list takes one actual step and leaves the potenti
 one. Finally, every tail that does reverse the rear list takes $m + 1$ actual steps and sets the new rear list to [],
 decreasing the potential by m, for an amortized cost of $ m+1-m = 1 $
 
-### splay heaps ###
+### Splay heaps ###
 Splay trees are perhaps the most famous and successful of all amortized data structure. Splay trees are a close relative
 of balanced binary search trees, but they maintain no explicit balance information. Instead, every operation blindly
 restructures the tree using some simple transformations that tend to increase balance. Although any individual operation
@@ -271,7 +271,7 @@ the input data. For example, using splay heaps to sort an already sorted list ta
 time. Leftist heaps also share this property, but only for decreasing sequences. Splay heaps excel on both increasing and
 decreasing sequences, as well as on sequence that are only partially sorted.
 
-### pairing heaps ###
+### Pairing heaps ###
 Pairing heaps are simple to implement and perform extremely well in parctice, but they have resisted analysis for over
 ten years. Pairing heaps are heap-ordered multiway trees, as defined:
 ```ocaml
@@ -358,7 +358,7 @@ of q contains only a single element and the rear list contains n - 1 elements. S
 tail n times, each call takes n actual steps. And the total actual cost, including the time to build q, is $ n^2 + n $,
 Thus the operation can not take O(1) amortized time, and this can be solved via lazy evaluation.
 
-## numerical representations ##
+## Numerical Representations ##
 Consider the usual representations of lists and natural numbers, along with several typical functions on each type:
 ```ocaml
 type 'a list = Nil | Cons of 'a * 'a list
@@ -396,7 +396,7 @@ very regular structure, for example, in binary numerical representations, all tr
 there are three common kinds of trees that exhibit this structure are _complete binary leaf trees_, _binomial trees_, and
 _pennants_. Each tree with rank r has $ 2^r $ element.
 
-### binary random-access lists ###
+### Binary random-access lists ###
 A random-access list, also called a one-sided flexible array, is a data structure that supports array-like lookup and 
 update functions:
 ```ocaml
@@ -552,7 +552,7 @@ let rec update i x = function
 All operations run in O(logn) worst-case time. But `cons`, `head` and `tail` run in O(logn) not O(1) is one disappointing 
 aspect.
 
-### zeroless representation ###
+### Zeroless representation ###
 Currently, `head` is implemented via a call to `unconsTree`, this approach yields compact code `unconsTree` supports both
 `head` and `tail`, but wastes time building lists that are immediately discard by `head`. For greater efficiency, we should
 implement `head` directly. As a special case, `head` can easily be made to run in O(1) time whenever the first digit is
@@ -652,14 +652,14 @@ let rec update i x = function
 ```
 Now the `head` and `tail` take O(1) time.
 
-## data-structural bootstrapping ##
+## Data-structural bootstrapping ##
 The term "bootstrapping" refers to solving problems via solving simple instance of the same problem. And there are three
 algorithmic design techniques of data-structural bootstrapping. The first, _structural decomposition_, involves bootstrapping
 complete data structures from incomplete data structures. The second, _structural abstraction_, involves bootstrapping
 efficient data structures from inefficient data structures. The last bootstrapping data structures with aggregate elements
 from data structures with atomic elements.
 
-### structural decomposition ###
+### Structural decomposition ###
 Typically _structural decomposition_ involves taking an implementation can handle objects only up to some bound size, and
 extending it to handle objects of unbounded size. Consider typical recursive datatypes such as lists and binary leaf trees:
 ```ocaml
@@ -704,7 +704,7 @@ Now we can represent the sequence 0...10 as `One(0, One((1, 2), Zero(One((((3, 4
 which has 11 elements, written 1101 in binary. The pairs in this type are always balanced. In fact, another way to think
 of pairs of elements is as complete binary leaf trees. And then we can replement binary random-access lists use this type.
 
-### tries ###
+### Tries ###
 Binary search trees work well when comparisons on the key or element type are cheap. This is true for simple types like
 integers or characters, but may not be true for aggregate types like strings. A better solution for aggregate types such
 as string is to choose a representation that takes advantage of the structure of that type. One such representation is

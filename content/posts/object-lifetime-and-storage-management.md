@@ -1,10 +1,10 @@
 ---
-title: object lifetime and storage management
+title: Object Lifetime and Storage Management
 date: 2018-12-08 16:48:49
 categories:
-- notes
+- Notes
 tags:
-- programming languages
+- 内存分配
 ---
 
 在考虑标识符和绑定(_bindings_)的时候, 关键在于区分标识符和它们所引用的对象, 以及以下事件:

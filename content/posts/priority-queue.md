@@ -1,8 +1,8 @@
 ---
-title: priority queue
+title: 优先队列
 date: 2018-04-04 16:18:50
 categories: 
-- algorithm
+- Algorithm
 tags:
 - Java
 ---

@@ -1,10 +1,10 @@
 ---
-title: "computer system 2"
+title: "Computer System 2"
 date: 2018-05-28T17:20:36
 categories:
-- notes
+- Notes
 tags:
-- system
+- System
 ---
 
 ## Assembler ##
@@ -85,7 +85,7 @@ A x86-64 CPU contains a set of 16 universal destination registers storing 64-bit
 %rsi, %rdi, %rbp, %rsp(in 32-bit those begin with e, e.g. %eax), %r8 to %r15(in 32-bit those ends with d, e.g. %r9d). 
 It's worth noting that the stack point %rsp, which indicates the address of program finished stack.
 
-### data movement instructions ###
+### Data movement instructions ###
 Among the most heavily used instructions are those that copy data from one location to another. The most simplest instructions
 is the MOV class, cosists of four instructions: `movb`, `movw`, `movl`, `movq`; they differ only in that they operate on data 
 of size 1, 2, 4 and 8 bytes. In most casees, MOV only update the register and memory address indicated by the operands,
@@ -101,7 +101,7 @@ address to low address) and write the data to the new address of %rsp. Since the
 the program code and other forms of program data, programs can access arbitrary positions within the stack using the 
 standard memory addressing methods.
 
-### arithmetic and logical operations ###
+### Arithmetic and logical operations ###
 
 | Instruction | Effect | Description |
 | :---------: | :----: | :---------: |
@@ -130,7 +130,7 @@ register.
 
 For shift operations, the shift amount is given either as an immediate or in the single-byte register element %c1(in %rcx),
 
-### control ###
+### Control ###
  Machine code provides two basic low-level mechanisms for implementing coditional behavior: it tests data values and then
 either alters the control flow or the data flow based on the result of these test. Data-dependent control flow is the
 more general and more common approach for implementing coditional behavior. The execution order of a set of machine-code
@@ -233,7 +233,7 @@ So, it's easy to see that it could be much slow if the cost if `then-expr` and `
 
 ## Loop ##
 
-### do-while loop ###
+### Do-while loop ###
 do-while have the form below:
 ```C
 do
@@ -249,7 +249,7 @@ loop:
         goto loop;
 ```
 
-### while loop ###
+### While loop ###
 while loop have the form below:
 ```C
 while (test-expr)
@@ -290,7 +290,7 @@ done:
 ```
 GCC would translate while loop in guarded-do form with `-O1` option.
 
-### for loop ###
+### For loop ###
 for loop has the form below:
 ```C
 for (init-expr; test-expr; update-expr)
@@ -305,7 +305,7 @@ while (test-expr)
 ```
 So GCC translate the for loop as same as the while loop above, choosing which form depending to the optimization degree.
 
-### switch statement ###
+### Switch statement ###
 A switch statement provides a multi way branching capability vased on the value of an integer index. They are particularly
 useful when dealing with tests where there can be a large number of possible outcomes. Not only do they make the C code
 more readable, they also allow an efficiant implementation using a data structure called _jump table_. JUmp tables are 
@@ -380,19 +380,19 @@ in different language: function, method, subroutine, handler. To supprot procedu
 - transfer data
 - allocate and deallocate memory sapce.
 
-### runtime stack ###
+### Runtime stack ###
 While the x86-64 procedure need more spaces than register have, then it would allocate space on stack, which called a
 stack frame of the procedure. If all local variables could be stored in register, the procedure don't need the stack frame.
 
-### transfer control ###
+### Transfer control ###
 To transfer control from procedure P to Q, it just simply set the PC with the start of Q, x86-64 uses `call Q` to push 
 address A and then set the PC with the start of Q, the corresponding instruction `ret` would pop the address A, and set
 the PC with A.
-### transfer data ###
+### Transfer data ###
 In x86-64, it can store 6 parameters in register at most, for 64-bit size data, they stored in the order: %rdi, %rsi, %rdx
 %rcx, %r8, %r9. So the parameters beyond should transfer by stack.
 
-### register local space ###
+### Register local space ###
 Register is the only resource shared by all procedures. Conventionally, register %rbx, %rbp and %r12 ~ %r15 are called
 _callee-saved_ registers, this means when procedure Q is called by P, then Q must save the values of any of these registers
 on the stack before overwriting them and restore them before returning. Any other registers except the stack point %rsp 

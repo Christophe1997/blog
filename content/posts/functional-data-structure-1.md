@@ -1,14 +1,14 @@
 ---
-title: "functional data structure 1"
+title: "Functional Data Structure 1"
 date: 2018-07-19T17:00:11
 categories:
-- notes
+- Notes
 tags:
 - OCaml
 - Functional
 ---
 
-## introduction ##
+## Introduction ##
 
 To implement data structure in a functional way, there are two basic problems. First, from the point of view of designing
 and implementing efficient data structures, functional programming's stricture against destructive updates(i.e. assignments)
@@ -33,7 +33,7 @@ to stack or queue objects as stacks or queues.
 about "the stack" as if there were only one stack, rather than different versions at different times. We can refer to this
 identity as a _persistent identity_.
 
-## persistence ##
+## Persistence ##
 A distinctive property of functional data structures is that they are always persistent, updating a functional data 
 structure does not destory the existing version, but rather creates a new version that coexists with the old one. Persistence
 is achieved by coping the affected nodes of a data structure and making all changes in the copy of rather than in the 
@@ -41,7 +41,7 @@ original. Because nodes are never modified directly, all nodes that are unaffect
 the old and new version of the data structure without worrying that a change in one version will inadvertently be visible
 to the other.
 
-### lists ###
+### Lists ###
 Linked lists are common in imperative programming and ubiquitous in functional programming. And we can define its abstraction
 as follow:
 ```ocaml
@@ -112,7 +112,7 @@ let rec update xs idx x =
 ```
 so that the tail optimization can be applied.
 
-### binary search trees ###
+### Binary search trees ###
 Binary search trees provide a good example of the kind of sharing the node with more than one pointer field. And a binary
 search tree can implement sets or finite maps, whose minimal interfaces as:
 ```ocaml
@@ -197,11 +197,11 @@ so that it return the tree itself while inserting an existing value to the tree 
 
 To sum up, we keep the persistence via sharing and copying.
 
-## some familiar data structures in a functional setting ##
+## Some Familiar Data Structures in A Functional Setting ##
 Although many imperative data structures are difficult or impossible to adapt to a functional setting, some can be adapted
 quite easily.
 
-### leftist heaps ###
+### Leftist heaps ###
 Sometimes we need efficient access only to the minimum element, a data structure supporting this kind of access is called
 a _priority queue_ or a _heap_:
 ```ocaml
@@ -332,7 +332,7 @@ module Make (Elem : Comparable) : (Heap with type elem = Elem.t) =
   end
 ```
 
-### binomial heaps ###
+### Binomial heaps ###
 Another common implementation of heaps is binomial queues, which we call _binomial heaps_ to avoid confusion with FIFO
 queues. Binomial heaps are composed of more primitive objects known as binomial trees. Binomial trees are inductively 
 defined as follows:
@@ -468,7 +468,7 @@ end
 ```
 And each major operation require O(log n) time in the worst case.
 
-### red black tree ###
+### Red black tree ###
 As we know, a simply binary search tree perform very poorly on ordered data, for which any individual operation might
 take up to O(n) times. The solution to this problem is to keep each tree approximately balanced, which is knwon as 
 balanced binary search tree, and red-black trees are one of the most popular families of balanced binary search tree. A

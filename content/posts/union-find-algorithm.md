@@ -1,8 +1,8 @@
 ---
-title: union-find algorithm
+title: union-find算法
 date: 2018-03-14 22:54:16
 categories: 
-- algorithm
+- Algorithm
 tags:
 - Java
 ---

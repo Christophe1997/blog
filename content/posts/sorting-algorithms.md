@@ -1,8 +1,8 @@
 ---
-title: sorting algorithms
+title: 排序算法
 date: 2018-03-30 12:07:09
 categories:
-- algorithm
+- Algorithm
 tags:
 - Java
 ---

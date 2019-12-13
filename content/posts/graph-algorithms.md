@@ -1,8 +1,8 @@
 ---
-title: graph algorithms
+title: 图算法
 date: 2018-04-20 19:21:30
 categories:
-- algorithm
+- Algorithm
 tags:
 - Java
 ---

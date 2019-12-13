@@ -1,13 +1,13 @@
 ---
-title: "computer system 1"
+title: "Computer System 1"
 date: 2018-05-23T23:54:04
 categories:
-- notes
+- Notes
 tags:
-- system
+- System
 ---
 
-## hardware organization of a system ##
+## Hardware Organization of A System ##
 
 A typical system has those hadrware below:
 <!-- more -->
@@ -42,14 +42,14 @@ file is a small storage device that consists of a collection of world-sized regi
 ALU computes new data and address values, here are some operations the CPU might carry out:
     - _Load_: Copy a byte or a word from main memory into a register, overwriting the previous contents of the register.
     - _Store_: Copy a byte or a word from a register to a location in main memory, overwriting the previous contents of 
-    that location.
+      that location.
     - _Operate_: Copy the contents of two register to the ALU, perform an arthmetic operation on the two words, and store
-    the result in a register, overwriting the previous contents of that register.
+      the result in a register, overwriting the previous contents of that register.
     - _Jump_: Extract a word from the instruction itself and copy that word into the PC, overwriting the previous value of
-    the PC.
+      the PC.
+  
     
-    
-## operating system ##
+## Operating System ##
 The operating system has two primary purposes:
 - to protect the hardware from misuse by runaway applications, and
 - to provide applications with simple and uniform mechanisms for mainpulating complicated and often wildly different 

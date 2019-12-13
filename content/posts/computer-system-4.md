@@ -1,10 +1,10 @@
 ---
-title: "computer system 4"
+title: "Computer System 4"
 date: 2018-06-10 19:14:22
 categories: 
-- notes
+- Notes
 tags:
-- system
+- System
 ---
 
 ## Linking ##
@@ -14,7 +14,7 @@ machine code; at load time, when the program is loaded into memory and executed 
 application programs. On modern systems, linking is performed automatically by programs called _linkers_.
 <!-- more -->
 
-### static linking ###
+### Static linking ###
 _Static linker_ such as the Unix ld program take as input a collection of relocatable object files and command-line arguments
 and generate as output a fully linked executable object file that can be loaded and run. To build the executable, the
 linker must perform two main tasks:
@@ -24,7 +24,7 @@ symbol reference with exactly one symbol definition.
 these sections by associating a memory location with each symbol definition, and then modifying all of the references
 to those symbols so that they point to this memory location.
 
-### object file ###
+### Object file ###
 Object files are merely collections of blocks of bytes, it comes in three forms:
 - _Relocatable object file_. Contains binary code and data in a form that can be combined with other relocatable object
 files at compile time to create an executable object file.
@@ -52,7 +52,7 @@ section headers.
 
 The .debug and .line sections only present if the compiler driver is invoked with the -g option.
 
-### symbol ###
+### Symbol ###
 Each relocatable object module m, has a symbol table that contains information about the symbols that are defined and 
 referenced by m. In the context of a linker, there are three different kinds of symbols:
 - _Global symbols_ that are defined by module m and that can be referenced by other modules. Global linker symbols 
@@ -93,7 +93,7 @@ Unix linkers use the following rules for dealing with multiply defined:
 2. Given a strong symbol and multiple weak symbols, choose the strong symbol.
 3. Given multiple weak symbols, choose any of the weak symbols.
 
-## Exceptional control flow ##
+## Exceptional Control Flow ##
 Exceptions can be divided into four classes: _interrupts_, _traps_, _faults_ and _aborts_.
 
 _Interrupts_ occur asynchronously as a result of signals from I/O devices that are external to the processor. Exception

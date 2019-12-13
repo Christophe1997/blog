@@ -1,10 +1,10 @@
 ---
-title: process
+title: 进程
 date: 2018-08-03 13:10:58
 categories:
-- notes
+- Notes
 tags:
-- system
+- System
 ---
 
 The abstraction provided by the OS of a running program is something we call a process. And there are some APIs must be
@@ -60,7 +60,7 @@ struct proc {
     struct trapframe *tf;        // Trap frame for the current interrupt
 };
 ```
-## process API ##
+## Process API ##
 Unix presents one of the most intriguing ways to create a new process with a pair of system calls: `fork()` and `exec()`.
 `wait()` can be used by a process wishing to wait for a process it has created to complete.
 
@@ -89,7 +89,7 @@ of the screen. This works because Unix system start looking for free file descri
 will be the first available one and thus get assigned when open() is called. Subsequent writes by the child process to 
 the standard output file descriptor(i.e. printf) will then be routed transparently to the newly-opened file. 
 
-## limited direct execution ##
+## Limited Direct Execution ##
 In order to virtualize the CPU, the operating system needs to somehow share the physical CPU among many jobs running 
 seemingly at the same time. The basic idea is simple: run one process for a little while, then run another one, and so
 forth.
@@ -112,7 +112,7 @@ the process refuses to make system call. Another way is to add a _timer interrup
 raise an interrupt every so many milliseconds; when the interrupt is raised, the currently running process is halted, and
 a pre-configured interrupt handler in the OS runs. At this point, the OS has regained control of the CPU.
 
-## scheduling policies ##
+## Scheduling Policies ##
 There are many scheduling algorithms, such as FIFO(first in first out), STCF(shortest time-to-completion first). Choosing
 which algorithm dependent on which metrics are used. One most well-known approaches to scheduling, known as the _Multi-level
  feedback queue_. The MLFQ has a number of distinct queues, each assigned a different priority level. At any given time,

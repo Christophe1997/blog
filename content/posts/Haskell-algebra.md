@@ -1,8 +1,8 @@
 ---
-title: Haskell algebra
+title: Haskell Algebra
 date: 2019-03-24 14:32:05
 categories: 
-- language concepts 
+- Language concepts 
 tags:
 - Haskell
 ---

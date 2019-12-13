@@ -1,8 +1,8 @@
 ---
-title: search algorithms
+title: 查找算法
 date: 2018-04-05 15:21:41
 categories:
-- algorithm
+- Algorithm
 tags:
 - Java
 ---

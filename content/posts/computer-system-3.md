@@ -1,10 +1,10 @@
 ---
-title: "computer system 3"
+title: "Computer System 3"
 date: 2018-06-01T23:23:16
 categories:
-- notes
+- Notes
 tags:
-- system
+- System
 ---
 
 ## Optimization ##
@@ -86,9 +86,9 @@ iteration. It can improve performance in two ways. First, it reduces the number 
 directly to the program result, such as loop indexing and conditional branching. Second, it expose ways in which we can 
 futher transform the code to reduce the number of operations in the cirtical paths of the overall computation.
 
-## The memory Hierarchy ##
+## The Memory Hierarchy ##
 
-### Random-Access memory ###
+### Random-access memory ###
 _Random-access memory_(RAM) comes in two varieties, static and dynamic. _Static RAM_(SRAM) is faster and significantly 
 more expensive than _dynamic RAM_(DRAM). SRAM is used for cache memories, both on and off the CPU chip. DRAM is used for
 the amin memory plus the frame buffer of a graphics system.
@@ -98,14 +98,14 @@ _Read-only memory_ can retain their information even when they are powered off, 
 the supply voltage is turned off. _flash memory_ is a type of nonvolstile memory, based on EEPROM(_electrically erasable
  programmable ROM_), that has become an important storage rechnology. The _solid state disk_(SSD), that provides a faster,
  sturdier and less power-hungry alternative to conventional rotating disk is a new form of flash-based disk driver.
- 
- ## principle of locality ##
+
+ ## Principle of Locality ##
  programs with good locality run faster than programs with poor locality. Locality is typically described as having two
  distinct forms: _temporal locality_ and _spatial locality_. In a program with good temporal locality, a memory location
  that is referenced once is likely to be referenced again multiple times in the near future. In a program with good spatial
  locality, if a memory location that is referenced once, then the program is likely to reference a nearby memory location
  in the near future.
- 
+
 Consider a program of matrix multiplication(C=AxB):
 ```C
 for (i = 0; i < n; i++)

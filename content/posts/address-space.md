@@ -1,13 +1,13 @@
 ---
-title: "address space"
+title: "Address Space"
 date: 2018-06-24T23:54:04
 categories:
-- notes
+- Notes
 tags:
-- system
+- System
 ---
 
-## The address space ##
+## The Address Space ##
 The address space is the abstraction that OS is providing to the running program. The address space of a process contains
 all of the memory state of the running program. For example, the code of the program, the stack and the heap. In the sight
 of the program, it loaded into at a particular address and has a potentially very large address space, thus, we say that
@@ -22,7 +22,7 @@ In running a C program, there are two types of memory that are allocated. The fi
 and deallocations of it are managed implicitly by the compiler, for this reason it is sometimes called _automatic_ memory.
 The second type of memory, called heap memory, where all allocations and deallocations are explicitly handled by the programmer.
 
-## address translation ##
+## Address Translation ##
 With address translation, the hardware transforms each memory access, changing the virtual address provided by the instruction
 to a physical address where the desired information is actually located. Thus, on each and every memory reference, an 
 address translation is performed by the hardware to redirect application memory reference to their actual locations in 
@@ -33,7 +33,7 @@ of this work is to create a beautiful illusion: that the program has its own pri
 reside. While behind the virtual reality lies the ugly physical truth: that many programs are actually sharing memory at
 the same time, as the CPU switchs between running one program and the next.
 
-### segmentation ###
+### Segmentation ###
 The first hardware-based address translation is a simple idea referred to as base and bounds. Specifically, we'll need
 two hardware registers within each CPU: one is called the __base__ register, and the other the __bounds__(sometimes called
 a __limit__ register). When a program starts running, the OS decides where in physical memory it should be loaded and sets
@@ -61,7 +61,7 @@ important issue is managing free space in physical memory, called _external frag
 segments was allocated and each segment might be a different size. Thus the physical memory quickly becomes full of little
 holes of free space, making it difficult to allocate new segment or to grow existing ones.
 
-### paging ###
+### Paging ###
 The segmentation chops things up into _variabled-sized_ pieces, unfortunately, the space itselt can become fragmented under
 this solution. Thus the second approach chopping things into _fixed-sized_ pieces may be worth considering, which is called
 paging. In this view, the physical memory like an array of fixed-sized slots called page frames. With a full-developed 
