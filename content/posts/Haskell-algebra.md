@@ -2,7 +2,7 @@
 title: Haskell algebra
 date: 2019-03-24 14:32:05
 categories: 
-- language concept 
+- language concepts 
 tags:
 - Haskell
 ---

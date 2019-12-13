@@ -2,7 +2,7 @@
 title: monad and transformers
 date: 2019-04-06 20:26:43
 categories: 
-- language concept
+- language concepts
 tags:
 - Haskell
 ---

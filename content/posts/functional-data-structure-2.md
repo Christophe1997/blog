@@ -5,7 +5,7 @@ categories:
 - notes
 tags:
 - OCaml
-- FP
+- Functional
 ---
 
 ## amortization ##

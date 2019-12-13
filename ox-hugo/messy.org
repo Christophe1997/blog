@@ -69,3 +69,4 @@ git项目地址，通常建议是 ~<username>.github.io~ 这个项目，这样Gi
 完成一篇博客时只需要将博客标记为DOWN即可。ox-hugo还会将org的tag转为相应的分类和标签，其中 ~@~ 开头的为分类, ox-hugo的自动生成可以参考相应的[[https://ox-hugo.scripter.co/doc/auto-export-on-saving/][文档]]。
 
 以上就是我在使用hugo生成博客时遇到的一些主要问题。如果你有什么问题，欢迎[[mailto:hey_christophe@outlook.com][邮件]]我。
+
