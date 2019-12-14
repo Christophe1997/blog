@@ -10,9 +10,9 @@ draft = false
 
 ## Value Restriction是什么？
 
-Value restriction是用于控制类型推断能否对值声明进行多态泛化的规则（[MLton原文](http://mlton.org/ValueRestriction)：“The value restriction is a rule that governs when type inference is allowed to polymorphically generalize a value declaration.”）。常出现在ML系的语言中，如[SML](https://www.smlnj.org/)，[OCaml](https://ocaml.org/)，[F#](https://fsharp.org/)中，其实value restriction产生的本质原因是为了保证类型系统在结合参数多态与命令式特性（_imperative feature_，如`ref`）时候的可靠性（_soundness_）。一个典型的例子就是：
+Value restriction是用于控制类型推断能否对值声明进行多态泛化的规则（[MLton原文](http://mlton.org/ValueRestriction)：“*The value restriction is a rule that governs when type inference is allowed to polymorphically generalize a value declaration.*”）。常出现在ML系的语言中，如[SML](https://www.smlnj.org/)，[OCaml](https://ocaml.org/)，[F#](https://fsharp.org/)中，其实value restriction产生的本质原因是为了保证类型系统在结合参数多态与命令式特性（_imperative feature_，如`ref`）时候的可靠性（_soundness_）。一个典型的例子就是：
 
-```F#
+```fsharp
 // 如果没有value restriction
 let x = ref None  // 'a option ref
 let y: int option ref = x // type checked
@@ -23,18 +23,18 @@ let  v: string = !z  // 破坏了类型安全
 
 ## 限制了什么？
 
-简单来讲，value restriction限制了类型泛化只能发生在表达式的右边是句法意义上的值。那么什么是句法意义上的值呢，SML的[语言规范](http://sml-family.org/sml97-defn.pdf)上明确给出了什么样的表达式是句法意义上的值（准确来说是_non-expansive_）:
+简单来讲，value restriction限制了类型泛化只能发生在表达式的右边是句法意义上的值。那么什么是句法意义上的值呢，SML的[语言规范](http://sml-family.org/sml97-defn.pdf)上明确给出了什么样的表达式是句法意义上的值（准确来说是*non-expansive*）:
 
 - 常量，如`13，"string"`
 - 变量，如`x,y`
 - 函数，如`fn x => e`
 - 除了`ref`以外的构造函数在值上的调用，如`Foo v`
 - 类型上受约束的值，如`v: t`
-- 每一个元素都是值的__tuple__, 如`(v1, v2, v3)`
-- 每一个字段都是值的__record__, 如`{l1 = v1, l2 = v2}`
-- 每一个元素都是值的__list__, 如`[v1, v2, v3]`
+- 每一个元素都是值的**tuple**, 如`(v1, v2, v3)`
+- 每一个字段都是值的**record**, 如`{l1 = v1, l2 = v2}`
+- 每一个元素都是值的**list**, 如`[v1, v2, v3]`
 
-确切的来讲，只要是协变（covariant）的类型并且不和可变的特性相结合，那么它总是可以类型安全的泛化（OCaml manual原文：“As a corollary, covariant variables will never denote mutable locations and can be safely generalized.”）。即：
+确切的来讲，只要是协变（covariant）的类型并且不和可变的特性相结合，那么它总是可以类型安全的泛化（[OCaml manual](https://caml.inria.fr/pub/docs/manual-ocaml/polymorphism.html)原文：“*As a corollary, covariant variables will never denote mutable locations and can be safely generalized.*”）。即：
 
 1. 是没有副作用的
 2. 表达式的结果是一个不可变对象
@@ -43,14 +43,14 @@ let  v: string = !z  // 破坏了类型安全
 
 从上述规则来看，`let x = ref None`显然是非法的表达式，然而在引入value restriction的同时，类型系统损失了一定的完备性（_completeness_），因为以下代码同样违反了value restriction：
 
-```F#
+```fsharp
 let id x = x  // 'a -> 'a
 let listId = List.map id  // 违反了value restriction
 ```
 
 即使我们只使用不可变特性，上述代码依然无法通过类型检查。因为函数调用不是句法意义上的值(因为编译器无法判断函数调用是否是pure的)。当然上述问题可以通过[eta-expansion](http://mlton.org/EtaExpansion)来避免，即：
 
-```F#
+```fsharp
 let listId = fun x -> List.map id x  // 'a list -> 'a list
 ```
 
@@ -64,7 +64,7 @@ lambda表达式是句法意义上的值，因此上述代码是可以通过类�
 
    向上一个例子那样，我们可以引入一个自由变量，使得函数调用变成了一个函数声明，从而通过了类型检查。
 
-   ```F#
+   ```fsharp
    let lsitId = fun x -> List.map id x
    ```
 
@@ -72,14 +72,14 @@ lambda表达式是句法意义上的值，因此上述代码是可以通过类�
 
 2. 引入局部变量，例如以下代码同样无法通过类型检查
 
-   ```F#
+   ```fsharp
    type 'a T = A of string | B of 'a
    let a = A (if true then "yes" else "no")  // failed
    ```
 
    但是可以修改为
 
-   ```F#
+   ```fsharp
    let s = if true then "yes" else "no" in 
    let a = A s
    ```
@@ -98,13 +98,14 @@ OCaml通过引入一个弱类型变量来放宽value restriction. 所谓弱类�
 # let a = ref None;;
 val a : '_a option ref = {contents = None}
 # let () = a := Some 2;;
-# a;;
+# a;;let v<'T> : 'T option ref = ref None;;
+val v<'T> : 'T option ref
 - : int option ref = {contents = Some 2}
 ```
 
 这和我们第一个例子是类似的，同意违反了value restriction。但是OCaml将a的类型推断为`'_a option ref`，这里的弱类型变量`'_a`指代的是未知的类型变量，在`let () = a := Some 2`中，编译器将`'_a`推断为`int`并且将a的类型固定为`int option ref`，通过这样的处理解决了第一个例子所展示的类型不安全的问题。换一种角度来看，所谓的弱类型变量是推迟了推断的具体的变量，即具体变量的占位符。这样确实解决了原有value restriction的完备性的问题，但同样导致了某些程序不在足够的泛化。例如
 
-```F#
+```ocaml
 # let id x = x;;
 val id : 'a -> 'a = <fun>
 # let listId = List.map id;;
@@ -132,14 +133,14 @@ val listId : '_a list -> '_a list = <fun>
 
 因此在F#中`listId`同样是非法的。但是F#允许你引入一个显示的泛型参数来解决这个问题，即：
 
-```F#
+```fsharp
 > let listId<'T> : 'T list -> 'T list = List.map id;;
 val listId<'T> : ('T list -> 'T list)
 ```
 
 这样的处理虽然不够优雅，但似乎是完美解决了这个问题，因为这里不会出现OCaml那样泛化不够的问题。但我们在看`ref`的问题：
 
-```F#
+```fsharp
 > let v<'T> : 'T option ref = ref None;;
 val v<'T> : 'T option ref
 > v := Some 2;;
@@ -150,7 +151,7 @@ val x : int option = None  // Oops
 
 我们看到，这里x的值居然是`None`，而不是预期的`Some 2`。实际上这里的`v`并不是一个`ref`对象，而是一个泛型类，其接收一个泛型参数，产生一个具体的类，当我们对`v`赋值时，真正调用的是`(v<int>) := Some 2`，而此时会生成一个新的`ref`对象。即使我们使用`let x: int option = !v<int>`得到的依然是`None`，因为此时又生成了一个新的`ref`对象，这个行为是由IL所决定的（有兴趣可以参考[4]）。因此我们不得不声明类型变量:
 
-```F#
+```fsharp
 > let v1 : int option ref = v<int>;;
 val v1 : int option ref = { contents = None }
 > let () = v1 := Some 2;;
@@ -172,14 +173,14 @@ val x : int option = Some 2
 
 `ref`对象而言，OCaml的处理更优雅，因为F#中，`v`变成了一个泛型类，而不是普通的值，而这是比较令人困惑的。在F#中，为了避免这样的问题，可以使用`[<RequiresExplicitTypeArguments>]`，即：
 
-```F#
+```fsharp
 [<RequiresExplicitTypeArguments>]
 let v<'T> : 'T option ref = ref None
 ```
 
 在这样的情况下，你将无法使用`v := Some 2`，而必须使用`v<int> := Some 2`，这样就能清晰的表示`v`是一个泛型类而不再是一个普通的值。另外，值得一提的是F#还提供了`[<GeneralizableValue>]`（即上述可泛化对象的最后一条），来告诉编译器这是一个可泛化的值：
 
-```F#
+```fsharp
 > [<GeneralizableValue>]
 - let v<'T> : 'T option ref = ref None;;
 val v<'T> : 'T option ref
@@ -195,7 +196,7 @@ val a : 'a option ref
 
 1. 添加一个显示的参数，使得其变为具体的类型
 
-   ```F#
+   ```fsharp
    let counter = ref None
    // Adding a type annotation fixes the problem:
    let counter : int option ref = ref None
@@ -203,9 +204,10 @@ val a : 'a option ref
 
 2. 使用eta-expansion将函数组合与部分调用展成一个lambda表达式或常规的函数
 
-   ```F#
+   ```fsharp
    let maxhash = max << hash
-   // The following is acceptable because the argument for maxhash is explicit:
+   // The following is acceptable because the argument 
+   // for maxhash is explicit:
    let maxhash obj = (max << hash) obj
    // or
    let maxhash = fun obj -> (max << hash) obj
@@ -213,7 +215,7 @@ val a : 'a option ref
 
 3. 引入局部变量来重写表达式
 
-   ```F#
+   ```fsharp
    type 'a T = A of string | B of 'a
    let a = A (if true then "yes" else "no")
    // introducing a local variable fixs the problem
@@ -223,9 +225,10 @@ val a : 'a option ref
 
 4. 通过添加一个额外的，无用的参数将表达式变成一个[thunk](https://en.wikipedia.org/wiki/Thunk)
 
-   ```F#
+   ```fsharp
    let emptyList10 = Array.create 10 []
-   // Adding an extra (unused) parameter makes it a function, which is generalizable.
+   // Adding an extra (unused) parameter makes it a function,
+   // which is generalizable.
    let emptyList10 () = Array.create 10 []
    ```
 
