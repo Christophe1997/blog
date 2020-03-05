@@ -1,5 +1,5 @@
 ---
-title: "Continuation Passing Style"
+title: "Continuation Passing Style and Tail Recursion"
 date: 2020-02-29T21:40:07+08:00
 draft: true
 categories: ["Language concept"]
@@ -10,3 +10,4 @@ tags: ["Functional", "F#"]
 
 ## 什么是CPS
 
+在理解什么是"Continuation Passing Style"之前, 我们首先需要定义*Continuation*
