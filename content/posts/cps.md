@@ -63,9 +63,22 @@ tags: ["Functional", "scheme", "F#"]
 CPS指得是将*continuation*作为显示参数传递的风格, 例如, 阶乘函数`fact`的CPS版本为:
 
 ```fsharp
-let rec fact n k = 
+let rec factCPS n k = 
   if n = 0
   then k 1
   else fact (n - 1) (fun x -> k (n * x))
+let fact n = factCPS n id
 ```
 
+这里我们用单参数函数来表示*continuation*, 因为函数本身就是接受输入在执行后续的计算, 和*continuation*表示未来的计算不谋而合, 通常用`id`来表示一个终止的*continuation*. 在CPS中, 我们总是把下一步需要的计算作为函数的显示参数传入. 再来看一个fold的[例子](https://en.wikibooks.org/wiki/Yet_Another_Haskell_Tutorial/Type_basics#Continuation_Passing_Style):
+
+```fsharp
+let rec foldCPS f z = function
+| [] -> z
+| x :: xs -> f x z (fun y -> foldCPS f y xs)
+
+let foldl f z ls = foldCPS (fun x z g -> g (f x z)) z ls
+let foldr f z ls = foldCPS (fun x z g -> f x (g z)) z ls
+```
+
+这里`foldCPS`的`f`是CPS的, 其第一个参数是列表头部的元素, 第二个参数是累加的值, 第三个参数是一个*continuation*. 我们还定义了`foldl`和`foldr`, `foldl f z [1; 2; 3; 4]`的逻辑是`()`
