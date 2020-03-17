@@ -45,7 +45,7 @@ mappend x (mappend y z) = mappend (mappend x y) z
 这和数学上带幺半群所满足的性质是一致的, 带幺半群即一个包含单位元的半群.
 
 ## Functor ##
-Functor最初由逻辑学家Rudolf Carnap在1930s引入, 其接受一个_sentence_(_phrase_)作为输入, 并生成一个_sentence_(_phrase_)作为输出. Functor在Haskell中定义为(部分):
+Functor最初由逻辑学家Rudolf Carnap在1930s引入, 其接受一个*sentence*(*phrase*)作为输入, 并生成一个*sentence*(*phrase*)作为输出. Functor在Haskell中定义为(部分):
 ```haskell
 -- 易见一个Functor的kind必为`* -> *`
 class Functor f where
@@ -62,7 +62,7 @@ fmap id = id
 -- Composition
 fmap (f . g) == fmap f . fmap g
 ```
-Functor是可堆叠的(_stacked_), 对于多个Functor嵌套的类型，可以通过多次复合fmap来获得对应不同层级的fmap:
+Functor是可堆叠的(*stacked*), 对于多个Functor嵌套的类型，可以通过多次复合fmap来获得对应不同层级的fmap:
 ```haskell
 Prelude> :t (fmap . fmap)
 (fmap . fmap)
@@ -102,7 +102,7 @@ Haskell的IO是Haskell关键设计之一, 由于其没有构造器, 因此只能
 getInt :: IO Int
 getInt = fmap read getLine
 ```
-`getLine`应当看成是获取String的方法(_a way to obtain a string_), IO不确保副作用会被执行, 而是确保副作用可以被执行. 我们可以用`fmap`对输入做任何处理:
+`getLine`应当看成是获取String的方法(*a way to obtain a string*), IO不确保副作用会被执行, 而是确保副作用可以被执行. 我们可以用`fmap`对输入做任何处理:
 ```haskell
 Prelude> fmap (+1) getInt
 1
@@ -143,7 +143,7 @@ u <*> pure y = pure ($ y) <*> u
 ```
 
 ## Monad ##
-Monad是Haskell中讨论最多的结构, 但严格来讲Monad对于Haskell并不是必须的(_Haskell Programming From First Principle_ p745). 当前的Haskell确实使用Monad来构成和转换IO动作, 但更早的Haskell并不是.
+Monad是Haskell中讨论最多的结构, 但严格来讲Monad对于Haskell并不是必须的(*Haskell Programming From First Principle* p745). 当前的Haskell确实使用Monad来构成和转换IO动作, 但更早的Haskell并不是.
 
 Monad是applicative functor, 但有一些唯一的特性使得其比applicative或functor更强大, 其在haskell中定义为(部分):
 ```haskell
