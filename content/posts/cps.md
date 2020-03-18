@@ -106,4 +106,28 @@ CPS的一个重要特征就是所有函数都是尾递归的. 因此, 不难想�
 
    具体而讲就是构造一个新的函数, 其参数是函数调用的结果, 函数体是在旧的*continuation*下完成计算, 例如上文`factCPS`中的`else fact (n - 1) (fun x -> k (n * x))`.
 
-   
+我们来看一个斐波那契数列的例子:
+
+```fsharp
+let rec fib n =
+	if n < 2
+	then 1
+	else fib (n - 1) + fib (n - 2)
+```
+
+我们首先添加一个额外的参数`k`. 随后, 该函数总共有俩处返回, `then`分支返回的是常量, 则改为`k 2`; `else`分支返回了一个表达式, 而且俩个操作数都是函数调用, 我们首先改写左边的操作数, 即`fib (n - 1) (fun v1 -> v1 + fib (n - 2))`, 随后改写第二个操作数, 并将结果传入*continuation*中, 即`fib (n - 2) (fun v2 -> v1 + v2 |> k)`, 将这些整合就得到了CPS版本的`fib`:
+
+```fsharp
+let rec fibCPS n k = 
+	if n < 2
+	then k 1
+	else fibCPS (n - 1) <| fun v1 -> fibCPS (n - 2) <| fun v2 -> v1 + v2 |> k
+let fib n = fibCPS n id
+```
+
+可以看到, `fib`的CPS版本相较于原始版本显得更加不直观, 而这确实是CPS的缺点, 由于显示的传递控制上下文, 我们的代码变得不够直观.
+
+## CPS与尾递归优化
+
+所谓的尾递归优化(*tail call optimization*, TCO)指的是对于一个尾递归的函数, 例如我们有函数f, 其尾递归调用了g, 由于不需要额外的信息, 我们可以直接传递f的返回地址. 这样当g返回时, 其可以直接返回到f的调用者. 从上文我们知道, CPS总是尾递归的, 因此CPS可以和TCO同时使用来消除递归函数的调用栈的增长. 上文也提到了CPS的缺陷, 其通常难以适用于日常的编程, 最典型的应用是将CPS作为编译器的IR(*intermediate representation*), [SML/NJ](https://www.smlnj.org/)就是一个例子, 具体可以参考[Andrew](https://www.cs.princeton.edu/~appel/)的"Compiling with Continuations".
+
