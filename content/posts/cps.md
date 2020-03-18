@@ -129,5 +129,5 @@ let fib n = fibCPS n id
 
 ## CPS与尾递归优化
 
-所谓的尾递归优化(*tail call optimization*, TCO)指的是对于一个尾递归的函数, 例如我们有函数f, 其尾递归调用了g, 由于不需要额外的信息, 我们可以直接传递f的返回地址. 这样当g返回时, 其可以直接返回到f的调用者. 从上文我们知道, CPS总是尾递归的, 因此CPS可以和TCO同时使用来消除递归函数的调用栈的增长. 上文也提到了CPS的缺陷, 其通常难以适用于日常的编程, 最典型的应用是将CPS作为编译器的IR(*intermediate representation*), [SML/NJ](https://www.smlnj.org/)就是一个例子, 具体可以参考[Andrew](https://www.cs.princeton.edu/~appel/)的"Compiling with Continuations".
+所谓的尾递归优化(*tail call optimization*, TCO)指的是对于一个尾递归的函数, 例如我们有函数f, 其尾递归调用了g, 由于不需要额外的信息, 我们可以直接传递f的返回地址. 这样当g返回时, 其可以直接返回到f的调用者. 从上文我们知道, CPS总是尾递归的, 因此CPS可以和TCO同时使用来消除递归函数的调用栈的增长. 因此CPS可以用于那些具有尾递归优化的语言来使避免我们的递归函数栈溢出, 但由于CPS使得代码变得不够直观, 因此其效果可能并不如使用*accumulator*, 同时CPS也可以作为编译器的IR(*intermediate representation*), [SML/NJ](https://www.smlnj.org/)就是一个例子, 具体可以参考[Andrew](https://www.cs.princeton.edu/~appel/)的"Compiling with Continuations".
 
