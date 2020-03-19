@@ -1,9 +1,9 @@
 ---
 title: "Continuation Passing Style and Tail Recursion"
 date: 2020-02-29T21:40:07+08:00
-draft: true
+draft: false
 categories: ["Language concept"]
-tags: ["Functional", "F#"]
+tags: ["Functional", "Continuation", "F#"]
 ---
 
 之前在"Essentials of Programming Languages"中学习过CPS(*Continuation Passing Style*), 而笔记在blog改版后被丢弃, 故在这篇文章中重新详细的探讨下CPS以及尾递归, 且当是温故而知新.
@@ -130,4 +130,12 @@ let fib n = fibCPS n id
 ## CPS与尾递归优化
 
 所谓的尾递归优化(*tail call optimization*, TCO)指的是对于一个尾递归的函数, 例如我们有函数f, 其尾递归调用了g, 由于不需要额外的信息, 我们可以直接传递f的返回地址. 这样当g返回时, 其可以直接返回到f的调用者. 从上文我们知道, CPS总是尾递归的, 因此CPS可以和TCO同时使用来消除递归函数的调用栈的增长. 因此CPS可以用于那些具有尾递归优化的语言来使避免我们的递归函数栈溢出, 但由于CPS使得代码变得不够直观, 因此其效果可能并不如使用*accumulator*, 同时CPS也可以作为编译器的IR(*intermediate representation*), [SML/NJ](https://www.smlnj.org/)就是一个例子, 具体可以参考[Andrew](https://www.cs.princeton.edu/~appel/)的"Compiling with Continuations".
+
+## .NET中的tail call
+
+.NET的CIL中存在着`tail.`的opcode, 不过C#的编译器本身不会做TCO, 而F#的编译器则会处理TCO, 对于简单的尾递归, 例如递归调用自身, F#编译器通常将其优化为循环, 对于其他的情况才会使用`tail.`, 具体可以参考"[Tail calls in F#](https://devblogs.microsoft.com/fsharpteam/tail-calls-in-f/)".
+
+## 总结
+
+以上就是关于CPS与尾递归的介绍, 然而这仅仅是关于*continuation*的一点皮毛而已, 也没有涉及到`call/cc`的内容, 如果你对*continuation*有兴趣, 可以参考Haskell中的"[Continuation monad](https://wiki.haskell.org/All_About_Monads#The_Continuation_monad)". 另外, 如果你关于本文有任何问题, 欢迎[邮件](mailto:hey_christophe@outlook.com)我.
 
