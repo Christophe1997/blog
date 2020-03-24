@@ -137,5 +137,4 @@ let fib n = fibCPS n id
 
 ## 总结
 
-以上就是关于CPS与尾递归的介绍, 然而这仅仅是关于*continuation*的一点皮毛而已, 也没有涉及到`call/cc`的内容, 如果你对*continuation*有兴趣, 可以参考Haskell中的"[Continuation monad](https://wiki.haskell.org/All_About_Monads#The_Continuation_monad)". 另外, 如果你关于本文有任何问题, 欢迎[邮件](mailto:hey_christophe@outlook.com)我.
-
+以上就是关于CPS与尾递归的介绍, 然而这仅仅是关于*continuation*的一点皮毛而已, 也没有涉及到`call/cc`的内容, 如果你对*continuation*有兴趣, 可以参考Haskell中的"[Continuation monad](https://wiki.haskell.org/All_About_Monads#The_Continuation_monad)". 另外, 如果你关于本文有任何问题, 欢迎[邮件](mailto:hey_christophe@outlook.com)我
