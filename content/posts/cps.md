@@ -2,7 +2,7 @@
 title: "Continuation Passing Style and Tail Recursion"
 date: 2020-02-29T21:40:07+08:00
 draft: false
-categories: ["Language concept"]
+categories: ["Language concepts"]
 tags: ["Functional", "Continuation", "F#"]
 ---
 
