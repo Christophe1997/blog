@@ -12,7 +12,7 @@ tags: ["Functional", "Haskell", "Pearls"]
 
 "Pearls of Functional Algorithm Design"的第一章, 其描述了一个分治的算法和一个基于array的算法, 这里按个人的思路讲解一下基于分治的算法, 基于array的算法具体可以查阅原文. 首先拿到这个问题, 我觉得最直接的想法就是
 
-*Solution 1*: `minfree xs = head $ [0..] \\ xs `
+*Base Solution*: `minfree xs = head $ [0..] \\ xs `
 
 然而这和要求的线性时间复杂度不符. 第二个想法就是设计一个fold的函数遍历一遍列表, 这样时间复杂度符合要求. 但是越来越多的边界条件让我意识到思路不对. 看了原文才发现忽略了解题的一个重要条件.
 
@@ -31,8 +31,6 @@ tags: ["Functional", "Haskell", "Pearls"]
 
 而`minfree`则可以改写为
 
-*Solution 2*:
-
 ```haskell
 minfree xs = if null $ [0..b-1] \\ us
              then head $ [b..] \\ vs
@@ -49,8 +47,6 @@ minfrom a xs = head $ [a..] \\ xs
 ```
 
 至此, 我们的`minfree`可以改为:
-
-*Solution 3*:
 
 ```haskell
 minfree = minfrom 0
@@ -80,4 +76,4 @@ minfrom a (n, xs) | n == 0     = a
                           m        = length us
 ```
 
-整个pearl看下来给我最大的感受就是首先给出一个比较naive的解, 然后利用分治的思想一步步的分解问题并优化解.
+整个pearl看下来给我最大的感受就是首先给出一个比较naive的解, 然后利用分治的思想一步步的分解问题并优化解. 同时, 虽然函数式的算法总是会比相应的命令式的算法差一个对数阶(因为函数式的算法中无法保证array的更新是常数级的, 通常是一个对数级的), 但是在这个pearl上, 作者通过不断的迭代算法缩小了这个差距.
