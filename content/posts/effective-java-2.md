@@ -6,7 +6,9 @@ categories: ["Notes"]
 tags: ["Java"]
 ---
 
-"effective Java"的第二部分, 内容主要关于`Object`的可重写的方法(`equals`, `toString`, `hashCode`, `clone`, `finalize`).
+"effective Java"的第二部分总结, 内容主要关于`Object`的可重写的方法(`equals`, `toString`, `hashCode`, `clone`, `finalize`)以及类和接口的使用。
+
+## Object中可重写的方法
 
 ### equals实现等价关系
 
@@ -34,3 +36,39 @@ tags: ["Java"]
 ### Comparable实现序关系
 
 可以用`Comparator`来实现`compareTo`.
+
+## 类和接口
+
+### 最小化类和成员的访问权限
+
+- 尽可能的使类和成员不可访问，即采取必要时放宽的策略, 即一开始, 除了定义的API外其他都应该是私有的;
+- 顶层的类和接口两个访问级别: *package-private*, *public*;
+- 成员四个访问级别: *private*, *package-private*, *protected*(子类和package中的其他类能够访问), *public*;
+
+### public的类使用getter/setter
+
+### Immutable
+
+- 没有修改对象状态的方法(如setter);
+- 保证类无法被继承;
+- 所有字段为*final*;
+- 所有字段为*private*;
+- 尽可能的保证类的不可变, 否则限制其可变性;
+- 尽可能的声明所有字段为`private final`.
+
+### 偏向组合而不是继承
+
+- 用一个中间的*forwarding class*(包装, 仅仅转发原始类的方法)实现复用(装饰模式);
+- 为继承提供良好的设计和文档.
+
+### 偏向接口而不是抽象类
+
+### 接口只用于提供类型
+
+### 嵌套类偏向于静态的
+
+- 如果一个嵌套类不需要访问实例非公有的方法和字段, 使用`static`.
+
+## 总结
+
+这两部分总的看下来除了最小化访问权限外没啥意外.
