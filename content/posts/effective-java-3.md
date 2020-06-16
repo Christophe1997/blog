@@ -6,7 +6,9 @@ categories: ["Notes"]
 tags: ["Java"]
 ---
 
-"effective java"第三部分总结, 内容主要包括泛型.
+"effective java"第三部分总结, 内容主要包括泛型, enum和异常.
+
+## 泛型
 
 ### 减少unchecked warnning
 
@@ -23,3 +25,72 @@ tags: ["Java"]
 
 - 在Java中Array是协变的, 而泛型本身是不变的
 - Array的实现是*reified*(具体化), 即Array保证其在运行时的类型, 而泛型的实现是*erasure*(擦除), 即泛型只能在编译期保证类型, 因此泛型Array在Java中是非法的.
+
+### 尽可能的使用泛型
+
+### 使用边界通配符增加灵活性
+
+- 这是为了解决由于Java泛型本身是不变的而产生的问题;
+- PECS原则(*producer-extends, consumer-super*), 即如果一个参数是生产者, 那使用`extends`, 而如果是消费者, 就使用`super`;
+- 不要在返回类型里使用通配符.
+
+## Enum
+
+### 使用enum代替int常量
+
+- Java的enum是正常的类, 只不过设置了public static final的枚举值字段. 因此, 可以为enum添加方法.
+
+- Java的enum可以有抽象方法, 其常量实例需要重写抽象方法. 同理, enum也可以实现接口.
+
+  ```java
+  import java.util.*;
+  import java.util.stream.Stream;
+  import static java.util.stream.Collectors.toMap;
+  
+  public enum Operation {
+    PLUS("+") {
+      @Override public double apply(double x, double y) { return x + y; }
+    },
+    MINUS("-") {
+      @Override public double apply(double x, double y) { return x - y; }
+    },
+    TIMES("*") {
+      @Override public double apply(double x, double y) { return x * y; }
+    },
+    DIVIDE("/") {
+      @Override public double apply(double x, double y) { return x / y; }
+    };
+  
+    private final String symbol;
+  
+    Operation(String symbol) {
+      this.symbol = symbol;
+    }
+  
+    @Override
+    public String toString() {
+      return symbol;
+    }
+  
+    public abstract double apply(double x, double y);
+  
+     // 实用的fronString
+    private static final Map<String, Operation> string2Enum =
+        Stream.of(values()).collect(toMap(Object::toString, e -> e));
+  
+    public static Optional<Operation> fromString(String symbol) {
+      return Optional.ofNullable(string2Enum.get(symbol));
+    }
+  }
+  ```
+
+- 避免使用`ordinal()`;
+
+- 使用`EnumSet`代替位字段;
+
+- 使用`EnumMap`来按enum字段索引.
+
+### 用标记接口定义类型
+
+- *marker interface*是没有方法的接口.
+
