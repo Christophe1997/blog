@@ -7,7 +7,6 @@ tags: ["Functional", "Haskell", "Pearls"]
 ---
 
 **Pearl 2**: 给定一个长度大于1的列表, 计算其元素的最大surpasser count, 要求算法复杂度$O(n log n)$.
-
 **Type**: `msc: Ord a => [a] -> Int`
 
 "Pearls of functional algorithm design"的第二章, 我们先来看surpasser的定义
