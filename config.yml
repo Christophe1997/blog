@@ -16,6 +16,9 @@ menu:
     - name: Tags
       url: /tags/
       weight: 5
+    - name: Categories
+      url: /categories/
+      weight: 7
 
 
 googleAnalytics: UA-112755173-3
