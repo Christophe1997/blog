@@ -2,8 +2,9 @@
 title: "Continuation Passing Style and Tail Recursion"
 date: 2020-02-29T21:40:07+08:00
 draft: false
-categories: ["Language concepts"]
-tags: ["Functional", "Continuation", "F#"]
+categories: ["Functional"]
+tags: ["Language concepts", "Continuation", "F#"]
+showToc: true
 ---
 
 之前在"Essentials of Programming Languages"中学习过CPS(*Continuation Passing Style*), 而笔记在blog改版后被丢弃, 故在这篇文章中重新详细的探讨下CPS以及尾递归, 就当是温故而知新.

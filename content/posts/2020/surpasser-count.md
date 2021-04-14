@@ -2,8 +2,9 @@
 title: "Surpasser Count"
 date: 2020-05-06T20:06:38+08:00
 draft: false
-categories: ["Algorithm"]
-tags: ["Functional", "Haskell", "Pearls"]
+categories: ["Functional"]
+tags: ["Algorithm", "Haskell", "Pearls"]
+showToc: true
 ---
 
 **Pearl 2**: 给定一个长度大于1的列表, 计算其元素的最大surpasser count, 要求算法复杂度$O(n log n)$.

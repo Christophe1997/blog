@@ -2,8 +2,9 @@
 title: "The Smallest Free Number"
 date: 2020-05-05T21:01:11+08:00
 draft: false
-categories: ["Algorithm"]
-tags: ["Functional", "Haskell", "Pearls"]
+categories: ["Functional"]
+tags: ["Algorithm", "Haskell", "Pearls"]
+showToc: true
 ---
 
 **Pearl 1**: 给定一个自然数的有限集X, 计算不属于X的最小自然数. X表示为不包含重复元素的无序列表. 时间复杂度要求$O(n)$.
