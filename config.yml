@@ -83,7 +83,7 @@ params:
 
     socialIcons:
         - name: email
-          url: hey_christophe@outlook.com
+          url: "mailto:hey_christophe@outlook.com"
         - name: github
           url: "https://github.com/Christophe1997"
         - name: rss
