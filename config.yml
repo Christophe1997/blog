@@ -1,6 +1,6 @@
-baseURL: "https://christophe1997.github.io"
+baseURL: "https://christophe1997.github.io/sdlinks.net"
 title: CastOff
-paginate: 8
+pagination.pagerSize: 8
 theme: hugo-PaperMod
 
 enableRobotsTXT: true
