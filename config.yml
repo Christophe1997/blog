@@ -48,11 +48,11 @@ params:
     author: Christophe 
     ShowReadingTime: true
     ShowShareButtons: true 
-    comments: false
     defaultTheme: auto
     disableThemeToggle: false
     disableSpecial1stPost: false
     math: true
+    comments: true
 
     assets:
          favicon: ""
