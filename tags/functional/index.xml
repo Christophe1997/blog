@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Functional on CastOff</title>
+    <link>http://www.sdlinks.net/tags/functional/</link>
+    <description>Recent content in Functional on CastOff</description>
+    <generator>Hugo -- 0.143.1</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 24 Jul 2018 15:54:24 +0000</lastBuildDate>
+    <atom:link href="http://www.sdlinks.net/tags/functional/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Functional Data Structure 2</title>
+      <link>http://www.sdlinks.net/posts/2018/functional-data-structure-2/</link>
+      <pubDate>Tue, 24 Jul 2018 15:54:24 +0000</pubDate>
+      <guid>http://www.sdlinks.net/posts/2018/functional-data-structure-2/</guid>
+      <description>&lt;h2 id=&#34;amortization&#34;&gt;Amortization&lt;/h2&gt;
+&lt;p&gt;Implementations with good amortized bounds are often simpler and faster than implementations with comparable worst-case
+bounds. Given a sequence of operations, we may wish to know the running time of the entire sequence, but not care about
+the running time of any individual operation.&lt;/p&gt;
+&lt;p&gt;For instance, given a sequence of n operations, we may wish to bound the
+total running time of the sequence by O(n) without insisting than every individual operation run in O(1) time. We might
+be satisfied if a few operations run in O(log n) or even O(n) time, provided the total cost of the sequence is only O(n).
+This freedom opens up a wide design space of possible solutions, and often yields new solutions that are simpler and
+faster than worst-case solutions with equivalent bounds.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Functional Data Structure 1</title>
+      <link>http://www.sdlinks.net/posts/2018/functional-data-structure-1/</link>
+      <pubDate>Thu, 19 Jul 2018 17:00:11 +0000</pubDate>
+      <guid>http://www.sdlinks.net/posts/2018/functional-data-structure-1/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;To implement data structure in a functional way, there are two basic problems. First, from the point of view of designing
+and implementing efficient data structures, functional programming&amp;rsquo;s stricture against destructive updates(i.e. assignments)
+is a staggering handicap, tantamount to confiscating a master chef&amp;rsquo;s knives.&lt;/p&gt;
+&lt;p&gt;Imperative data structures often rely on
+assignments in crucial ways, and so different solutions must be found for functional programs. The second difficulty is
+that functional data strcutures are expected to be more flexible than their imperative counterparts. In particular, when
+we update an imperative data structure we typically accept that the old version of the data strcuture will no longer
+be available, but when we update a functional data structure, we expect that both the old and the new version of the data
+structure will be available for further processing, this is called &lt;em&gt;persistent&lt;/em&gt;, while the other is called &lt;em&gt;ephemeral&lt;/em&gt;.
+And we are not surprised if the persistent version is more complicated and even less efficient that the ephemeral one.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

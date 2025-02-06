@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Cheat Sheet on CastOff</title>
+    <link>http://www.sdlinks.net/tags/cheat-sheet/</link>
+    <description>Recent content in Cheat Sheet on CastOff</description>
+    <generator>Hugo -- 0.143.1</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 11 Mar 2018 13:07:40 +0000</lastBuildDate>
+    <atom:link href="http://www.sdlinks.net/tags/cheat-sheet/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Cheat Sheet</title>
+      <link>http://www.sdlinks.net/posts/2018/git-cheat-sheet/</link>
+      <pubDate>Sun, 11 Mar 2018 13:07:40 +0000</pubDate>
+      <guid>http://www.sdlinks.net/posts/2018/git-cheat-sheet/</guid>
+      <description>&lt;h2 id=&#34;本地操作&#34;&gt;本地操作&lt;/h2&gt;
+&lt;h3 id=&#34;状态检览&#34;&gt;状态检览&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ git status -s
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;XY PATH1 -&amp;gt; PATH2
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;PATH2只有在PATH1关联到不同的路径时才会显示(例如, 文件重命名).&lt;/p&gt;
+&lt;p&gt;XY是两个状态码, 在合并冲突的时候, X和Y分别表示合并双方的修改状态; 而在一般情况下X表示暂存区域(&lt;em&gt;index&lt;/em&gt;)的状态, Y表示工作目录的状态(&lt;em&gt;work tree&lt;/em&gt;):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;rsquo; &amp;rsquo; = unmodified&lt;/li&gt;
+&lt;li&gt;M = modified&lt;/li&gt;
+&lt;li&gt;A = added&lt;/li&gt;
+&lt;li&gt;D = deleted&lt;/li&gt;
+&lt;li&gt;R = renamed&lt;/li&gt;
+&lt;li&gt;C = copied&lt;/li&gt;
+&lt;li&gt;U = updated but unmerged&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;未被追踪(&lt;em&gt;untracked&lt;/em&gt;)的文件, XY = ??; 默认不显示忽略的文件(&lt;em&gt;ignored&lt;/em&gt;), 除非使用&lt;code&gt;--ignore&lt;/code&gt;选项, 此时XY = !!.&lt;/p&gt;
+&lt;h3 id=&#34;查看已暂存和未暂存的修改&#34;&gt;查看已暂存和未暂存的修改&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ git diff
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;用来比较工作目录中当前文件和暂存区域快照之间的差异, 使用&lt;code&gt;--staged&lt;/code&gt;选项查看已经暂存的将要添加到下次修改的内容&lt;/p&gt;
+&lt;h3 id=&#34;提交更新&#34;&gt;提交更新&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ git commit
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;这种方式会启动shell的环境变量&lt;code&gt;$EDDITOR&lt;/code&gt;所指定的软件, 一般是VIM或emacs, 或者使用&lt;code&gt;git	config	--global	core.editor&lt;/code&gt;来指定编辑器,
+使用&lt;code&gt;-v&lt;/code&gt;选项将&lt;code&gt;diff&lt;/code&gt;的内容追加到编辑器中, 使用&lt;code&gt;-m &#39;${comment}&#39;&lt;/code&gt;选项来直接添加提交信息, 而不打开编辑器.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

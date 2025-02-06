@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>System on CastOff</title>
+    <link>http://www.sdlinks.net/tags/system/</link>
+    <description>Recent content in System on CastOff</description>
+    <generator>Hugo -- 0.143.1</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 03 Aug 2018 13:10:58 +0000</lastBuildDate>
+    <atom:link href="http://www.sdlinks.net/tags/system/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>进程</title>
+      <link>http://www.sdlinks.net/posts/2018/process/</link>
+      <pubDate>Fri, 03 Aug 2018 13:10:58 +0000</pubDate>
+      <guid>http://www.sdlinks.net/posts/2018/process/</guid>
+      <description>&lt;p&gt;The abstraction provided by the OS of a running program is something we call a process. And there are some APIs must be
+included in any interface of an operating system:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;create&lt;/li&gt;
+&lt;li&gt;destroy&lt;/li&gt;
+&lt;li&gt;wait&lt;/li&gt;
+&lt;li&gt;miscellaneous control, most OS provide some kind of method to suspend a process and resume it.&lt;/li&gt;
+&lt;li&gt;status, there are usually interfaces to get some status information about a process.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The first thing that the OS must do to run a program is to load its code and any static data into memory, into the address
+space of the process. Once the code and static data are loaded into memory, there are a few other things the OS needs to
+do before running the process. Some memory must be allocated for the program&amp;rsquo;s &lt;em&gt;run-time stack&lt;/em&gt;, and the OS may also
+allocate smoe memory for the program&amp;rsquo;s heap. Also, the os will do some other intialization tasks, particularly as related
+to I/O, i.e. in Unix systems each process by default has three open file descriptors, for standard input, output and error.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Address Space</title>
+      <link>http://www.sdlinks.net/posts/2018/address-space/</link>
+      <pubDate>Sun, 24 Jun 2018 23:54:04 +0000</pubDate>
+      <guid>http://www.sdlinks.net/posts/2018/address-space/</guid>
+      <description>&lt;h2 id=&#34;the-address-space&#34;&gt;The Address Space&lt;/h2&gt;
+&lt;p&gt;The address space is the abstraction that OS is providing to the running program. The address space of a process contains
+all of the memory state of the running program. For example, the code of the program, the stack and the heap. In the sight
+of the program, it loaded into at a particular address and has a potentially very large address space, thus, we say that
+the OS is &lt;em&gt;virtualizing memory&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Computer System 4</title>
+      <link>http://www.sdlinks.net/posts/2018/computer-system-4/</link>
+      <pubDate>Sun, 10 Jun 2018 19:14:22 +0000</pubDate>
+      <guid>http://www.sdlinks.net/posts/2018/computer-system-4/</guid>
+      <description>&lt;h2 id=&#34;linking&#34;&gt;Linking&lt;/h2&gt;
+&lt;p&gt;Linking is the process of collecting and combining various pieces of code and data into a single file that can be loaded
+(copied) into memory and executed. Linking can be performed at compile time, when the source code is translated into
+machine code; at load time, when the program is loaded into memory and executed by the &lt;em&gt;loader&lt;/em&gt;; and even at run time, by
+application programs. On modern systems, linking is performed automatically by programs called &lt;em&gt;linkers&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Computer System 3</title>
+      <link>http://www.sdlinks.net/posts/2018/computer-system-3/</link>
+      <pubDate>Fri, 01 Jun 2018 23:23:16 +0000</pubDate>
+      <guid>http://www.sdlinks.net/posts/2018/computer-system-3/</guid>
+      <description>&lt;h2 id=&#34;optimization&#34;&gt;Optimization&lt;/h2&gt;
+&lt;p&gt;Writing an efficient program requires several type of activities. First, we must select an appropriate set of algorithms
+and data structures. Second, we must write source code that the compiler can effectively optimize to turn into efficient
+executable code. A third technique for dealing with especially demanding computations is to divide a task into portions
+that can be computed in parallel, on some combination of multiple cores and multiple processors.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Computer System 2</title>
+      <link>http://www.sdlinks.net/posts/2018/computer-system-2/</link>
+      <pubDate>Mon, 28 May 2018 17:20:36 +0000</pubDate>
+      <guid>http://www.sdlinks.net/posts/2018/computer-system-2/</guid>
+      <description>&lt;h2 id=&#34;assembler&#34;&gt;Assembler&lt;/h2&gt;
+&lt;p&gt;Computer execute machine code, sequences of bytes encoding the low-level operations that manipulate data manage memory,
+read and write data on storage devices, and communicate over networks.&lt;/p&gt;
+&lt;p&gt;We will focus on x86-64, the commonest machine language used in processor with laptop and PC, also it&amp;rsquo;s widely used in
+supercomputer and lager data center.&lt;/p&gt;
+&lt;p&gt;the x86-64 machine code is much different with the corresponding C code, the processor states below are everywhere:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Computer System 1</title>
+      <link>http://www.sdlinks.net/posts/2018/computer-system-1/</link>
+      <pubDate>Wed, 23 May 2018 23:54:04 +0000</pubDate>
+      <guid>http://www.sdlinks.net/posts/2018/computer-system-1/</guid>
+      <description>&lt;h2 id=&#34;hardware-organization-of-a-system&#34;&gt;Hardware Organization of A System&lt;/h2&gt;
+&lt;p&gt;A typical system has those hadrware below:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Buses: Running throughout the system is a collection of electrical conduits called buses that carry bytes of ingormation
+back and forth betweent the components. Buses are typically designed to transfer fiexed sized chunks of bytes know as words.
+The number of bytes in a word is a fundamental system parameter that varies across systems. Most have word sizes of 8 bytes
+(64 bits)today&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

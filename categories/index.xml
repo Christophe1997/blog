@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Categories on CastOff</title>
+    <link>http://www.sdlinks.net/categories/</link>
+    <description>Recent content in Categories on CastOff</description>
+    <generator>Hugo -- 0.143.1</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 06 Apr 2021 23:26:20 +0800</lastBuildDate>
+    <atom:link href="http://www.sdlinks.net/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Functional</title>
+      <link>http://www.sdlinks.net/categories/functional/</link>
+      <pubDate>Tue, 06 Apr 2021 23:26:20 +0800</pubDate>
+      <guid>http://www.sdlinks.net/categories/functional/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Notes</title>
+      <link>http://www.sdlinks.net/categories/notes/</link>
+      <pubDate>Tue, 25 Feb 2020 11:50:04 +0800</pubDate>
+      <guid>http://www.sdlinks.net/categories/notes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Language Concepts</title>
+      <link>http://www.sdlinks.net/categories/language-concepts/</link>
+      <pubDate>Fri, 13 Dec 2019 19:47:37 +0800</pubDate>
+      <guid>http://www.sdlinks.net/categories/language-concepts/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>杂项</title>
+      <link>http://www.sdlinks.net/categories/%E6%9D%82%E9%A1%B9/</link>
+      <pubDate>Thu, 05 Dec 2019 20:29:00 +0800</pubDate>
+      <guid>http://www.sdlinks.net/categories/%E6%9D%82%E9%A1%B9/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Algorithm</title>
+      <link>http://www.sdlinks.net/categories/algorithm/</link>
+      <pubDate>Mon, 07 May 2018 21:18:59 +0000</pubDate>
+      <guid>http://www.sdlinks.net/categories/algorithm/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

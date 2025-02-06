@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Structure on CastOff</title>
+    <link>https://christophe1997.github.io/categories/data-structure/</link>
+    <description>Recent content in Data Structure on CastOff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 27 Feb 2020 21:17:41 +0800</lastBuildDate><atom:link href="https://christophe1997.github.io/categories/data-structure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zipper</title>
+      <link>https://christophe1997.github.io/posts/2020/zipper/</link>
+      <pubDate>Thu, 27 Feb 2020 21:17:41 +0800</pubDate>
+      
+      <guid>https://christophe1997.github.io/posts/2020/zipper/</guid>
+      <description>近来想于函数式编程中寻找类似与双向链表的数据结构, 结果找到了Zipper. Zipper中文为拉链, 泛指一类常在函数式编程中使用的聚合数据结构, 其加强了原有的数据结构, 使得能够遍历或更新原有数据结构的任意部分. zipper的关键思想是将目前需要处理的部分和不需要处理的部分分开, 同时保存目前不需要的部分, 也可以将其形象的理解为光标. 本文首先介绍了如何在list的基础上构建zipper, 随后将其扩展到二叉树上.
+list的例子 定义zipper list或者说是单向链表, 是函数式编程中最负盛名的结构, 其既简单又实用. 当我们需要修改list中的一部分时, 例如将[1 2 3 4 5]中的[3 4 5]替换为[5 6], list就带来了问题. 这时候一个简单的做法是:
+1 2 3 4 5 6  let rec changeTailOfList l1 idx l2 = match l1 with | [] -&amp;gt; l2 // 忽略了idx大于0的情况  | x::xs -&amp;gt; if idx = 0 then l2 else x :: (changeTailOfList xs (idx - 1) l2) changeTailOfList [1; 2; 3; 4; 5] 2 [5; 6] // [1; 2; 5; 6]   看起来好像挺不错, 而这时候如果我们想要修改刚刚添加的内容, 例如在上面的例子中, 我们把5替换为[7 8], 这时候同样可以采取和changeTailOfList一样的做法, 从头开始遍历列表, 在目标位置进行更改.</description>
+    </item>
+    
+  </channel>
+</rss>

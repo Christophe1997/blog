@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Optimization on CastOff</title>
+    <link>https://christophe1997.github.io/categories/optimization/</link>
+    <description>Recent content in Optimization on CastOff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 19 Jun 2020 21:39:35 +0800</lastBuildDate><atom:link href="https://christophe1997.github.io/categories/optimization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Memoization in Haskell</title>
+      <link>https://christophe1997.github.io/posts/2020/memoization-in-haskell/</link>
+      <pubDate>Fri, 19 Jun 2020 21:39:35 +0800</pubDate>
+      
+      <guid>https://christophe1997.github.io/posts/2020/memoization-in-haskell/</guid>
+      <description>Memoization是动态规划(Dynamic Programming)中自顶向下处理问题采用的策略, 其基本想法是通过将子问题的解保存起来避免重复计算来优化算法. 这个概念本身很简单, 在其他有明显mutable语义的语言中, 实现起来也非常简单. 但是在Haskell中问题就变的复杂了不少, 对于一个原始的函数f :: a -&amp;gt; b你如果要用ref, 比如说IORef, 你必须要把它放到IO monad中, 你的memoize函数就变成了... -&amp;gt; IO (a -&amp;gt; b). 我们希望是能够找到一个memoize :: ... -&amp;gt; (a -&amp;gt; b), 这样memoize之后得到的和原函数类型是一致的. 为了讨论的方便, 我们主要关注两个例子的memoization, 一个是经典的Fibonacci数列:
+1 2 3 4  fib :: Int -&amp;gt; Integer fib 0 = 0 fib 1 = 1 fib n = fib (n - 2) + fib (n - 1)   另一个则是动态规划(自底向上)中典型的最小编辑距离的问题, 所谓的最小编辑距离就是一个字符串通过增加, 删除, 替换的操作得到另一个字符串所需要的操作次数:
+1 2 3 4 5 6  minEditDist :: String -&amp;gt; String -&amp;gt; Int minEditDist [] [] = 0 minEditDist s [] = length s minEditDist [] s = length s minEditDist (x:xs) (y:ys) | x == y = minEditDist xs ys | otherwise = 1 + minimum [minEditDist xs ys, minEditDist xs (y:ys), minEditDist (x:xs) ys]   Memoizing with specific problem 首先来看fib的问题, wiki给出了一个非常elegant的解(就fib本身而言, 还有更经典的解, fib = (fibs !</description>
+    </item>
+    
+  </channel>
+</rss>

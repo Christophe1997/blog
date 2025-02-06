@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Pearls on CastOff</title>
+    <link>http://www.sdlinks.net/tags/pearls/</link>
+    <description>Recent content in Pearls on CastOff</description>
+    <generator>Hugo -- 0.143.1</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 06 May 2020 20:06:38 +0800</lastBuildDate>
+    <atom:link href="http://www.sdlinks.net/tags/pearls/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Surpasser Count</title>
+      <link>http://www.sdlinks.net/posts/2020/surpasser-count/</link>
+      <pubDate>Wed, 06 May 2020 20:06:38 +0800</pubDate>
+      <guid>http://www.sdlinks.net/posts/2020/surpasser-count/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Pearl 2&lt;/strong&gt;: 给定一个长度大于1的列表, 计算其元素的最大surpasser count, 要求算法复杂度$O(n log n)$.
+&lt;strong&gt;Type&lt;/strong&gt;: &lt;code&gt;msc: Ord a =&amp;gt; [a] -&amp;gt; Int&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Pearls of functional algorithm design&amp;quot;的第二章, 我们先来看surpasser的定义&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Definition surpasser&lt;/strong&gt;: 称列表中$X[j]$是$X[i]$的surpasser, 如果$X[i] &amp;lt; X[j]$且$i &amp;lt; j$.&lt;/p&gt;
+&lt;p&gt;因此一个元素的surpasser count就是其surpasser的数目.&lt;/p&gt;
+&lt;p&gt;同样, 一个naive的实现很容易:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-haskell&#34; data-lang=&#34;haskell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;msc&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;::&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;Ord&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;Int&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;msc&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;xs&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;maximum&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;scount&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;z&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;zs&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;z&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;zs&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;tails&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;xs&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;scount&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;::&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;Ord&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;Int&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;scount&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;x&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;xs&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;length&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;$&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;filter&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;xs&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;同时也很容易看到, 这个实现的时间复杂度是$O(n^2)$, 不符合要求的$O(n log n)$. 为了达到$ O(n log n)$的时间复杂度, 我们希望有个函数&lt;code&gt;f&lt;/code&gt;能够递归的处理&lt;code&gt;xs = us ++ vs&lt;/code&gt;, 并且存在一个线性复杂度的函数&lt;code&gt;join&lt;/code&gt;, 使得&lt;code&gt;f xs = join (f us) (f vs)&lt;/code&gt;, 这样整体的复杂度满足$T(n)=2 T(n/2)+O(n)=O(n log n)$. 原文中, 作者利用分治的思想通过一步步地推导获得了线性时间的&lt;code&gt;join&lt;/code&gt;, 这里也仅仅是类似于复读的&amp;quot;再解释&amp;rdquo;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Smallest Free Number</title>
+      <link>http://www.sdlinks.net/posts/2020/the-smallest-free-number/</link>
+      <pubDate>Tue, 05 May 2020 21:01:11 +0800</pubDate>
+      <guid>http://www.sdlinks.net/posts/2020/the-smallest-free-number/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Pearl 1&lt;/strong&gt;: 给定一个自然数的有限集X, 计算不属于X的最小自然数. X表示为不包含重复元素的无序列表. 时间复杂度要求$O(n)$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Type&lt;/strong&gt;: &lt;code&gt;minfree :: [Int] -&amp;gt; Int&lt;/code&gt;(也可以额外的定义自然数类型, 不过这不是我们的重点)&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Pearls of Functional Algorithm Design&amp;quot;的第一章, 其描述了一个分治的算法和一个基于array的算法, 这里按个人的思路讲解一下基于分治的算法, 基于array的算法具体可以查阅原文. 首先拿到这个问题, 我觉得最直接的想法就是&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Base Solution&lt;/em&gt;: &lt;code&gt;minfree xs = head $ [0..] \\ xs &lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;然而这和要求的线性时间复杂度不符. 第二个想法就是设计一个fold的函数遍历一遍列表, 这样时间复杂度符合要求. 但是越来越多的边界条件让我意识到思路不对. 看了原文才发现忽略了解题的一个重要条件.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fact&lt;/strong&gt;: &lt;code&gt;[0..n]&lt;/code&gt;中的所有自然数不可能都在X(&lt;code&gt;xs&lt;/code&gt;)中, 其中&lt;code&gt;n = length xs&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;这也很容易证明, 因为$ n + 1 = length\ [0..n] &amp;gt; n $, 因此不属于集合X的最小自然数就是&lt;code&gt;[0..n]&lt;/code&gt;中不属于X的最小自然数. 至此,该问题很容易解决, 只需要一个marked的array来表示&lt;code&gt;[0,,n]&lt;/code&gt;中的自然数是否在X中即可. 下面描述基于分治的算法, 首先给出一个基本的结论.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Theorem&lt;/strong&gt;: &lt;code&gt;(as ++ bs) \\ (us ++ vs) == (as \\ us) ++ (bs \\ vs)&lt;/code&gt;, 如果&lt;code&gt;as \\ vs == as &amp;amp;&amp;amp; bs \\ us == bs&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
