@@ -1,0 +1,21 @@
+{{- /* Head custom content area start */ -}}
+<link rel="stylesheet" href="{{"/css/katex.min.css" | urlize | relURL }}">
+<script defer src="{{"/js/katex.min.js" | urlize  | relURL }}"></script>
+<script defer src="{{"/js/auto-render.min.js" | urlize | relURL }}"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          // customised options
+          // • auto-render specific keys, e.g.:
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          // • rendering keys, e.g.:
+          throwOnError : false
+        });
+    });
+</script>
+{{- /* Head custom content area end */ -}}

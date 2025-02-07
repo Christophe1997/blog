@@ -1,6 +1,5 @@
 baseURL: "http://www.sdlinks.net"
 title: CastOff
-pagination.pagerSize: 8
 theme: hugo-PaperMod
 
 enableRobotsTXT: true
@@ -41,6 +40,11 @@ markup:
     noClasses: true
     tabWidth: 2
 
+pagination:
+  disableAliases: false
+  pagerSize: 8
+  path: page
+
 params:
     env: production
     title: CastOff
@@ -48,6 +52,7 @@ params:
     author: Christophe 
     ShowReadingTime: true
     ShowShareButtons: true 
+    ShowCodeCopyButtons: true
     defaultTheme: auto
     disableThemeToggle: false
     disableSpecial1stPost: false
