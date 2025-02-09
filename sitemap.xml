@@ -2,189 +2,192 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://www.sdlinks.net/</loc>
+    <loc>https://www.sdlinks.net/categories/</loc>
+    <lastmod>2025-02-09T12:59:29+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/</loc>
+    <lastmod>2025-02-09T12:59:29+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/posts/</loc>
+    <lastmod>2025-02-09T12:59:29+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/posts/2025/restart-a-link-blog/</loc>
+    <lastmod>2025-02-09T12:59:29+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/tags/simon-willison/</loc>
+    <lastmod>2025-02-09T12:59:29+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/tags/</loc>
+    <lastmod>2025-02-09T12:59:29+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/categories/things-ive-found/</loc>
+    <lastmod>2025-02-09T12:59:29+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/tags/data-structure/</loc>
     <lastmod>2021-04-06T23:26:20+08:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/categories/</loc>
+    <loc>https://www.sdlinks.net/tags/haskell/</loc>
     <lastmod>2021-04-06T23:26:20+08:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/tags/data-structure/</loc>
+    <loc>https://www.sdlinks.net/categories/things-i-learned/</loc>
     <lastmod>2021-04-06T23:26:20+08:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/categories/functional/</loc>
+    <loc>https://www.sdlinks.net/posts/2021/fp-data-structure/</loc>
     <lastmod>2021-04-06T23:26:20+08:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/tags/haskell/</loc>
-    <lastmod>2021-04-06T23:26:20+08:00</lastmod>
-  </url><url>
-    <loc>http://www.sdlinks.net/posts/</loc>
-    <lastmod>2021-04-06T23:26:20+08:00</lastmod>
-  </url><url>
-    <loc>http://www.sdlinks.net/tags/</loc>
-    <lastmod>2021-04-06T23:26:20+08:00</lastmod>
-  </url><url>
-    <loc>http://www.sdlinks.net/posts/2021/fp-data-structure/</loc>
-    <lastmod>2021-04-06T23:26:20+08:00</lastmod>
-  </url><url>
-    <loc>http://www.sdlinks.net/tags/dp/</loc>
+    <loc>https://www.sdlinks.net/tags/dp/</loc>
     <lastmod>2020-06-19T21:39:35+08:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/tags/memoization/</loc>
+    <loc>https://www.sdlinks.net/tags/memoization/</loc>
     <lastmod>2020-06-19T21:39:35+08:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/posts/2020/memoization-in-haskell/</loc>
+    <loc>https://www.sdlinks.net/posts/2020/memoization-in-haskell/</loc>
     <lastmod>2020-06-19T21:39:35+08:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/tags/algorithm/</loc>
+    <loc>https://www.sdlinks.net/tags/algorithm/</loc>
     <lastmod>2020-05-06T20:06:38+08:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/tags/pearls/</loc>
+    <loc>https://www.sdlinks.net/tags/pearls/</loc>
     <lastmod>2020-05-06T20:06:38+08:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/posts/2020/surpasser-count/</loc>
+    <loc>https://www.sdlinks.net/posts/2020/surpasser-count/</loc>
     <lastmod>2020-05-06T20:06:38+08:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/posts/2020/the-smallest-free-number/</loc>
+    <loc>https://www.sdlinks.net/posts/2020/the-smallest-free-number/</loc>
     <lastmod>2020-05-05T21:01:11+08:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/tags/continuation/</loc>
+    <loc>https://www.sdlinks.net/tags/continuation/</loc>
     <lastmod>2020-02-29T21:40:07+08:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/posts/2020/cps/</loc>
+    <loc>https://www.sdlinks.net/posts/2020/cps/</loc>
     <lastmod>2020-02-29T21:40:07+08:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/tags/f%23/</loc>
+    <loc>https://www.sdlinks.net/tags/f%23/</loc>
     <lastmod>2020-02-29T21:40:07+08:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/tags/language-concepts/</loc>
+    <loc>https://www.sdlinks.net/tags/language-concepts/</loc>
     <lastmod>2020-02-29T21:40:07+08:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/tags/fsharp/</loc>
+    <loc>https://www.sdlinks.net/tags/fsharp/</loc>
     <lastmod>2020-02-27T21:17:41+08:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/tags/zipper/</loc>
+    <loc>https://www.sdlinks.net/tags/zipper/</loc>
     <lastmod>2020-02-27T21:17:41+08:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/posts/2020/zipper/</loc>
+    <loc>https://www.sdlinks.net/posts/2020/zipper/</loc>
     <lastmod>2020-02-27T21:17:41+08:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/tags/bitwise/</loc>
+    <loc>https://www.sdlinks.net/tags/bitwise/</loc>
     <lastmod>2020-02-25T11:50:04+08:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/categories/notes/</loc>
+    <loc>https://www.sdlinks.net/posts/2020/some-bitwise-tricks/</loc>
     <lastmod>2020-02-25T11:50:04+08:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/posts/2020/some-bitwise-tricks/</loc>
-    <lastmod>2020-02-25T11:50:04+08:00</lastmod>
-  </url><url>
-    <loc>http://www.sdlinks.net/categories/language-concepts/</loc>
+    <loc>https://www.sdlinks.net/tags/ocaml/</loc>
     <lastmod>2019-12-13T19:47:37+08:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/tags/ocaml/</loc>
+    <loc>https://www.sdlinks.net/posts/2018/value-restriction/</loc>
     <lastmod>2019-12-13T19:47:37+08:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/posts/2018/value-restriction/</loc>
-    <lastmod>2019-12-13T19:47:37+08:00</lastmod>
-  </url><url>
-    <loc>http://www.sdlinks.net/tags/hugo/</loc>
+    <loc>https://www.sdlinks.net/tags/hugo/</loc>
     <lastmod>2019-12-19T20:24:17+08:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/tags/org-mode/</loc>
+    <loc>https://www.sdlinks.net/tags/org-mode/</loc>
     <lastmod>2019-12-19T20:24:17+08:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/posts/2019/%E4%BD%BF%E7%94%A8hugo%E7%94%9F%E6%88%90%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://www.sdlinks.net/categories/projetcs/</loc>
     <lastmod>2019-12-19T20:24:17+08:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/categories/%E6%9D%82%E9%A1%B9/</loc>
+    <loc>https://www.sdlinks.net/posts/2019/%E4%BD%BF%E7%94%A8hugo%E7%94%9F%E6%88%90%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2019-12-19T20:24:17+08:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/posts/2019/monad-and-transformers/</loc>
+    <loc>https://www.sdlinks.net/posts/2019/monad-and-transformers/</loc>
     <lastmod>2019-04-06T20:26:43+00:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/posts/2019/haskell-algebra/</loc>
+    <loc>https://www.sdlinks.net/posts/2019/haskell-algebra/</loc>
     <lastmod>2019-03-24T14:32:05+00:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/posts/2019/%E6%9D%82%E8%AE%B0/</loc>
+    <loc>https://www.sdlinks.net/categories/others/</loc>
     <lastmod>2019-03-04T17:12:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/posts/2018/object-lifetime-and-storage-management/</loc>
+    <loc>https://www.sdlinks.net/posts/2019/%E6%9D%82%E8%AE%B0/</loc>
+    <lastmod>2019-03-04T17:12:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/posts/2018/object-lifetime-and-storage-management/</loc>
     <lastmod>2018-12-08T16:48:49+00:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/tags/%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D/</loc>
+    <loc>https://www.sdlinks.net/tags/%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D/</loc>
     <lastmod>2018-12-08T16:48:49+00:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/tags/system/</loc>
+    <loc>https://www.sdlinks.net/tags/system/</loc>
     <lastmod>2018-08-03T13:10:58+00:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/posts/2018/process/</loc>
+    <loc>https://www.sdlinks.net/posts/2018/process/</loc>
     <lastmod>2018-08-03T13:10:58+00:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/tags/functional/</loc>
+    <loc>https://www.sdlinks.net/tags/functional/</loc>
     <lastmod>2018-07-24T15:54:24+00:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/posts/2018/functional-data-structure-2/</loc>
+    <loc>https://www.sdlinks.net/posts/2018/functional-data-structure-2/</loc>
     <lastmod>2018-07-24T15:54:24+00:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/posts/2018/functional-data-structure-1/</loc>
+    <loc>https://www.sdlinks.net/posts/2018/functional-data-structure-1/</loc>
     <lastmod>2018-07-19T17:00:11+00:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/posts/2018/address-space/</loc>
+    <loc>https://www.sdlinks.net/posts/2018/address-space/</loc>
     <lastmod>2018-06-24T23:54:04+00:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/posts/2018/computer-system-4/</loc>
+    <loc>https://www.sdlinks.net/posts/2018/computer-system-4/</loc>
     <lastmod>2018-06-10T19:14:22+00:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/posts/2018/computer-system-3/</loc>
+    <loc>https://www.sdlinks.net/posts/2018/computer-system-3/</loc>
     <lastmod>2018-06-01T23:23:16+00:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/posts/2018/computer-system-2/</loc>
+    <loc>https://www.sdlinks.net/posts/2018/computer-system-2/</loc>
     <lastmod>2018-05-28T17:20:36+00:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/posts/2018/computer-system-1/</loc>
+    <loc>https://www.sdlinks.net/posts/2018/computer-system-1/</loc>
     <lastmod>2018-05-23T23:54:04+00:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/categories/algorithm/</loc>
+    <loc>https://www.sdlinks.net/tags/java/</loc>
     <lastmod>2018-05-07T21:18:59+00:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/tags/java/</loc>
+    <loc>https://www.sdlinks.net/posts/2018/string-algorithms/</loc>
     <lastmod>2018-05-07T21:18:59+00:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/posts/2018/string-algorithms/</loc>
-    <lastmod>2018-05-07T21:18:59+00:00</lastmod>
-  </url><url>
-    <loc>http://www.sdlinks.net/tags/grub/</loc>
+    <loc>https://www.sdlinks.net/tags/grub/</loc>
     <lastmod>2018-04-28T21:11:36+00:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/tags/ubuntu/</loc>
+    <loc>https://www.sdlinks.net/tags/ubuntu/</loc>
     <lastmod>2018-04-28T21:11:36+00:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/posts/2018/some-ubuntu-install-problem/</loc>
+    <loc>https://www.sdlinks.net/posts/2018/some-ubuntu-install-problem/</loc>
     <lastmod>2018-04-28T21:11:36+00:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/posts/2018/graph-algorithms/</loc>
+    <loc>https://www.sdlinks.net/posts/2018/graph-algorithms/</loc>
     <lastmod>2018-04-20T19:21:30+00:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/posts/2018/search-algorithms/</loc>
+    <loc>https://www.sdlinks.net/posts/2018/search-algorithms/</loc>
     <lastmod>2018-04-05T15:21:41+00:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/posts/2018/priority-queue/</loc>
+    <loc>https://www.sdlinks.net/posts/2018/priority-queue/</loc>
     <lastmod>2018-04-04T16:18:50+00:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/posts/2018/sorting-algorithms/</loc>
+    <loc>https://www.sdlinks.net/posts/2018/sorting-algorithms/</loc>
     <lastmod>2018-03-30T12:07:09+00:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/posts/2018/union-find-algorithm/</loc>
+    <loc>https://www.sdlinks.net/posts/2018/union-find-algorithm/</loc>
     <lastmod>2018-03-14T22:54:16+00:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/tags/cheat-sheet/</loc>
+    <loc>https://www.sdlinks.net/tags/cheat-sheet/</loc>
     <lastmod>2018-03-11T13:07:40+00:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/tags/git/</loc>
+    <loc>https://www.sdlinks.net/tags/git/</loc>
     <lastmod>2018-03-11T13:07:40+00:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/posts/2018/git-cheat-sheet/</loc>
+    <loc>https://www.sdlinks.net/posts/2018/git-cheat-sheet/</loc>
     <lastmod>2018-03-11T13:07:40+00:00</lastmod>
   </url><url>
-    <loc>http://www.sdlinks.net/archives/</loc>
+    <loc>https://www.sdlinks.net/archives/</loc>
   </url>
 </urlset>

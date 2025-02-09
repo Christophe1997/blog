@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Language Concepts on CastOff</title>
-    <link>http://www.sdlinks.net/tags/language-concepts/</link>
-    <description>Recent content in Language Concepts on CastOff</description>
+    <title>Language Concepts on Neo VRAINS</title>
+    <link>https://www.sdlinks.net/tags/language-concepts/</link>
+    <description>Recent content in Language Concepts on Neo VRAINS</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>en</language>
     <lastBuildDate>Sat, 29 Feb 2020 21:40:07 +0800</lastBuildDate>
-    <atom:link href="http://www.sdlinks.net/tags/language-concepts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.sdlinks.net/tags/language-concepts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Continuation Passing Style and Tail Recursion</title>
-      <link>http://www.sdlinks.net/posts/2020/cps/</link>
+      <link>https://www.sdlinks.net/posts/2020/cps/</link>
       <pubDate>Sat, 29 Feb 2020 21:40:07 +0800</pubDate>
-      <guid>http://www.sdlinks.net/posts/2020/cps/</guid>
+      <guid>https://www.sdlinks.net/posts/2020/cps/</guid>
       <description>&lt;p&gt;之前在&amp;quot;Essentials of Programming Languages&amp;quot;中学习过CPS(&lt;em&gt;Continuation Passing Style&lt;/em&gt;), 而笔记在blog改版后被丢弃, 故在这篇文章中重新详细的探讨下CPS以及尾递归, 就当是温故而知新.&lt;/p&gt;
 &lt;h2 id=&#34;continuation&#34;&gt;Continuation&lt;/h2&gt;
 &lt;p&gt;在理解什么是&amp;quot;Continuation Passing Style&amp;quot;之前, 我们首先需要定义&lt;em&gt;Continuation&lt;/em&gt;(惭愧的是我都不知道中文叫啥, 查了下好像是&amp;quot;续延&amp;quot;). &lt;em&gt;Continuation&lt;/em&gt;是计算机程序控制状态的抽象表示, 换言之, 其就是一种表示程序执行中间某一计算步骤的控制上下文的数据结构, 即表示某一计算的未来. 一个形象的例子是阶乘函数:&lt;/p&gt;

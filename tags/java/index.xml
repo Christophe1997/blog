@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Java on CastOff</title>
-    <link>http://www.sdlinks.net/tags/java/</link>
-    <description>Recent content in Java on CastOff</description>
+    <title>Java on Neo VRAINS</title>
+    <link>https://www.sdlinks.net/tags/java/</link>
+    <description>Recent content in Java on Neo VRAINS</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>en</language>
     <lastBuildDate>Mon, 07 May 2018 21:18:59 +0000</lastBuildDate>
-    <atom:link href="http://www.sdlinks.net/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.sdlinks.net/tags/java/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>字符串处理算法</title>
-      <link>http://www.sdlinks.net/posts/2018/string-algorithms/</link>
+      <link>https://www.sdlinks.net/posts/2018/string-algorithms/</link>
       <pubDate>Mon, 07 May 2018 21:18:59 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2018/string-algorithms/</guid>
+      <guid>https://www.sdlinks.net/posts/2018/string-algorithms/</guid>
       <description>&lt;p&gt;字符串处理算法具有很高的重要性以及应用领域的多样性. 以下讨论默认的是扩展的ASCII字符集(R=256).&lt;/p&gt;
 &lt;h2 id=&#34;字符串排序算法&#34;&gt;字符串排序算法&lt;/h2&gt;
 &lt;p&gt;对于许多排序应用而言, 决定顺序的键都是字符串. 利用字符串的特殊性质来将其排序通常能够获得更高的效率.&lt;/p&gt;
@@ -63,9 +63,9 @@
     </item>
     <item>
       <title>图算法</title>
-      <link>http://www.sdlinks.net/posts/2018/graph-algorithms/</link>
+      <link>https://www.sdlinks.net/posts/2018/graph-algorithms/</link>
       <pubDate>Fri, 20 Apr 2018 19:21:30 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2018/graph-algorithms/</guid>
+      <guid>https://www.sdlinks.net/posts/2018/graph-algorithms/</guid>
       <description>&lt;p&gt;采用哪种数据结构来表示图, 主要考虑以下两个方面:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;必须为可能在应用中碰到的各种类型的图预留出足够的空间, 以及&lt;/li&gt;
@@ -173,9 +173,9 @@
     </item>
     <item>
       <title>查找算法</title>
-      <link>http://www.sdlinks.net/posts/2018/search-algorithms/</link>
+      <link>https://www.sdlinks.net/posts/2018/search-algorithms/</link>
       <pubDate>Thu, 05 Apr 2018 15:21:41 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2018/search-algorithms/</guid>
+      <guid>https://www.sdlinks.net/posts/2018/search-algorithms/</guid>
       <description>&lt;p&gt;符号表是一种存储键值对的数据结构, 支持插入和查找操作. 要确定一个给定的键是否存在于符号表中, 首先要建立对象等价性的概念. 为了保证一致性, 最好选择不
 可变的数据类型作为键. 成本模型: 统计比较的次数, 在内循环不进行比较的情况下, 转为统计数组的访问次数.&lt;/p&gt;
 &lt;h2 id=&#34;二叉查找树&#34;&gt;二叉查找树&lt;/h2&gt;
@@ -294,9 +294,9 @@
     </item>
     <item>
       <title>优先队列</title>
-      <link>http://www.sdlinks.net/posts/2018/priority-queue/</link>
+      <link>https://www.sdlinks.net/posts/2018/priority-queue/</link>
       <pubDate>Wed, 04 Apr 2018 16:18:50 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2018/priority-queue/</guid>
+      <guid>https://www.sdlinks.net/posts/2018/priority-queue/</guid>
       <description>&lt;h2 id=&#34;优先队列&#34;&gt;优先队列&lt;/h2&gt;
 &lt;p&gt;当一颗二叉树的每个节点都大于等于它的两个子结点时, 它被称为堆有序, 于是从任一结点向上都能够得到一列非递减的元素. 二叉堆(以下简称堆)是一组能够用堆有序
 的完全二叉树排序的元素, 并在数组中按照层级存储. 在一个堆中, 位置k的节点的父结点的位置为$ \lfloor k/2 \rfloor $, 而它的两个子节点的位置是2k和
@@ -473,9 +473,9 @@
     </item>
     <item>
       <title>排序算法</title>
-      <link>http://www.sdlinks.net/posts/2018/sorting-algorithms/</link>
+      <link>https://www.sdlinks.net/posts/2018/sorting-algorithms/</link>
       <pubDate>Fri, 30 Mar 2018 12:07:09 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2018/sorting-algorithms/</guid>
+      <guid>https://www.sdlinks.net/posts/2018/sorting-algorithms/</guid>
       <description>&lt;p&gt;排序算法的目标就是将所有元素的主键按照某种方式排列. 成本模型: 计算比较和交换的次数, 对于不交换元素的算法, 计算访问数组的次数. 排序算法的额外内存开销
 和运行时间是同等重要的, 排序算法可以分为原地排序算法以及需要额外内存空间来存储另一份数组副本的其他排序算法.&lt;/p&gt;
 &lt;p&gt;我们使用的算法模板如下&lt;/p&gt;
@@ -560,9 +560,9 @@
     </item>
     <item>
       <title>union-find算法</title>
-      <link>http://www.sdlinks.net/posts/2018/union-find-algorithm/</link>
+      <link>https://www.sdlinks.net/posts/2018/union-find-algorithm/</link>
       <pubDate>Wed, 14 Mar 2018 22:54:16 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2018/union-find-algorithm/</guid>
+      <guid>https://www.sdlinks.net/posts/2018/union-find-algorithm/</guid>
       <description>&lt;p&gt;union-find算法是一个解决动态连通性的经典算法, 具有广泛性的应用. 简单起见, 我们将对象称为触点, 将整数对称为连接, 将等价类称为连通分量, 并用0
 到N-1的整数来表示N个触点.&lt;/p&gt;
 &lt;h2 id=&#34;api&#34;&gt;API&lt;/h2&gt;

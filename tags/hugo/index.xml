@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Hugo on CastOff</title>
-    <link>http://www.sdlinks.net/tags/hugo/</link>
-    <description>Recent content in Hugo on CastOff</description>
+    <title>Hugo on Neo VRAINS</title>
+    <link>https://www.sdlinks.net/tags/hugo/</link>
+    <description>Recent content in Hugo on Neo VRAINS</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>en</language>
     <lastBuildDate>Thu, 19 Dec 2019 20:24:17 +0800</lastBuildDate>
-    <atom:link href="http://www.sdlinks.net/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.sdlinks.net/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用hugo生成博客</title>
-      <link>http://www.sdlinks.net/posts/2019/%E4%BD%BF%E7%94%A8hugo%E7%94%9F%E6%88%90%E5%8D%9A%E5%AE%A2/</link>
+      <link>https://www.sdlinks.net/posts/2019/%E4%BD%BF%E7%94%A8hugo%E7%94%9F%E6%88%90%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Thu, 05 Dec 2019 20:29:00 +0800</pubDate>
-      <guid>http://www.sdlinks.net/posts/2019/%E4%BD%BF%E7%94%A8hugo%E7%94%9F%E6%88%90%E5%8D%9A%E5%AE%A2/</guid>
+      <guid>https://www.sdlinks.net/posts/2019/%E4%BD%BF%E7%94%A8hugo%E7%94%9F%E6%88%90%E5%8D%9A%E5%AE%A2/</guid>
       <description>&lt;p&gt;之前一直有使用&lt;a href=&#34;https://hexo.io/zh-cn/index.html&#34;&gt;Hexo&lt;/a&gt;来生成静态博客，如今将博客迁移到了&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;下。两种工具总体而言各有优势，个人此次转移到hugo的主要原因大概是希望能够重拾写博客的习惯，本文主要介绍了使用Hugo的大致流程。首先给出个人博客的文件结构：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -46,7 +46,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;+-- data
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;+-- layouts
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;+-- ox-hugo        # org文件位置
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; |-- messy.org     # category为杂项的org文件
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; |-- messy.org     # category为Others的org文件
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;+-- public         # submodule
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;+-- resource
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;+-- static

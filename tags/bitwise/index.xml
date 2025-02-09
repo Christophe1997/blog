@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Bitwise on CastOff</title>
-    <link>http://www.sdlinks.net/tags/bitwise/</link>
-    <description>Recent content in Bitwise on CastOff</description>
+    <title>Bitwise on Neo VRAINS</title>
+    <link>https://www.sdlinks.net/tags/bitwise/</link>
+    <description>Recent content in Bitwise on Neo VRAINS</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>en</language>
     <lastBuildDate>Tue, 25 Feb 2020 11:50:04 +0800</lastBuildDate>
-    <atom:link href="http://www.sdlinks.net/tags/bitwise/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.sdlinks.net/tags/bitwise/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Some Bitwise Tricks</title>
-      <link>http://www.sdlinks.net/posts/2020/some-bitwise-tricks/</link>
+      <link>https://www.sdlinks.net/posts/2020/some-bitwise-tricks/</link>
       <pubDate>Tue, 25 Feb 2020 11:50:04 +0800</pubDate>
-      <guid>http://www.sdlinks.net/posts/2020/some-bitwise-tricks/</guid>
+      <guid>https://www.sdlinks.net/posts/2020/some-bitwise-tricks/</guid>
       <description>&lt;h2 id=&#34;bitwise-tricks&#34;&gt;Bitwise tricks&lt;/h2&gt;
 &lt;p&gt;近来翻到一本&amp;quot;Hackers Delight&amp;quot;的书, 其主要介绍基于二进制运算的算法. 初读来大感震撼, 其结果之巧妙,过程之精简, 于仅仅是了解计算机数是用补码所表示, 并未深入了解过二进制运算的人而言不可谓不精美. 正如Dijkstra所言, 计算机程序是集逻辑美感与机械实现的矛盾体. 本文姑且将其中的一些皮毛摘录如下, 以便日后之使用, 目前倒是难以得到应用.&lt;/p&gt;
 &lt;ol&gt;

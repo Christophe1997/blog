@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Memoization on CastOff</title>
-    <link>http://www.sdlinks.net/tags/memoization/</link>
-    <description>Recent content in Memoization on CastOff</description>
+    <title>Memoization on Neo VRAINS</title>
+    <link>https://www.sdlinks.net/tags/memoization/</link>
+    <description>Recent content in Memoization on Neo VRAINS</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>en</language>
     <lastBuildDate>Fri, 19 Jun 2020 21:39:35 +0800</lastBuildDate>
-    <atom:link href="http://www.sdlinks.net/tags/memoization/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.sdlinks.net/tags/memoization/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Memoization in Haskell</title>
-      <link>http://www.sdlinks.net/posts/2020/memoization-in-haskell/</link>
+      <link>https://www.sdlinks.net/posts/2020/memoization-in-haskell/</link>
       <pubDate>Fri, 19 Jun 2020 21:39:35 +0800</pubDate>
-      <guid>http://www.sdlinks.net/posts/2020/memoization-in-haskell/</guid>
+      <guid>https://www.sdlinks.net/posts/2020/memoization-in-haskell/</guid>
       <description>&lt;p&gt;Memoization是动态规划(&lt;em&gt;Dynamic Programming&lt;/em&gt;)中自顶向下处理问题采用的策略, 其基本想法是通过将子问题的解保存起来避免重复计算来优化算法. 这个概念本身很简单, 在其他有明显mutable语义的语言中, 实现起来也非常简单. 但是在Haskell中问题就变的复杂了不少, 对于一个原始的函数&lt;code&gt;f :: a -&amp;gt; b&lt;/code&gt;你如果要用ref, 比如说IORef, 你必须要把它放到IO monad中, 你的memoize函数就变成了&lt;code&gt;... -&amp;gt; IO (a -&amp;gt; b)&lt;/code&gt;. 我们希望是能够找到一个&lt;code&gt;memoize :: ... -&amp;gt; (a -&amp;gt; b)&lt;/code&gt;, 这样memoize之后得到的和原函数类型是一致的. 为了讨论的方便, 我们主要关注两个例子的memoization, 一个是经典的Fibonacci数列:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;

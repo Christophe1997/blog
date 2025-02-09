@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Fsharp on CastOff</title>
-    <link>http://www.sdlinks.net/tags/fsharp/</link>
-    <description>Recent content in Fsharp on CastOff</description>
+    <title>Fsharp on Neo VRAINS</title>
+    <link>https://www.sdlinks.net/tags/fsharp/</link>
+    <description>Recent content in Fsharp on Neo VRAINS</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>en</language>
     <lastBuildDate>Thu, 27 Feb 2020 21:17:41 +0800</lastBuildDate>
-    <atom:link href="http://www.sdlinks.net/tags/fsharp/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.sdlinks.net/tags/fsharp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Zipper</title>
-      <link>http://www.sdlinks.net/posts/2020/zipper/</link>
+      <link>https://www.sdlinks.net/posts/2020/zipper/</link>
       <pubDate>Thu, 27 Feb 2020 21:17:41 +0800</pubDate>
-      <guid>http://www.sdlinks.net/posts/2020/zipper/</guid>
+      <guid>https://www.sdlinks.net/posts/2020/zipper/</guid>
       <description>&lt;p&gt;近来想于函数式编程中寻找类似与双向链表的数据结构, 结果找到了Zipper. Zipper中文为拉链, 泛指一类常在函数式编程中使用的聚合数据结构, &lt;strong&gt;其加强了原有的数据结构, 使得能够遍历或更新原有数据结构的任意部分&lt;/strong&gt;. zipper的关键思想是将目前需要处理的部分和不需要处理的部分分开, 同时保存目前不需要的部分, 也可以将其形象的理解为光标. 本文首先介绍了如何在list的基础上构建zipper, 随后将其扩展到二叉树上.&lt;/p&gt;
 &lt;h2 id=&#34;list的例子&#34;&gt;list的例子&lt;/h2&gt;
 &lt;h3 id=&#34;定义zipper&#34;&gt;定义zipper&lt;/h3&gt;

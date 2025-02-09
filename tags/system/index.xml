@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>System on CastOff</title>
-    <link>http://www.sdlinks.net/tags/system/</link>
-    <description>Recent content in System on CastOff</description>
+    <title>System on Neo VRAINS</title>
+    <link>https://www.sdlinks.net/tags/system/</link>
+    <description>Recent content in System on Neo VRAINS</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>en</language>
     <lastBuildDate>Fri, 03 Aug 2018 13:10:58 +0000</lastBuildDate>
-    <atom:link href="http://www.sdlinks.net/tags/system/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.sdlinks.net/tags/system/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>进程</title>
-      <link>http://www.sdlinks.net/posts/2018/process/</link>
+      <link>https://www.sdlinks.net/posts/2018/process/</link>
       <pubDate>Fri, 03 Aug 2018 13:10:58 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2018/process/</guid>
+      <guid>https://www.sdlinks.net/posts/2018/process/</guid>
       <description>&lt;p&gt;The abstraction provided by the OS of a running program is something we call a process. And there are some APIs must be
 included in any interface of an operating system:&lt;/p&gt;
 &lt;ol&gt;
@@ -30,9 +30,9 @@ to I/O, i.e. in Unix systems each process by default has three open file descrip
     </item>
     <item>
       <title>Address Space</title>
-      <link>http://www.sdlinks.net/posts/2018/address-space/</link>
+      <link>https://www.sdlinks.net/posts/2018/address-space/</link>
       <pubDate>Sun, 24 Jun 2018 23:54:04 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2018/address-space/</guid>
+      <guid>https://www.sdlinks.net/posts/2018/address-space/</guid>
       <description>&lt;h2 id=&#34;the-address-space&#34;&gt;The Address Space&lt;/h2&gt;
 &lt;p&gt;The address space is the abstraction that OS is providing to the running program. The address space of a process contains
 all of the memory state of the running program. For example, the code of the program, the stack and the heap. In the sight
@@ -41,9 +41,9 @@ the OS is &lt;em&gt;virtualizing memory&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Computer System 4</title>
-      <link>http://www.sdlinks.net/posts/2018/computer-system-4/</link>
+      <link>https://www.sdlinks.net/posts/2018/computer-system-4/</link>
       <pubDate>Sun, 10 Jun 2018 19:14:22 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2018/computer-system-4/</guid>
+      <guid>https://www.sdlinks.net/posts/2018/computer-system-4/</guid>
       <description>&lt;h2 id=&#34;linking&#34;&gt;Linking&lt;/h2&gt;
 &lt;p&gt;Linking is the process of collecting and combining various pieces of code and data into a single file that can be loaded
 (copied) into memory and executed. Linking can be performed at compile time, when the source code is translated into
@@ -52,9 +52,9 @@ application programs. On modern systems, linking is performed automatically by p
     </item>
     <item>
       <title>Computer System 3</title>
-      <link>http://www.sdlinks.net/posts/2018/computer-system-3/</link>
+      <link>https://www.sdlinks.net/posts/2018/computer-system-3/</link>
       <pubDate>Fri, 01 Jun 2018 23:23:16 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2018/computer-system-3/</guid>
+      <guid>https://www.sdlinks.net/posts/2018/computer-system-3/</guid>
       <description>&lt;h2 id=&#34;optimization&#34;&gt;Optimization&lt;/h2&gt;
 &lt;p&gt;Writing an efficient program requires several type of activities. First, we must select an appropriate set of algorithms
 and data structures. Second, we must write source code that the compiler can effectively optimize to turn into efficient
@@ -63,9 +63,9 @@ that can be computed in parallel, on some combination of multiple cores and mult
     </item>
     <item>
       <title>Computer System 2</title>
-      <link>http://www.sdlinks.net/posts/2018/computer-system-2/</link>
+      <link>https://www.sdlinks.net/posts/2018/computer-system-2/</link>
       <pubDate>Mon, 28 May 2018 17:20:36 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2018/computer-system-2/</guid>
+      <guid>https://www.sdlinks.net/posts/2018/computer-system-2/</guid>
       <description>&lt;h2 id=&#34;assembler&#34;&gt;Assembler&lt;/h2&gt;
 &lt;p&gt;Computer execute machine code, sequences of bytes encoding the low-level operations that manipulate data manage memory,
 read and write data on storage devices, and communicate over networks.&lt;/p&gt;
@@ -75,9 +75,9 @@ supercomputer and lager data center.&lt;/p&gt;
     </item>
     <item>
       <title>Computer System 1</title>
-      <link>http://www.sdlinks.net/posts/2018/computer-system-1/</link>
+      <link>https://www.sdlinks.net/posts/2018/computer-system-1/</link>
       <pubDate>Wed, 23 May 2018 23:54:04 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2018/computer-system-1/</guid>
+      <guid>https://www.sdlinks.net/posts/2018/computer-system-1/</guid>
       <description>&lt;h2 id=&#34;hardware-organization-of-a-system&#34;&gt;Hardware Organization of A System&lt;/h2&gt;
 &lt;p&gt;A typical system has those hadrware below:&lt;/p&gt;
 &lt;ul&gt;

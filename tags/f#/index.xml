@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>F# on CastOff</title>
-    <link>http://www.sdlinks.net/tags/f%23/</link>
-    <description>Recent content in F# on CastOff</description>
+    <title>F# on Neo VRAINS</title>
+    <link>https://www.sdlinks.net/tags/f%23/</link>
+    <description>Recent content in F# on Neo VRAINS</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>en</language>
     <lastBuildDate>Sat, 29 Feb 2020 21:40:07 +0800</lastBuildDate>
-    <atom:link href="http://www.sdlinks.net/tags/f%23/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.sdlinks.net/tags/f%23/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Continuation Passing Style and Tail Recursion</title>
-      <link>http://www.sdlinks.net/posts/2020/cps/</link>
+      <link>https://www.sdlinks.net/posts/2020/cps/</link>
       <pubDate>Sat, 29 Feb 2020 21:40:07 +0800</pubDate>
-      <guid>http://www.sdlinks.net/posts/2020/cps/</guid>
+      <guid>https://www.sdlinks.net/posts/2020/cps/</guid>
       <description>&lt;p&gt;之前在&amp;quot;Essentials of Programming Languages&amp;quot;中学习过CPS(&lt;em&gt;Continuation Passing Style&lt;/em&gt;), 而笔记在blog改版后被丢弃, 故在这篇文章中重新详细的探讨下CPS以及尾递归, 就当是温故而知新.&lt;/p&gt;
 &lt;h2 id=&#34;continuation&#34;&gt;Continuation&lt;/h2&gt;
 &lt;p&gt;在理解什么是&amp;quot;Continuation Passing Style&amp;quot;之前, 我们首先需要定义&lt;em&gt;Continuation&lt;/em&gt;(惭愧的是我都不知道中文叫啥, 查了下好像是&amp;quot;续延&amp;quot;). &lt;em&gt;Continuation&lt;/em&gt;是计算机程序控制状态的抽象表示, 换言之, 其就是一种表示程序执行中间某一计算步骤的控制上下文的数据结构, 即表示某一计算的未来. 一个形象的例子是阶乘函数:&lt;/p&gt;
@@ -61,9 +61,9 @@
     </item>
     <item>
       <title>Value restriction，从OCaml到F#</title>
-      <link>http://www.sdlinks.net/posts/2018/value-restriction/</link>
+      <link>https://www.sdlinks.net/posts/2018/value-restriction/</link>
       <pubDate>Fri, 13 Dec 2019 19:47:37 +0800</pubDate>
-      <guid>http://www.sdlinks.net/posts/2018/value-restriction/</guid>
+      <guid>https://www.sdlinks.net/posts/2018/value-restriction/</guid>
       <description>&lt;h2 id=&#34;value-restriction是什么&#34;&gt;Value Restriction是什么？&lt;/h2&gt;
 &lt;p&gt;Value restriction是用于控制类型推断能否对值声明进行多态泛化的规则（&lt;a href=&#34;http://mlton.org/ValueRestriction&#34;&gt;MLton原文&lt;/a&gt;：“&lt;em&gt;The value restriction is a rule that governs when type inference is allowed to polymorphically generalize a value declaration.&lt;/em&gt;”）。常出现在ML系的语言中，如&lt;a href=&#34;https://www.smlnj.org/&#34;&gt;SML&lt;/a&gt;，&lt;a href=&#34;https://ocaml.org/&#34;&gt;OCaml&lt;/a&gt;，&lt;a href=&#34;https://fsharp.org/&#34;&gt;F#&lt;/a&gt;中，其实value restriction产生的本质原因是为了保证类型系统在结合参数多态与命令式特性（&lt;em&gt;imperative feature&lt;/em&gt;，如&lt;code&gt;ref&lt;/code&gt;）时候的可靠性（&lt;em&gt;soundness&lt;/em&gt;）。一个典型的例子就是：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;

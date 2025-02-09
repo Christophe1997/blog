@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Things I&#39;ve Found on Neo VRAINS</title>
+    <link>https://www.sdlinks.net/categories/things-ive-found/</link>
+    <description>Recent content in Things I&#39;ve Found on Neo VRAINS</description>
+    <generator>Hugo -- 0.143.1</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 09 Feb 2025 12:59:29 +0800</lastBuildDate>
+    <atom:link href="https://www.sdlinks.net/categories/things-ive-found/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Restart As a Link Blog</title>
+      <link>https://www.sdlinks.net/posts/2025/restart-a-link-blog/</link>
+      <pubDate>Sun, 09 Feb 2025 12:59:29 +0800</pubDate>
+      <guid>https://www.sdlinks.net/posts/2025/restart-a-link-blog/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://simonwillison.net/2025/Feb/4/build-a-link-blog/&#34;&gt;Build a link blog&lt;/a&gt;, 最近从&lt;a href=&#34;https://simonwillison.net/&#34;&gt;Simon Willison&lt;/a&gt;看到的想法，觉得是一个重新捡起Blog的机会。这个依托于Github
+Pages 的博客站点荒废了好久，最早可以追溯到2018年，彼时还未大学毕业，中间有一段时间荒废，后续迁移到博客园上重启，过来一段时间后又荒废。如今又重新捡起，说实话整体感受还是比较复杂的，之前荒废的原因无外乎以下几点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;懒；&lt;/li&gt;
+&lt;li&gt;觉得无法输出有意思的观点，只是在拾人牙慧；&lt;/li&gt;
+&lt;li&gt;由于2，导致写blog过程中没收到什么反馈，没有反馈的事情，对人类来说还是太难坚持了。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;但是近期从Simon Willison那了解到了关于blog内容的新思路：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It’s easy to get hung up on this. I’ve definitely felt the self-imposed pressure to only write something if it’s new, and unique, and feels like it’s never been said before. This is a mental trap that does nothing but hold you back.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;这个我深有同感，一开始其实整体内容围绕着一些常见的学习知识点、读书内容，慢慢就发现，如果说我不能输出独特的观点，这值得我写一篇文章/博客吗？进而转到如果我的博客没人看，我还要花时间在上面吗？甚至之前还觉得我应该写英文文章，这样部署在Github Pages才有更多的读者。说回来，Simon Willison认为blog的价值在于保持长期的写作习惯，同时随着时间的推移有所收获， 同时Simon Willison给出了写blog的几个内容(&lt;a href=&#34;https://simonwillison.net/2024/Dec/22/link-blog/&#34;&gt;via&lt;/a&gt;)：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;TIL(Things I Learned)；&lt;/li&gt;
+&lt;li&gt;DMP(Descriptions of My Projects)；&lt;/li&gt;
+&lt;li&gt;TIF(Things I&amp;rsquo;ve Found)。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;基于3就衍生出了本文的主题，“links”, 也就是说通过blog的形式分享记录自己阅读的内容。作为一个Link Blog, 可以包含以下内容：&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

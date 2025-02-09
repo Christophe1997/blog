@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>OCaml on CastOff</title>
-    <link>http://www.sdlinks.net/tags/ocaml/</link>
-    <description>Recent content in OCaml on CastOff</description>
+    <title>OCaml on Neo VRAINS</title>
+    <link>https://www.sdlinks.net/tags/ocaml/</link>
+    <description>Recent content in OCaml on Neo VRAINS</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>en</language>
     <lastBuildDate>Fri, 13 Dec 2019 19:47:37 +0800</lastBuildDate>
-    <atom:link href="http://www.sdlinks.net/tags/ocaml/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.sdlinks.net/tags/ocaml/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Value restriction，从OCaml到F#</title>
-      <link>http://www.sdlinks.net/posts/2018/value-restriction/</link>
+      <link>https://www.sdlinks.net/posts/2018/value-restriction/</link>
       <pubDate>Fri, 13 Dec 2019 19:47:37 +0800</pubDate>
-      <guid>http://www.sdlinks.net/posts/2018/value-restriction/</guid>
+      <guid>https://www.sdlinks.net/posts/2018/value-restriction/</guid>
       <description>&lt;h2 id=&#34;value-restriction是什么&#34;&gt;Value Restriction是什么？&lt;/h2&gt;
 &lt;p&gt;Value restriction是用于控制类型推断能否对值声明进行多态泛化的规则（&lt;a href=&#34;http://mlton.org/ValueRestriction&#34;&gt;MLton原文&lt;/a&gt;：“&lt;em&gt;The value restriction is a rule that governs when type inference is allowed to polymorphically generalize a value declaration.&lt;/em&gt;”）。常出现在ML系的语言中，如&lt;a href=&#34;https://www.smlnj.org/&#34;&gt;SML&lt;/a&gt;，&lt;a href=&#34;https://ocaml.org/&#34;&gt;OCaml&lt;/a&gt;，&lt;a href=&#34;https://fsharp.org/&#34;&gt;F#&lt;/a&gt;中，其实value restriction产生的本质原因是为了保证类型系统在结合参数多态与命令式特性（&lt;em&gt;imperative feature&lt;/em&gt;，如&lt;code&gt;ref&lt;/code&gt;）时候的可靠性（&lt;em&gt;soundness&lt;/em&gt;）。一个典型的例子就是：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -49,9 +49,9 @@
     </item>
     <item>
       <title>Functional Data Structure 2</title>
-      <link>http://www.sdlinks.net/posts/2018/functional-data-structure-2/</link>
+      <link>https://www.sdlinks.net/posts/2018/functional-data-structure-2/</link>
       <pubDate>Tue, 24 Jul 2018 15:54:24 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2018/functional-data-structure-2/</guid>
+      <guid>https://www.sdlinks.net/posts/2018/functional-data-structure-2/</guid>
       <description>&lt;h2 id=&#34;amortization&#34;&gt;Amortization&lt;/h2&gt;
 &lt;p&gt;Implementations with good amortized bounds are often simpler and faster than implementations with comparable worst-case
 bounds. Given a sequence of operations, we may wish to know the running time of the entire sequence, but not care about
@@ -64,9 +64,9 @@ faster than worst-case solutions with equivalent bounds.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Functional Data Structure 1</title>
-      <link>http://www.sdlinks.net/posts/2018/functional-data-structure-1/</link>
+      <link>https://www.sdlinks.net/posts/2018/functional-data-structure-1/</link>
       <pubDate>Thu, 19 Jul 2018 17:00:11 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2018/functional-data-structure-1/</guid>
+      <guid>https://www.sdlinks.net/posts/2018/functional-data-structure-1/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;To implement data structure in a functional way, there are two basic problems. First, from the point of view of designing
 and implementing efficient data structures, functional programming&amp;rsquo;s stricture against destructive updates(i.e. assignments)

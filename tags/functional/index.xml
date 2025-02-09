@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Functional on CastOff</title>
-    <link>http://www.sdlinks.net/tags/functional/</link>
-    <description>Recent content in Functional on CastOff</description>
+    <title>Functional on Neo VRAINS</title>
+    <link>https://www.sdlinks.net/tags/functional/</link>
+    <description>Recent content in Functional on Neo VRAINS</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>en</language>
     <lastBuildDate>Tue, 24 Jul 2018 15:54:24 +0000</lastBuildDate>
-    <atom:link href="http://www.sdlinks.net/tags/functional/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.sdlinks.net/tags/functional/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Functional Data Structure 2</title>
-      <link>http://www.sdlinks.net/posts/2018/functional-data-structure-2/</link>
+      <link>https://www.sdlinks.net/posts/2018/functional-data-structure-2/</link>
       <pubDate>Tue, 24 Jul 2018 15:54:24 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2018/functional-data-structure-2/</guid>
+      <guid>https://www.sdlinks.net/posts/2018/functional-data-structure-2/</guid>
       <description>&lt;h2 id=&#34;amortization&#34;&gt;Amortization&lt;/h2&gt;
 &lt;p&gt;Implementations with good amortized bounds are often simpler and faster than implementations with comparable worst-case
 bounds. Given a sequence of operations, we may wish to know the running time of the entire sequence, but not care about
@@ -25,9 +25,9 @@ faster than worst-case solutions with equivalent bounds.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Functional Data Structure 1</title>
-      <link>http://www.sdlinks.net/posts/2018/functional-data-structure-1/</link>
+      <link>https://www.sdlinks.net/posts/2018/functional-data-structure-1/</link>
       <pubDate>Thu, 19 Jul 2018 17:00:11 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2018/functional-data-structure-1/</guid>
+      <guid>https://www.sdlinks.net/posts/2018/functional-data-structure-1/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;To implement data structure in a functional way, there are two basic problems. First, from the point of view of designing
 and implementing efficient data structures, functional programming&amp;rsquo;s stricture against destructive updates(i.e. assignments)

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Haskell on CastOff</title>
-    <link>http://www.sdlinks.net/tags/haskell/</link>
-    <description>Recent content in Haskell on CastOff</description>
+    <title>Haskell on Neo VRAINS</title>
+    <link>https://www.sdlinks.net/tags/haskell/</link>
+    <description>Recent content in Haskell on Neo VRAINS</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>en</language>
     <lastBuildDate>Tue, 06 Apr 2021 23:26:20 +0800</lastBuildDate>
-    <atom:link href="http://www.sdlinks.net/tags/haskell/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.sdlinks.net/tags/haskell/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>函数式数据结构漫谈（一）</title>
-      <link>http://www.sdlinks.net/posts/2021/fp-data-structure/</link>
+      <link>https://www.sdlinks.net/posts/2021/fp-data-structure/</link>
       <pubDate>Tue, 06 Apr 2021 23:26:20 +0800</pubDate>
-      <guid>http://www.sdlinks.net/posts/2021/fp-data-structure/</guid>
+      <guid>https://www.sdlinks.net/posts/2021/fp-data-structure/</guid>
       <description>&lt;p&gt;近期计划开这个系列的坑，内容大多都是“Purely Functional Data Structures”内容加一点自己的理解（改一张牌就是我的了:），算是打磨文笔？&lt;/p&gt;
 &lt;h2 id=&#34;数据结构是什么&#34;&gt;数据结构是什么&lt;/h2&gt;
 &lt;p&gt;当我们在讨论数据结构的时候，我们在讨论什么。常见的介绍有“数据结构是一种数据组织、管理和存储的格式，它可以帮助我们实现对数据高效的访问和修改，更准确地说，
@@ -75,9 +75,9 @@ Data Structures”里指出，数据结构这一概念通常有四种含义：&l
     </item>
     <item>
       <title>Memoization in Haskell</title>
-      <link>http://www.sdlinks.net/posts/2020/memoization-in-haskell/</link>
+      <link>https://www.sdlinks.net/posts/2020/memoization-in-haskell/</link>
       <pubDate>Fri, 19 Jun 2020 21:39:35 +0800</pubDate>
-      <guid>http://www.sdlinks.net/posts/2020/memoization-in-haskell/</guid>
+      <guid>https://www.sdlinks.net/posts/2020/memoization-in-haskell/</guid>
       <description>&lt;p&gt;Memoization是动态规划(&lt;em&gt;Dynamic Programming&lt;/em&gt;)中自顶向下处理问题采用的策略, 其基本想法是通过将子问题的解保存起来避免重复计算来优化算法. 这个概念本身很简单, 在其他有明显mutable语义的语言中, 实现起来也非常简单. 但是在Haskell中问题就变的复杂了不少, 对于一个原始的函数&lt;code&gt;f :: a -&amp;gt; b&lt;/code&gt;你如果要用ref, 比如说IORef, 你必须要把它放到IO monad中, 你的memoize函数就变成了&lt;code&gt;... -&amp;gt; IO (a -&amp;gt; b)&lt;/code&gt;. 我们希望是能够找到一个&lt;code&gt;memoize :: ... -&amp;gt; (a -&amp;gt; b)&lt;/code&gt;, 这样memoize之后得到的和原函数类型是一致的. 为了讨论的方便, 我们主要关注两个例子的memoization, 一个是经典的Fibonacci数列:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -117,10 +117,10 @@ Data Structures”里指出，数据结构这一概念通常有四种含义：&l
     </item>
     <item>
       <title>Surpasser Count</title>
-      <link>http://www.sdlinks.net/posts/2020/surpasser-count/</link>
+      <link>https://www.sdlinks.net/posts/2020/surpasser-count/</link>
       <pubDate>Wed, 06 May 2020 20:06:38 +0800</pubDate>
-      <guid>http://www.sdlinks.net/posts/2020/surpasser-count/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Pearl 2&lt;/strong&gt;: 给定一个长度大于1的列表, 计算其元素的最大surpasser count, 要求算法复杂度$O(n log n)$.
+      <guid>https://www.sdlinks.net/posts/2020/surpasser-count/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Pearl 2&lt;/strong&gt;: 给定一个长度大于1的列表, 计算其元素的最大surpasser count, 要求算法复杂度 $O(n log n)$.
 &lt;strong&gt;Type&lt;/strong&gt;: &lt;code&gt;msc: Ord a =&amp;gt; [a] -&amp;gt; Int&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;Pearls of functional algorithm design&amp;quot;的第二章, 我们先来看surpasser的定义&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Definition surpasser&lt;/strong&gt;: 称列表中$X[j]$是$X[i]$的surpasser, 如果$X[i] &amp;lt; X[j]$且$i &amp;lt; j$.&lt;/p&gt;
@@ -140,13 +140,13 @@ Data Structures”里指出，数据结构这一概念通常有四种含义：&l
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;scount&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;x&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;xs&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;length&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;$&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;filter&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;xs&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;同时也很容易看到, 这个实现的时间复杂度是$O(n^2)$, 不符合要求的$O(n log n)$. 为了达到$ O(n log n)$的时间复杂度, 我们希望有个函数&lt;code&gt;f&lt;/code&gt;能够递归的处理&lt;code&gt;xs = us ++ vs&lt;/code&gt;, 并且存在一个线性复杂度的函数&lt;code&gt;join&lt;/code&gt;, 使得&lt;code&gt;f xs = join (f us) (f vs)&lt;/code&gt;, 这样整体的复杂度满足$T(n)=2 T(n/2)+O(n)=O(n log n)$. 原文中, 作者利用分治的思想通过一步步地推导获得了线性时间的&lt;code&gt;join&lt;/code&gt;, 这里也仅仅是类似于复读的&amp;quot;再解释&amp;rdquo;.&lt;/p&gt;</description>
+&lt;/div&gt;&lt;p&gt;同时也很容易看到, 这个实现的时间复杂度是 $O(n^2)$, 不符合要求的 $O(n log n)$. 为了达到 $O(n log n)$ 的时间复杂度, 我们希望有个函数&lt;code&gt;f&lt;/code&gt;能够递归的处理&lt;code&gt;xs = us ++ vs&lt;/code&gt;, 并且存在一个线性复杂度的函数&lt;code&gt;join&lt;/code&gt;, 使得&lt;code&gt;f xs = join (f us) (f vs)&lt;/code&gt;, 这样整体的复杂度满足 $T(n)=2 T(n/2)+O(n)=O(n log n)$. 原文中, 作者利用分治的思想通过一步步地推导获得了线性时间的&lt;code&gt;join&lt;/code&gt;, 这里也仅仅是类似于复读的&amp;quot;再解释&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Smallest Free Number</title>
-      <link>http://www.sdlinks.net/posts/2020/the-smallest-free-number/</link>
+      <link>https://www.sdlinks.net/posts/2020/the-smallest-free-number/</link>
       <pubDate>Tue, 05 May 2020 21:01:11 +0800</pubDate>
-      <guid>http://www.sdlinks.net/posts/2020/the-smallest-free-number/</guid>
+      <guid>https://www.sdlinks.net/posts/2020/the-smallest-free-number/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Pearl 1&lt;/strong&gt;: 给定一个自然数的有限集X, 计算不属于X的最小自然数. X表示为不包含重复元素的无序列表. 时间复杂度要求$O(n)$.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Type&lt;/strong&gt;: &lt;code&gt;minfree :: [Int] -&amp;gt; Int&lt;/code&gt;(也可以额外的定义自然数类型, 不过这不是我们的重点)&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;Pearls of Functional Algorithm Design&amp;quot;的第一章, 其描述了一个分治的算法和一个基于array的算法, 这里按个人的思路讲解一下基于分治的算法, 基于array的算法具体可以查阅原文. 首先拿到这个问题, 我觉得最直接的想法就是&lt;/p&gt;
@@ -158,9 +158,9 @@ Data Structures”里指出，数据结构这一概念通常有四种含义：&l
     </item>
     <item>
       <title>Monad and Transformers</title>
-      <link>http://www.sdlinks.net/posts/2019/monad-and-transformers/</link>
+      <link>https://www.sdlinks.net/posts/2019/monad-and-transformers/</link>
       <pubDate>Sat, 06 Apr 2019 20:26:43 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2019/monad-and-transformers/</guid>
+      <guid>https://www.sdlinks.net/posts/2019/monad-and-transformers/</guid>
       <description>&lt;p&gt;Monad是Haskell中讨论最多的结构, 需要更详细的探讨其相关内容, 即使它对于Haskell而言不是必须的:(.&lt;/p&gt;
 &lt;p&gt;参考: &lt;a href=&#34;https://wiki.haskell.org/All_About_Monads&#34;&gt;All about Monads&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;monad-support&#34;&gt;Monad Support&lt;/h2&gt;
@@ -278,9 +278,9 @@ Data Structures”里指出，数据结构这一概念通常有四种含义：&l
     </item>
     <item>
       <title>Haskell Algebra</title>
-      <link>http://www.sdlinks.net/posts/2019/haskell-algebra/</link>
+      <link>https://www.sdlinks.net/posts/2019/haskell-algebra/</link>
       <pubDate>Sun, 24 Mar 2019 14:32:05 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2019/haskell-algebra/</guid>
+      <guid>https://www.sdlinks.net/posts/2019/haskell-algebra/</guid>
       <description>&lt;h2 id=&#34;semigroup&#34;&gt;Semigroup&lt;/h2&gt;
 &lt;p&gt;半群即一个集合以及在之上定义的一个满足结合律的二元运算, 在Haskell中定义为(部分):&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;

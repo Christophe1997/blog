@@ -1,18 +1,41 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on CastOff</title>
-    <link>http://www.sdlinks.net/posts/</link>
-    <description>Recent content in Posts on CastOff</description>
+    <title>Posts on Neo VRAINS</title>
+    <link>https://www.sdlinks.net/posts/</link>
+    <description>Recent content in Posts on Neo VRAINS</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 06 Apr 2021 23:26:20 +0800</lastBuildDate>
-    <atom:link href="http://www.sdlinks.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Feb 2025 12:59:29 +0800</lastBuildDate>
+    <atom:link href="https://www.sdlinks.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Restart As a Link Blog</title>
+      <link>https://www.sdlinks.net/posts/2025/restart-a-link-blog/</link>
+      <pubDate>Sun, 09 Feb 2025 12:59:29 +0800</pubDate>
+      <guid>https://www.sdlinks.net/posts/2025/restart-a-link-blog/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://simonwillison.net/2025/Feb/4/build-a-link-blog/&#34;&gt;Build a link blog&lt;/a&gt;, 最近从&lt;a href=&#34;https://simonwillison.net/&#34;&gt;Simon Willison&lt;/a&gt;看到的想法，觉得是一个重新捡起Blog的机会。这个依托于Github
+Pages 的博客站点荒废了好久，最早可以追溯到2018年，彼时还未大学毕业，中间有一段时间荒废，后续迁移到博客园上重启，过来一段时间后又荒废。如今又重新捡起，说实话整体感受还是比较复杂的，之前荒废的原因无外乎以下几点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;懒；&lt;/li&gt;
+&lt;li&gt;觉得无法输出有意思的观点，只是在拾人牙慧；&lt;/li&gt;
+&lt;li&gt;由于2，导致写blog过程中没收到什么反馈，没有反馈的事情，对人类来说还是太难坚持了。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;但是近期从Simon Willison那了解到了关于blog内容的新思路：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It’s easy to get hung up on this. I’ve definitely felt the self-imposed pressure to only write something if it’s new, and unique, and feels like it’s never been said before. This is a mental trap that does nothing but hold you back.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;这个我深有同感，一开始其实整体内容围绕着一些常见的学习知识点、读书内容，慢慢就发现，如果说我不能输出独特的观点，这值得我写一篇文章/博客吗？进而转到如果我的博客没人看，我还要花时间在上面吗？甚至之前还觉得我应该写英文文章，这样部署在Github Pages才有更多的读者。说回来，Simon Willison认为blog的价值在于保持长期的写作习惯，同时随着时间的推移有所收获， 同时Simon Willison给出了写blog的几个内容(&lt;a href=&#34;https://simonwillison.net/2024/Dec/22/link-blog/&#34;&gt;via&lt;/a&gt;)：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;TIL(Things I Learned)；&lt;/li&gt;
+&lt;li&gt;DMP(Descriptions of My Projects)；&lt;/li&gt;
+&lt;li&gt;TIF(Things I&amp;rsquo;ve Found)。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;基于3就衍生出了本文的主题，“links”, 也就是说通过blog的形式分享记录自己阅读的内容。作为一个Link Blog, 可以包含以下内容：&lt;/p&gt;</description>
+    </item>
     <item>
       <title>函数式数据结构漫谈（一）</title>
-      <link>http://www.sdlinks.net/posts/2021/fp-data-structure/</link>
+      <link>https://www.sdlinks.net/posts/2021/fp-data-structure/</link>
       <pubDate>Tue, 06 Apr 2021 23:26:20 +0800</pubDate>
-      <guid>http://www.sdlinks.net/posts/2021/fp-data-structure/</guid>
+      <guid>https://www.sdlinks.net/posts/2021/fp-data-structure/</guid>
       <description>&lt;p&gt;近期计划开这个系列的坑，内容大多都是“Purely Functional Data Structures”内容加一点自己的理解（改一张牌就是我的了:），算是打磨文笔？&lt;/p&gt;
 &lt;h2 id=&#34;数据结构是什么&#34;&gt;数据结构是什么&lt;/h2&gt;
 &lt;p&gt;当我们在讨论数据结构的时候，我们在讨论什么。常见的介绍有“数据结构是一种数据组织、管理和存储的格式，它可以帮助我们实现对数据高效的访问和修改，更准确地说，
@@ -75,9 +98,9 @@ Data Structures”里指出，数据结构这一概念通常有四种含义：&l
     </item>
     <item>
       <title>Memoization in Haskell</title>
-      <link>http://www.sdlinks.net/posts/2020/memoization-in-haskell/</link>
+      <link>https://www.sdlinks.net/posts/2020/memoization-in-haskell/</link>
       <pubDate>Fri, 19 Jun 2020 21:39:35 +0800</pubDate>
-      <guid>http://www.sdlinks.net/posts/2020/memoization-in-haskell/</guid>
+      <guid>https://www.sdlinks.net/posts/2020/memoization-in-haskell/</guid>
       <description>&lt;p&gt;Memoization是动态规划(&lt;em&gt;Dynamic Programming&lt;/em&gt;)中自顶向下处理问题采用的策略, 其基本想法是通过将子问题的解保存起来避免重复计算来优化算法. 这个概念本身很简单, 在其他有明显mutable语义的语言中, 实现起来也非常简单. 但是在Haskell中问题就变的复杂了不少, 对于一个原始的函数&lt;code&gt;f :: a -&amp;gt; b&lt;/code&gt;你如果要用ref, 比如说IORef, 你必须要把它放到IO monad中, 你的memoize函数就变成了&lt;code&gt;... -&amp;gt; IO (a -&amp;gt; b)&lt;/code&gt;. 我们希望是能够找到一个&lt;code&gt;memoize :: ... -&amp;gt; (a -&amp;gt; b)&lt;/code&gt;, 这样memoize之后得到的和原函数类型是一致的. 为了讨论的方便, 我们主要关注两个例子的memoization, 一个是经典的Fibonacci数列:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -117,10 +140,10 @@ Data Structures”里指出，数据结构这一概念通常有四种含义：&l
     </item>
     <item>
       <title>Surpasser Count</title>
-      <link>http://www.sdlinks.net/posts/2020/surpasser-count/</link>
+      <link>https://www.sdlinks.net/posts/2020/surpasser-count/</link>
       <pubDate>Wed, 06 May 2020 20:06:38 +0800</pubDate>
-      <guid>http://www.sdlinks.net/posts/2020/surpasser-count/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Pearl 2&lt;/strong&gt;: 给定一个长度大于1的列表, 计算其元素的最大surpasser count, 要求算法复杂度$O(n log n)$.
+      <guid>https://www.sdlinks.net/posts/2020/surpasser-count/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Pearl 2&lt;/strong&gt;: 给定一个长度大于1的列表, 计算其元素的最大surpasser count, 要求算法复杂度 $O(n log n)$.
 &lt;strong&gt;Type&lt;/strong&gt;: &lt;code&gt;msc: Ord a =&amp;gt; [a] -&amp;gt; Int&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;Pearls of functional algorithm design&amp;quot;的第二章, 我们先来看surpasser的定义&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Definition surpasser&lt;/strong&gt;: 称列表中$X[j]$是$X[i]$的surpasser, 如果$X[i] &amp;lt; X[j]$且$i &amp;lt; j$.&lt;/p&gt;
@@ -140,13 +163,13 @@ Data Structures”里指出，数据结构这一概念通常有四种含义：&l
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;scount&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;x&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;xs&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;length&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;$&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;filter&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;xs&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;同时也很容易看到, 这个实现的时间复杂度是$O(n^2)$, 不符合要求的$O(n log n)$. 为了达到$ O(n log n)$的时间复杂度, 我们希望有个函数&lt;code&gt;f&lt;/code&gt;能够递归的处理&lt;code&gt;xs = us ++ vs&lt;/code&gt;, 并且存在一个线性复杂度的函数&lt;code&gt;join&lt;/code&gt;, 使得&lt;code&gt;f xs = join (f us) (f vs)&lt;/code&gt;, 这样整体的复杂度满足$T(n)=2 T(n/2)+O(n)=O(n log n)$. 原文中, 作者利用分治的思想通过一步步地推导获得了线性时间的&lt;code&gt;join&lt;/code&gt;, 这里也仅仅是类似于复读的&amp;quot;再解释&amp;rdquo;.&lt;/p&gt;</description>
+&lt;/div&gt;&lt;p&gt;同时也很容易看到, 这个实现的时间复杂度是 $O(n^2)$, 不符合要求的 $O(n log n)$. 为了达到 $O(n log n)$ 的时间复杂度, 我们希望有个函数&lt;code&gt;f&lt;/code&gt;能够递归的处理&lt;code&gt;xs = us ++ vs&lt;/code&gt;, 并且存在一个线性复杂度的函数&lt;code&gt;join&lt;/code&gt;, 使得&lt;code&gt;f xs = join (f us) (f vs)&lt;/code&gt;, 这样整体的复杂度满足 $T(n)=2 T(n/2)+O(n)=O(n log n)$. 原文中, 作者利用分治的思想通过一步步地推导获得了线性时间的&lt;code&gt;join&lt;/code&gt;, 这里也仅仅是类似于复读的&amp;quot;再解释&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Smallest Free Number</title>
-      <link>http://www.sdlinks.net/posts/2020/the-smallest-free-number/</link>
+      <link>https://www.sdlinks.net/posts/2020/the-smallest-free-number/</link>
       <pubDate>Tue, 05 May 2020 21:01:11 +0800</pubDate>
-      <guid>http://www.sdlinks.net/posts/2020/the-smallest-free-number/</guid>
+      <guid>https://www.sdlinks.net/posts/2020/the-smallest-free-number/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Pearl 1&lt;/strong&gt;: 给定一个自然数的有限集X, 计算不属于X的最小自然数. X表示为不包含重复元素的无序列表. 时间复杂度要求$O(n)$.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Type&lt;/strong&gt;: &lt;code&gt;minfree :: [Int] -&amp;gt; Int&lt;/code&gt;(也可以额外的定义自然数类型, 不过这不是我们的重点)&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;Pearls of Functional Algorithm Design&amp;quot;的第一章, 其描述了一个分治的算法和一个基于array的算法, 这里按个人的思路讲解一下基于分治的算法, 基于array的算法具体可以查阅原文. 首先拿到这个问题, 我觉得最直接的想法就是&lt;/p&gt;
@@ -158,9 +181,9 @@ Data Structures”里指出，数据结构这一概念通常有四种含义：&l
     </item>
     <item>
       <title>Continuation Passing Style and Tail Recursion</title>
-      <link>http://www.sdlinks.net/posts/2020/cps/</link>
+      <link>https://www.sdlinks.net/posts/2020/cps/</link>
       <pubDate>Sat, 29 Feb 2020 21:40:07 +0800</pubDate>
-      <guid>http://www.sdlinks.net/posts/2020/cps/</guid>
+      <guid>https://www.sdlinks.net/posts/2020/cps/</guid>
       <description>&lt;p&gt;之前在&amp;quot;Essentials of Programming Languages&amp;quot;中学习过CPS(&lt;em&gt;Continuation Passing Style&lt;/em&gt;), 而笔记在blog改版后被丢弃, 故在这篇文章中重新详细的探讨下CPS以及尾递归, 就当是温故而知新.&lt;/p&gt;
 &lt;h2 id=&#34;continuation&#34;&gt;Continuation&lt;/h2&gt;
 &lt;p&gt;在理解什么是&amp;quot;Continuation Passing Style&amp;quot;之前, 我们首先需要定义&lt;em&gt;Continuation&lt;/em&gt;(惭愧的是我都不知道中文叫啥, 查了下好像是&amp;quot;续延&amp;quot;). &lt;em&gt;Continuation&lt;/em&gt;是计算机程序控制状态的抽象表示, 换言之, 其就是一种表示程序执行中间某一计算步骤的控制上下文的数据结构, 即表示某一计算的未来. 一个形象的例子是阶乘函数:&lt;/p&gt;
@@ -209,9 +232,9 @@ Data Structures”里指出，数据结构这一概念通常有四种含义：&l
     </item>
     <item>
       <title>Zipper</title>
-      <link>http://www.sdlinks.net/posts/2020/zipper/</link>
+      <link>https://www.sdlinks.net/posts/2020/zipper/</link>
       <pubDate>Thu, 27 Feb 2020 21:17:41 +0800</pubDate>
-      <guid>http://www.sdlinks.net/posts/2020/zipper/</guid>
+      <guid>https://www.sdlinks.net/posts/2020/zipper/</guid>
       <description>&lt;p&gt;近来想于函数式编程中寻找类似与双向链表的数据结构, 结果找到了Zipper. Zipper中文为拉链, 泛指一类常在函数式编程中使用的聚合数据结构, &lt;strong&gt;其加强了原有的数据结构, 使得能够遍历或更新原有数据结构的任意部分&lt;/strong&gt;. zipper的关键思想是将目前需要处理的部分和不需要处理的部分分开, 同时保存目前不需要的部分, 也可以将其形象的理解为光标. 本文首先介绍了如何在list的基础上构建zipper, 随后将其扩展到二叉树上.&lt;/p&gt;
 &lt;h2 id=&#34;list的例子&#34;&gt;list的例子&lt;/h2&gt;
 &lt;h3 id=&#34;定义zipper&#34;&gt;定义zipper&lt;/h3&gt;
@@ -251,9 +274,9 @@ Data Structures”里指出，数据结构这一概念通常有四种含义：&l
     </item>
     <item>
       <title>Some Bitwise Tricks</title>
-      <link>http://www.sdlinks.net/posts/2020/some-bitwise-tricks/</link>
+      <link>https://www.sdlinks.net/posts/2020/some-bitwise-tricks/</link>
       <pubDate>Tue, 25 Feb 2020 11:50:04 +0800</pubDate>
-      <guid>http://www.sdlinks.net/posts/2020/some-bitwise-tricks/</guid>
+      <guid>https://www.sdlinks.net/posts/2020/some-bitwise-tricks/</guid>
       <description>&lt;h2 id=&#34;bitwise-tricks&#34;&gt;Bitwise tricks&lt;/h2&gt;
 &lt;p&gt;近来翻到一本&amp;quot;Hackers Delight&amp;quot;的书, 其主要介绍基于二进制运算的算法. 初读来大感震撼, 其结果之巧妙,过程之精简, 于仅仅是了解计算机数是用补码所表示, 并未深入了解过二进制运算的人而言不可谓不精美. 正如Dijkstra所言, 计算机程序是集逻辑美感与机械实现的矛盾体. 本文姑且将其中的一些皮毛摘录如下, 以便日后之使用, 目前倒是难以得到应用.&lt;/p&gt;
 &lt;ol&gt;
@@ -306,9 +329,9 @@ Data Structures”里指出，数据结构这一概念通常有四种含义：&l
     </item>
     <item>
       <title>Value restriction，从OCaml到F#</title>
-      <link>http://www.sdlinks.net/posts/2018/value-restriction/</link>
+      <link>https://www.sdlinks.net/posts/2018/value-restriction/</link>
       <pubDate>Fri, 13 Dec 2019 19:47:37 +0800</pubDate>
-      <guid>http://www.sdlinks.net/posts/2018/value-restriction/</guid>
+      <guid>https://www.sdlinks.net/posts/2018/value-restriction/</guid>
       <description>&lt;h2 id=&#34;value-restriction是什么&#34;&gt;Value Restriction是什么？&lt;/h2&gt;
 &lt;p&gt;Value restriction是用于控制类型推断能否对值声明进行多态泛化的规则（&lt;a href=&#34;http://mlton.org/ValueRestriction&#34;&gt;MLton原文&lt;/a&gt;：“&lt;em&gt;The value restriction is a rule that governs when type inference is allowed to polymorphically generalize a value declaration.&lt;/em&gt;”）。常出现在ML系的语言中，如&lt;a href=&#34;https://www.smlnj.org/&#34;&gt;SML&lt;/a&gt;，&lt;a href=&#34;https://ocaml.org/&#34;&gt;OCaml&lt;/a&gt;，&lt;a href=&#34;https://fsharp.org/&#34;&gt;F#&lt;/a&gt;中，其实value restriction产生的本质原因是为了保证类型系统在结合参数多态与命令式特性（&lt;em&gt;imperative feature&lt;/em&gt;，如&lt;code&gt;ref&lt;/code&gt;）时候的可靠性（&lt;em&gt;soundness&lt;/em&gt;）。一个典型的例子就是：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -345,9 +368,9 @@ Data Structures”里指出，数据结构这一概念通常有四种含义：&l
     </item>
     <item>
       <title>使用hugo生成博客</title>
-      <link>http://www.sdlinks.net/posts/2019/%E4%BD%BF%E7%94%A8hugo%E7%94%9F%E6%88%90%E5%8D%9A%E5%AE%A2/</link>
+      <link>https://www.sdlinks.net/posts/2019/%E4%BD%BF%E7%94%A8hugo%E7%94%9F%E6%88%90%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Thu, 05 Dec 2019 20:29:00 +0800</pubDate>
-      <guid>http://www.sdlinks.net/posts/2019/%E4%BD%BF%E7%94%A8hugo%E7%94%9F%E6%88%90%E5%8D%9A%E5%AE%A2/</guid>
+      <guid>https://www.sdlinks.net/posts/2019/%E4%BD%BF%E7%94%A8hugo%E7%94%9F%E6%88%90%E5%8D%9A%E5%AE%A2/</guid>
       <description>&lt;p&gt;之前一直有使用&lt;a href=&#34;https://hexo.io/zh-cn/index.html&#34;&gt;Hexo&lt;/a&gt;来生成静态博客，如今将博客迁移到了&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;下。两种工具总体而言各有优势，个人此次转移到hugo的主要原因大概是希望能够重拾写博客的习惯，本文主要介绍了使用Hugo的大致流程。首先给出个人博客的文件结构：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -381,7 +404,7 @@ Data Structures”里指出，数据结构这一概念通常有四种含义：&l
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;+-- data
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;+-- layouts
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;+-- ox-hugo        # org文件位置
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; |-- messy.org     # category为杂项的org文件
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; |-- messy.org     # category为Others的org文件
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;+-- public         # submodule
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;+-- resource
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;+-- static
@@ -397,9 +420,9 @@ Data Structures”里指出，数据结构这一概念通常有四种含义：&l
     </item>
     <item>
       <title>Monad and Transformers</title>
-      <link>http://www.sdlinks.net/posts/2019/monad-and-transformers/</link>
+      <link>https://www.sdlinks.net/posts/2019/monad-and-transformers/</link>
       <pubDate>Sat, 06 Apr 2019 20:26:43 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2019/monad-and-transformers/</guid>
+      <guid>https://www.sdlinks.net/posts/2019/monad-and-transformers/</guid>
       <description>&lt;p&gt;Monad是Haskell中讨论最多的结构, 需要更详细的探讨其相关内容, 即使它对于Haskell而言不是必须的:(.&lt;/p&gt;
 &lt;p&gt;参考: &lt;a href=&#34;https://wiki.haskell.org/All_About_Monads&#34;&gt;All about Monads&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;monad-support&#34;&gt;Monad Support&lt;/h2&gt;
@@ -517,9 +540,9 @@ Data Structures”里指出，数据结构这一概念通常有四种含义：&l
     </item>
     <item>
       <title>Haskell Algebra</title>
-      <link>http://www.sdlinks.net/posts/2019/haskell-algebra/</link>
+      <link>https://www.sdlinks.net/posts/2019/haskell-algebra/</link>
       <pubDate>Sun, 24 Mar 2019 14:32:05 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2019/haskell-algebra/</guid>
+      <guid>https://www.sdlinks.net/posts/2019/haskell-algebra/</guid>
       <description>&lt;h2 id=&#34;semigroup&#34;&gt;Semigroup&lt;/h2&gt;
 &lt;p&gt;半群即一个集合以及在之上定义的一个满足结合律的二元运算, 在Haskell中定义为(部分):&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -592,9 +615,9 @@ Data Structures”里指出，数据结构这一概念通常有四种含义：&l
     </item>
     <item>
       <title>杂记</title>
-      <link>http://www.sdlinks.net/posts/2019/%E6%9D%82%E8%AE%B0/</link>
+      <link>https://www.sdlinks.net/posts/2019/%E6%9D%82%E8%AE%B0/</link>
       <pubDate>Mon, 04 Mar 2019 17:12:00 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2019/%E6%9D%82%E8%AE%B0/</guid>
+      <guid>https://www.sdlinks.net/posts/2019/%E6%9D%82%E8%AE%B0/</guid>
       <description>&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;多态(&lt;em&gt;polymorphic&lt;/em&gt;)最早从19世纪希腊语中引入, 其中poly代表很多(&lt;em&gt;many&lt;/em&gt;), morph代表形式(&lt;em&gt;form&lt;/em&gt;), 而-ic的后缀表示由&amp;hellip;制成(&lt;em&gt;made of&lt;/em&gt;). 因此, 多态意味着&amp;quot;made of many form&amp;quot;, 即有许多形式构成. 因此单态(&lt;em&gt;monomorphic&lt;/em&gt;)很容易猜到是&amp;quot;made of one form&amp;quot;. 2019.03.04&lt;/p&gt;
@@ -617,9 +640,9 @@ Data Structures”里指出，数据结构这一概念通常有四种含义：&l
     </item>
     <item>
       <title>Object Lifetime and Storage Management</title>
-      <link>http://www.sdlinks.net/posts/2018/object-lifetime-and-storage-management/</link>
+      <link>https://www.sdlinks.net/posts/2018/object-lifetime-and-storage-management/</link>
       <pubDate>Sat, 08 Dec 2018 16:48:49 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2018/object-lifetime-and-storage-management/</guid>
+      <guid>https://www.sdlinks.net/posts/2018/object-lifetime-and-storage-management/</guid>
       <description>&lt;p&gt;在考虑标识符和绑定(&lt;em&gt;bindings&lt;/em&gt;)的时候, 关键在于区分标识符和它们所引用的对象, 以及以下事件:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;对象的创建&lt;/li&gt;
@@ -662,9 +685,9 @@ bookkeeping信息. 通常传入参数位于帧的顶部, 方便被调用者定�
     </item>
     <item>
       <title>进程</title>
-      <link>http://www.sdlinks.net/posts/2018/process/</link>
+      <link>https://www.sdlinks.net/posts/2018/process/</link>
       <pubDate>Fri, 03 Aug 2018 13:10:58 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2018/process/</guid>
+      <guid>https://www.sdlinks.net/posts/2018/process/</guid>
       <description>&lt;p&gt;The abstraction provided by the OS of a running program is something we call a process. And there are some APIs must be
 included in any interface of an operating system:&lt;/p&gt;
 &lt;ol&gt;
@@ -682,9 +705,9 @@ to I/O, i.e. in Unix systems each process by default has three open file descrip
     </item>
     <item>
       <title>Functional Data Structure 2</title>
-      <link>http://www.sdlinks.net/posts/2018/functional-data-structure-2/</link>
+      <link>https://www.sdlinks.net/posts/2018/functional-data-structure-2/</link>
       <pubDate>Tue, 24 Jul 2018 15:54:24 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2018/functional-data-structure-2/</guid>
+      <guid>https://www.sdlinks.net/posts/2018/functional-data-structure-2/</guid>
       <description>&lt;h2 id=&#34;amortization&#34;&gt;Amortization&lt;/h2&gt;
 &lt;p&gt;Implementations with good amortized bounds are often simpler and faster than implementations with comparable worst-case
 bounds. Given a sequence of operations, we may wish to know the running time of the entire sequence, but not care about
@@ -697,9 +720,9 @@ faster than worst-case solutions with equivalent bounds.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Functional Data Structure 1</title>
-      <link>http://www.sdlinks.net/posts/2018/functional-data-structure-1/</link>
+      <link>https://www.sdlinks.net/posts/2018/functional-data-structure-1/</link>
       <pubDate>Thu, 19 Jul 2018 17:00:11 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2018/functional-data-structure-1/</guid>
+      <guid>https://www.sdlinks.net/posts/2018/functional-data-structure-1/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;To implement data structure in a functional way, there are two basic problems. First, from the point of view of designing
 and implementing efficient data structures, functional programming&amp;rsquo;s stricture against destructive updates(i.e. assignments)
@@ -714,9 +737,9 @@ And we are not surprised if the persistent version is more complicated and even 
     </item>
     <item>
       <title>Address Space</title>
-      <link>http://www.sdlinks.net/posts/2018/address-space/</link>
+      <link>https://www.sdlinks.net/posts/2018/address-space/</link>
       <pubDate>Sun, 24 Jun 2018 23:54:04 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2018/address-space/</guid>
+      <guid>https://www.sdlinks.net/posts/2018/address-space/</guid>
       <description>&lt;h2 id=&#34;the-address-space&#34;&gt;The Address Space&lt;/h2&gt;
 &lt;p&gt;The address space is the abstraction that OS is providing to the running program. The address space of a process contains
 all of the memory state of the running program. For example, the code of the program, the stack and the heap. In the sight
@@ -725,9 +748,9 @@ the OS is &lt;em&gt;virtualizing memory&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Computer System 4</title>
-      <link>http://www.sdlinks.net/posts/2018/computer-system-4/</link>
+      <link>https://www.sdlinks.net/posts/2018/computer-system-4/</link>
       <pubDate>Sun, 10 Jun 2018 19:14:22 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2018/computer-system-4/</guid>
+      <guid>https://www.sdlinks.net/posts/2018/computer-system-4/</guid>
       <description>&lt;h2 id=&#34;linking&#34;&gt;Linking&lt;/h2&gt;
 &lt;p&gt;Linking is the process of collecting and combining various pieces of code and data into a single file that can be loaded
 (copied) into memory and executed. Linking can be performed at compile time, when the source code is translated into
@@ -736,9 +759,9 @@ application programs. On modern systems, linking is performed automatically by p
     </item>
     <item>
       <title>Computer System 3</title>
-      <link>http://www.sdlinks.net/posts/2018/computer-system-3/</link>
+      <link>https://www.sdlinks.net/posts/2018/computer-system-3/</link>
       <pubDate>Fri, 01 Jun 2018 23:23:16 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2018/computer-system-3/</guid>
+      <guid>https://www.sdlinks.net/posts/2018/computer-system-3/</guid>
       <description>&lt;h2 id=&#34;optimization&#34;&gt;Optimization&lt;/h2&gt;
 &lt;p&gt;Writing an efficient program requires several type of activities. First, we must select an appropriate set of algorithms
 and data structures. Second, we must write source code that the compiler can effectively optimize to turn into efficient
@@ -747,9 +770,9 @@ that can be computed in parallel, on some combination of multiple cores and mult
     </item>
     <item>
       <title>Computer System 2</title>
-      <link>http://www.sdlinks.net/posts/2018/computer-system-2/</link>
+      <link>https://www.sdlinks.net/posts/2018/computer-system-2/</link>
       <pubDate>Mon, 28 May 2018 17:20:36 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2018/computer-system-2/</guid>
+      <guid>https://www.sdlinks.net/posts/2018/computer-system-2/</guid>
       <description>&lt;h2 id=&#34;assembler&#34;&gt;Assembler&lt;/h2&gt;
 &lt;p&gt;Computer execute machine code, sequences of bytes encoding the low-level operations that manipulate data manage memory,
 read and write data on storage devices, and communicate over networks.&lt;/p&gt;
@@ -759,9 +782,9 @@ supercomputer and lager data center.&lt;/p&gt;
     </item>
     <item>
       <title>Computer System 1</title>
-      <link>http://www.sdlinks.net/posts/2018/computer-system-1/</link>
+      <link>https://www.sdlinks.net/posts/2018/computer-system-1/</link>
       <pubDate>Wed, 23 May 2018 23:54:04 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2018/computer-system-1/</guid>
+      <guid>https://www.sdlinks.net/posts/2018/computer-system-1/</guid>
       <description>&lt;h2 id=&#34;hardware-organization-of-a-system&#34;&gt;Hardware Organization of A System&lt;/h2&gt;
 &lt;p&gt;A typical system has those hadrware below:&lt;/p&gt;
 &lt;ul&gt;
@@ -773,9 +796,9 @@ The number of bytes in a word is a fundamental system parameter that varies acro
     </item>
     <item>
       <title>字符串处理算法</title>
-      <link>http://www.sdlinks.net/posts/2018/string-algorithms/</link>
+      <link>https://www.sdlinks.net/posts/2018/string-algorithms/</link>
       <pubDate>Mon, 07 May 2018 21:18:59 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2018/string-algorithms/</guid>
+      <guid>https://www.sdlinks.net/posts/2018/string-algorithms/</guid>
       <description>&lt;p&gt;字符串处理算法具有很高的重要性以及应用领域的多样性. 以下讨论默认的是扩展的ASCII字符集(R=256).&lt;/p&gt;
 &lt;h2 id=&#34;字符串排序算法&#34;&gt;字符串排序算法&lt;/h2&gt;
 &lt;p&gt;对于许多排序应用而言, 决定顺序的键都是字符串. 利用字符串的特殊性质来将其排序通常能够获得更高的效率.&lt;/p&gt;
@@ -826,9 +849,9 @@ The number of bytes in a word is a fundamental system parameter that varies acro
     </item>
     <item>
       <title>一些Ubuntu安装问题</title>
-      <link>http://www.sdlinks.net/posts/2018/some-ubuntu-install-problem/</link>
+      <link>https://www.sdlinks.net/posts/2018/some-ubuntu-install-problem/</link>
       <pubDate>Sat, 28 Apr 2018 21:11:36 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2018/some-ubuntu-install-problem/</guid>
+      <guid>https://www.sdlinks.net/posts/2018/some-ubuntu-install-problem/</guid>
       <description>&lt;p&gt;One day ago, I started upgrading my Ubuntu 16.04 to 18.04, after I see the update from website. The most diffrience
 betwen 16.04 and 18.04 is that the 18.04 use GNOME desktop rather than Unity. I had heard that the GNOME desktop is
 better than Unity, so I tried 18.04 for the new desktop. Unfortunately, after I upgraded my OS, I found that the GNOME
@@ -837,9 +860,9 @@ problems I met while reinstalling the OS.&lt;/p&gt;</description>
     </item>
     <item>
       <title>图算法</title>
-      <link>http://www.sdlinks.net/posts/2018/graph-algorithms/</link>
+      <link>https://www.sdlinks.net/posts/2018/graph-algorithms/</link>
       <pubDate>Fri, 20 Apr 2018 19:21:30 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2018/graph-algorithms/</guid>
+      <guid>https://www.sdlinks.net/posts/2018/graph-algorithms/</guid>
       <description>&lt;p&gt;采用哪种数据结构来表示图, 主要考虑以下两个方面:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;必须为可能在应用中碰到的各种类型的图预留出足够的空间, 以及&lt;/li&gt;
@@ -947,9 +970,9 @@ problems I met while reinstalling the OS.&lt;/p&gt;</description>
     </item>
     <item>
       <title>查找算法</title>
-      <link>http://www.sdlinks.net/posts/2018/search-algorithms/</link>
+      <link>https://www.sdlinks.net/posts/2018/search-algorithms/</link>
       <pubDate>Thu, 05 Apr 2018 15:21:41 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2018/search-algorithms/</guid>
+      <guid>https://www.sdlinks.net/posts/2018/search-algorithms/</guid>
       <description>&lt;p&gt;符号表是一种存储键值对的数据结构, 支持插入和查找操作. 要确定一个给定的键是否存在于符号表中, 首先要建立对象等价性的概念. 为了保证一致性, 最好选择不
 可变的数据类型作为键. 成本模型: 统计比较的次数, 在内循环不进行比较的情况下, 转为统计数组的访问次数.&lt;/p&gt;
 &lt;h2 id=&#34;二叉查找树&#34;&gt;二叉查找树&lt;/h2&gt;
@@ -1068,9 +1091,9 @@ problems I met while reinstalling the OS.&lt;/p&gt;</description>
     </item>
     <item>
       <title>优先队列</title>
-      <link>http://www.sdlinks.net/posts/2018/priority-queue/</link>
+      <link>https://www.sdlinks.net/posts/2018/priority-queue/</link>
       <pubDate>Wed, 04 Apr 2018 16:18:50 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2018/priority-queue/</guid>
+      <guid>https://www.sdlinks.net/posts/2018/priority-queue/</guid>
       <description>&lt;h2 id=&#34;优先队列&#34;&gt;优先队列&lt;/h2&gt;
 &lt;p&gt;当一颗二叉树的每个节点都大于等于它的两个子结点时, 它被称为堆有序, 于是从任一结点向上都能够得到一列非递减的元素. 二叉堆(以下简称堆)是一组能够用堆有序
 的完全二叉树排序的元素, 并在数组中按照层级存储. 在一个堆中, 位置k的节点的父结点的位置为$ \lfloor k/2 \rfloor $, 而它的两个子节点的位置是2k和
@@ -1247,9 +1270,9 @@ problems I met while reinstalling the OS.&lt;/p&gt;</description>
     </item>
     <item>
       <title>排序算法</title>
-      <link>http://www.sdlinks.net/posts/2018/sorting-algorithms/</link>
+      <link>https://www.sdlinks.net/posts/2018/sorting-algorithms/</link>
       <pubDate>Fri, 30 Mar 2018 12:07:09 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2018/sorting-algorithms/</guid>
+      <guid>https://www.sdlinks.net/posts/2018/sorting-algorithms/</guid>
       <description>&lt;p&gt;排序算法的目标就是将所有元素的主键按照某种方式排列. 成本模型: 计算比较和交换的次数, 对于不交换元素的算法, 计算访问数组的次数. 排序算法的额外内存开销
 和运行时间是同等重要的, 排序算法可以分为原地排序算法以及需要额外内存空间来存储另一份数组副本的其他排序算法.&lt;/p&gt;
 &lt;p&gt;我们使用的算法模板如下&lt;/p&gt;
@@ -1334,9 +1357,9 @@ problems I met while reinstalling the OS.&lt;/p&gt;</description>
     </item>
     <item>
       <title>union-find算法</title>
-      <link>http://www.sdlinks.net/posts/2018/union-find-algorithm/</link>
+      <link>https://www.sdlinks.net/posts/2018/union-find-algorithm/</link>
       <pubDate>Wed, 14 Mar 2018 22:54:16 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2018/union-find-algorithm/</guid>
+      <guid>https://www.sdlinks.net/posts/2018/union-find-algorithm/</guid>
       <description>&lt;p&gt;union-find算法是一个解决动态连通性的经典算法, 具有广泛性的应用. 简单起见, 我们将对象称为触点, 将整数对称为连接, 将等价类称为连通分量, 并用0
 到N-1的整数来表示N个触点.&lt;/p&gt;
 &lt;h2 id=&#34;api&#34;&gt;API&lt;/h2&gt;
@@ -1399,9 +1422,9 @@ problems I met while reinstalling the OS.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Git Cheat Sheet</title>
-      <link>http://www.sdlinks.net/posts/2018/git-cheat-sheet/</link>
+      <link>https://www.sdlinks.net/posts/2018/git-cheat-sheet/</link>
       <pubDate>Sun, 11 Mar 2018 13:07:40 +0000</pubDate>
-      <guid>http://www.sdlinks.net/posts/2018/git-cheat-sheet/</guid>
+      <guid>https://www.sdlinks.net/posts/2018/git-cheat-sheet/</guid>
       <description>&lt;h2 id=&#34;本地操作&#34;&gt;本地操作&lt;/h2&gt;
 &lt;h3 id=&#34;状态检览&#34;&gt;状态检览&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
