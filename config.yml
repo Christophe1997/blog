@@ -61,10 +61,10 @@ params:
     hideAuthor: true
 
     assets:
-         favicon: "images/favicon.png"
-    #     favicon16x16: "<link / abs url>"
-    #     favicon32x32: "<link / abs url>"
-    #     apple_touch_icon: "<link / abs url>"
+         favicon: "images/favicon.ico"
+         favicon16x16: "images/favicon-16x16.png"
+         favicon32x32: "images/favicon-32x32.png"
+         apple_touch_icon: "images/apple-touch-icon.png"
     #     safari_pinned_tab: "<link / abs url>"
 
     label:
