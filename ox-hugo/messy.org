@@ -1,11 +1,11 @@
 #+STARTUP: content
 #+hugo_base_dir: ../
 #+hugo_section: ../content/posts
-#+filetags: @杂项
+#+filetags: @Others
 #+hugo_auto_set_lastmod: t
 #+hugo_locale: zh-cn
 
-* 杂项
+* Others
 ** DONE 使用hugo生成博客                                      :Hugo:Org_mode:
    CLOSED: [2019-12-05 Thu 20:29]
   :PROPERTIES:
@@ -23,7 +23,7 @@
   +-- data
   +-- layouts
   +-- ox-hugo        # org文件位置
-   |-- messy.org     # category为杂项的org文件
+   |-- messy.org     # category为Others的org文件
   +-- public         # submodule
   +-- resource
   +-- static

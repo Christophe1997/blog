@@ -2,9 +2,10 @@
 title: 查找算法
 date: 2018-04-05 15:21:41
 categories:
-- Algorithm
+- Things I Learned
 tags:
 - Java
+- Algorithm
 ---
 
 符号表是一种存储键值对的数据结构, 支持插入和查找操作. 要确定一个给定的键是否存在于符号表中, 首先要建立对象等价性的概念. 为了保证一致性, 最好选择不

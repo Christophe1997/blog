@@ -4,7 +4,7 @@ author = ["christophe"]
 date = 2019-12-05T20:29:00+08:00
 lastmod = 2019-12-19T20:24:17+08:00
 tags = ["Hugo", "Org-mode"]
-categories = ["杂项"]
+categories = ["Projetcs"]
 draft = false
 +++
 
@@ -20,7 +20,7 @@ Root               # blog根目录
 +-- data
 +-- layouts
 +-- ox-hugo        # org文件位置
- |-- messy.org     # category为杂项的org文件
+ |-- messy.org     # category为Others的org文件
 +-- public         # submodule
 +-- resource
 +-- static

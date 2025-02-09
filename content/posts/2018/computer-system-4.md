@@ -2,7 +2,7 @@
 title: "Computer System 4"
 date: 2018-06-10 19:14:22
 categories: 
-- Notes
+- Things I Learned 
 tags:
 - System
 ---

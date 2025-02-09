@@ -2,7 +2,7 @@
 title: "Functional Data Structure 2"
 date: 2018-07-24T15:54:24
 categories: 
-- Notes
+- Things I Learned
 tags:
 - OCaml
 - Functional

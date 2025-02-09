@@ -2,7 +2,7 @@
 title: 进程
 date: 2018-08-03 13:10:58
 categories:
-- Notes
+- Things I Learned
 tags:
 - System
 ---

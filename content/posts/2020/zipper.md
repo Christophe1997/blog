@@ -2,7 +2,7 @@
 title: "Zipper"
 date: 2020-02-27T21:17:41+08:00
 draft: false
-categories: ["Functional"]
+categories: ["Things I Learned"]
 tags: ["Zipper", "Data Structure", "Fsharp"]
 showToc: true
 ---

@@ -2,7 +2,7 @@
 title: Monad and Transformers
 date: 2019-04-06 20:26:43
 categories: 
-- Language concepts
+- Things I Learned
 tags:
 - Haskell
 ---

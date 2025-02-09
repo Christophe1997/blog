@@ -2,7 +2,7 @@
 title: "The Smallest Free Number"
 date: 2020-05-05T21:01:11+08:00
 draft: false
-categories: ["Functional"]
+categories: ["Things I Learned"]
 tags: ["Algorithm", "Haskell", "Pearls"]
 showToc: true
 ---

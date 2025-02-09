@@ -2,7 +2,7 @@
 title: Object Lifetime and Storage Management
 date: 2018-12-08 16:48:49
 categories:
-- Notes
+- Things I Learned
 tags:
 - 内存分配
 ---

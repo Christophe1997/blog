@@ -2,9 +2,10 @@
 title: union-find算法
 date: 2018-03-14 22:54:16
 categories: 
-- Algorithm
+- Things I Learned
 tags:
 - Java
+- Algorithm
 ---
 
 union-find算法是一个解决动态连通性的经典算法, 具有广泛性的应用. 简单起见, 我们将对象称为触点, 将整数对称为连接, 将等价类称为连通分量, 并用0

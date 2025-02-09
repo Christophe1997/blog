@@ -2,7 +2,7 @@
 title = "Value restriction，从OCaml到F#"
 author = ["christophe"]
 lastmod = 2019-12-13T19:47:37+08:00
-categories = ["language concepts"]
+categories = ["Things I Learned"]
 tags = ["OCaml", "F#"]
 draft = false
 

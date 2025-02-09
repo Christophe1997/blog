@@ -2,7 +2,7 @@
 title: "Details in Data.List"
 date: 2020-06-17T20:36:04+08:00
 draft: true
-categories: ["Data Structure"]
+categories: ["Things I Learned"]
 tags: ["Haskell", "List"]
 ---
 

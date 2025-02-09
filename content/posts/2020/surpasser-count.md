@@ -2,12 +2,12 @@
 title: "Surpasser Count"
 date: 2020-05-06T20:06:38+08:00
 draft: false
-categories: ["Functional"]
+categories: ["Things I Learned"]
 tags: ["Algorithm", "Haskell", "Pearls"]
 showToc: true
 ---
 
-**Pearl 2**: 给定一个长度大于1的列表, 计算其元素的最大surpasser count, 要求算法复杂度$O(n log n)$.
+**Pearl 2**: 给定一个长度大于1的列表, 计算其元素的最大surpasser count, 要求算法复杂度 $O(n log n)$.
 **Type**: `msc: Ord a => [a] -> Int`
 
 "Pearls of functional algorithm design"的第二章, 我们先来看surpasser的定义
@@ -25,7 +25,7 @@ scount :: Ord a => a -> [a] -> Int
 scount x xs = length $ filter (> x) xs
 ```
 
-同时也很容易看到, 这个实现的时间复杂度是$O(n^2)$, 不符合要求的$O(n log n)$. 为了达到$ O(n log n)$的时间复杂度, 我们希望有个函数`f`能够递归的处理`xs = us ++ vs`, 并且存在一个线性复杂度的函数`join`, 使得`f xs = join (f us) (f vs)`, 这样整体的复杂度满足$T(n)=2 T(n/2)+O(n)=O(n log n)$. 原文中, 作者利用分治的思想通过一步步地推导获得了线性时间的`join`, 这里也仅仅是类似于复读的"再解释".
+同时也很容易看到, 这个实现的时间复杂度是 $O(n^2)$, 不符合要求的 $O(n log n)$. 为了达到 $O(n log n)$ 的时间复杂度, 我们希望有个函数`f`能够递归的处理`xs = us ++ vs`, 并且存在一个线性复杂度的函数`join`, 使得`f xs = join (f us) (f vs)`, 这样整体的复杂度满足 $T(n)=2 T(n/2)+O(n)=O(n log n)$. 原文中, 作者利用分治的思想通过一步步地推导获得了线性时间的`join`, 这里也仅仅是类似于复读的"再解释".
 
 这里我们从所有surpasser count的表开始, 即`table xs = [(z, scount z zs) | z:zs <- tails xs]`, 这样的话`msc = maximum . map snd . table`. 如果我们能够找到一个线性复杂度的`join`, 使得`table (xs ++ ys) = join (table xs) (table ys)`, 那么就能够得到满足时间复杂度条件的算法. 首先, 给出一个非常直接的性质
 

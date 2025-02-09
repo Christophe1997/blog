@@ -2,7 +2,7 @@
 title: Haskell Algebra
 date: 2019-03-24 14:32:05
 categories: 
-- Language concepts 
+- Things I Learned 
 tags:
 - Haskell
 ---

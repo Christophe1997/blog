@@ -2,7 +2,7 @@
 title: "Address Space"
 date: 2018-06-24T23:54:04
 categories:
-- Notes
+- Things I Learned
 tags:
 - System
 ---

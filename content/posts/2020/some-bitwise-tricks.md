@@ -2,7 +2,7 @@
 title: "Some Bitwise Tricks"
 date: 2020-02-25T11:50:04+08:00
 draft: false
-categories: ["Notes"]
+categories: ["Things I Learned"]
 tags: ["Bitwise"]
 ---
 

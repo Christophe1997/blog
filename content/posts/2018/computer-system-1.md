@@ -2,7 +2,7 @@
 title: "Computer System 1"
 date: 2018-05-23T23:54:04
 categories:
-- Notes
+- Things I Learned
 tags:
 - System
 ---

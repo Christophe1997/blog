@@ -2,7 +2,7 @@
 title: 一些Ubuntu安装问题
 date: 2018-04-28 21:11:36
 categories:
-- 杂项
+- Others
 tags:
 - Ubuntu
 - GRUB 

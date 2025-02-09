@@ -3,7 +3,7 @@ title: "函数式数据结构漫谈（一）"
 date: 2021-04-06T23:26:20+08:00
 draft: false
 tags: ["Haskell", "Data Structure"]
-categories: ["Functional"]
+categories: ["Things I Learned"]
 showToc: true
 TocOpen: false
 ---

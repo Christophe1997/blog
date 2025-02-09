@@ -2,9 +2,10 @@
 title: 优先队列
 date: 2018-04-04 16:18:50
 categories: 
-- Algorithm
+- Things I Learned
 tags:
 - Java
+- Algorithm
 ---
 ## 优先队列 ##
 当一颗二叉树的每个节点都大于等于它的两个子结点时, 它被称为堆有序, 于是从任一结点向上都能够得到一列非递减的元素. 二叉堆(以下简称堆)是一组能够用堆有序

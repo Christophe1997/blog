@@ -2,7 +2,7 @@
 title: "Memoization in Haskell"
 date: 2020-06-19T21:39:35+08:00
 draft: false
-categories: ["Functional"]
+categories: ["Things I Learned"]
 showToc: true
 tags: ["Haskell", "Memoization", "DP"]
 showToc: true

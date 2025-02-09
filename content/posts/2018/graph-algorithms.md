@@ -2,9 +2,10 @@
 title: 图算法
 date: 2018-04-20 19:21:30
 categories:
-- Algorithm
+- Things I Learned
 tags:
 - Java
+- Algorithm
 ---
 
 采用哪种数据结构来表示图, 主要考虑以下两个方面:
