@@ -8,4 +8,4 @@ showToc: true
 TocOpen: false
 ---
 
-[Three Observations](https://blog.samaltman.com/three-observations), 
+[Three Observations](https://blog.samaltman.com/three-observations), 奥尔特曼
