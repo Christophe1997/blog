@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.sdlinks.net/categories/</loc>
-    <lastmod>2025-02-09T12:59:29+08:00</lastmod>
-  </url><url>
     <loc>https://www.sdlinks.net/</loc>
-    <lastmod>2025-02-09T12:59:29+08:00</lastmod>
+    <lastmod>2025-02-11T19:36:13+08:00</lastmod>
   </url><url>
     <loc>https://www.sdlinks.net/posts/</loc>
+    <lastmod>2025-02-11T19:36:13+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/categories/</loc>
     <lastmod>2025-02-09T12:59:29+08:00</lastmod>
   </url><url>
     <loc>https://www.sdlinks.net/posts/2025/restart-a-link-blog/</loc>
