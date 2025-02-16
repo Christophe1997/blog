@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Neo VRAINS</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 11 Feb 2025 19:36:13 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 16 Feb 2025 17:23:47 +0800</lastBuildDate>
     <atom:link href="https://www.sdlinks.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go 1.24</title>
+      <link>https://www.sdlinks.net/posts/2025/go1-24/</link>
+      <pubDate>Sun, 16 Feb 2025 17:23:47 +0800</pubDate>
+      <guid>https://www.sdlinks.net/posts/2025/go1-24/</guid>
+      <description>&lt;p&gt;[Go 1.24 Release Notes][Go 1.24 Release Notes]， Go 1.24已经于2.11正式发布，主要语言特性为&lt;a href=&#34;https://github.com/golang/go/issues/46477&#34;&gt;泛型类型别名&lt;/a&gt;和基于&lt;a href=&#34;https://abseil.io/about/design/swisstables&#34;&gt;Swiss Tables&lt;/a&gt;的&lt;code&gt;map&lt;/code&gt;实现，通过轻微的delete性能损耗来显著提升查询和插入的性能（&lt;a href=&#34;https://www.bytesizego.com/blog/go-124-swiss-table-maps&#34;&gt;via&lt;/a&gt;）。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Three Observations</title>
       <link>https://www.sdlinks.net/posts/2025/three-observations/</link>
