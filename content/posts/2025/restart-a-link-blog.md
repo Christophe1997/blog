@@ -1,7 +1,6 @@
 ---
 title: "Restart As a Link Blog"
 date: 2025-02-09T12:59:29+08:00
-draft: false
 tags: ["Simon Willison"]
 categories: ["Things I've Found"]
 showToc: true

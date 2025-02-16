@@ -1,8 +1,7 @@
 ---
 title: "Three Observations"
 date: 2025-02-11T19:36:13+08:00
-draft: false
-tags: ["Sam Altman", "Geoffrey Huntley"]
+tags: ["Sam Altman", "Geoffrey Huntley", "AIGC"]
 categories: ["Things I've Found"]
 showToc: true
 TocOpen: false
