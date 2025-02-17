@@ -47,6 +47,22 @@ pagination:
   pagerSize: 8
   path: page
 
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
+
+fuseOpts:
+  isCaseSensitive: false
+  shouldSort: true
+  location: 0
+  distance: 1000
+  threshold: 0.4
+  minMatchCharLength: 0
+  # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+  keys: ["title", "tags", "permalink", "summary", "content", "categories"]
+
 params:
   env: production
   title: "Neo VRAINS"
@@ -101,18 +117,3 @@ params:
   analytics:
     google:
       SiteVerificationTag: "Neo VRAINS"
-
-  outputs:
-    home:
-      - HTML
-      - RSS
-      - JSON # necessary for search
-  fuseOpts:
-    isCaseSensitive: false
-    shouldSort: true
-    location: 0
-    distance: 1000
-    threshold: 0.4
-    minMatchCharLength: 0
-    # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
-    keys: ["title", "tags", "permalink", "summary", "content", "categories"]
