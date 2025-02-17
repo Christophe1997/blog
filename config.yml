@@ -1,5 +1,5 @@
 baseURL: "https://www.sdlinks.net"
-title: Neo VRAINS 
+title: Neo VRAINS
 theme: hugo-PaperMod
 
 enableRobotsTXT: true
@@ -10,22 +10,24 @@ pygmentsUseClasses: true
 
 menu:
   main:
+    - name: Search
+      url: /search/
+      weight: 1
     - name: Archives
       url: /archives/
-      weight: 10
+      weight: 4
     - name: Tags
       url: /tags/
-      weight: 5
+      weight: 2
     - name: Categories
       url: /categories/
-      weight: 7
-
+      weight: 3
 
 googleAnalytics: G-RH029G1TZ5
 
 minify:
-    disableXML: true
-    minifyOutput: true
+  disableXML: true
+  minifyOutput: true
 
 markup:
   highlight:
@@ -46,55 +48,71 @@ pagination:
   path: page
 
 params:
-    env: production
-    title: "Neo VRAINS"
-    description: "Christophe's blog site"
-    author: Christophe 
-    ShowReadingTime: true
-    ShowShareButtons: true 
-    ShowCodeCopyButtons: true
-    defaultTheme: auto
-    disableThemeToggle: false
-    disableSpecial1stPost: false
-    math: true
-    comments: true
-    hideAuthor: true
+  env: production
+  title: "Neo VRAINS"
+  description: "Christophe's blog site"
+  author: Christophe
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowCodeCopyButtons: true
+  defaultTheme: auto
+  disableThemeToggle: false
+  disableSpecial1stPost: false
+  math: true
+  comments: true
+  hideAuthor: true
+  searchHidden: true
 
-    assets:
-         favicon: "images/favicon.ico"
-         favicon16x16: "images/favicon-16x16.png"
-         favicon32x32: "images/favicon-32x32.png"
-         apple_touch_icon: "images/apple-touch-icon.png"
-    #     safari_pinned_tab: "<link / abs url>"
+  assets:
+    favicon: "images/favicon.ico"
+    favicon16x16: "images/favicon-16x16.png"
+    favicon32x32: "images/favicon-32x32.png"
+    apple_touch_icon: "images/apple-touch-icon.png"
+  #     safari_pinned_tab: "<link / abs url>"
 
-    label:
-        text: "Neo VRAINS"
+  label:
+    text: "Neo VRAINS"
 
-    # profile-mode
-    profileMode:
-        enabled: false # needs to be explicitly set
-        title: ExampleSite
-        # imageUrl: '<img location>'
-        # imageTitle: my image
-        buttons:
-            - name: Posts
-              url: posts
-            - name: Tags
-              url: tags
+  # profile-mode
+  profileMode:
+    enabled: false # needs to be explicitly set
+    title: ExampleSite
+    # imageUrl: '<img location>'
+    # imageTitle: my image
+    buttons:
+      - name: Posts
+        url: posts
+      - name: Tags
+        url: tags
 
-    # home-info mode
-    homeInfoParams:
-        Title: "I'm Christophe"
-        Content: Welcome to my blog
+  # home-info mode
+  homeInfoParams:
+    Title: "I'm Christophe"
+    Content: Welcome to my blog
 
-    socialIcons:
-        - name: email
-          url: "mailto:hey_christophe@outlook.com"
-        - name: github
-          url: "https://github.com/Christophe1997"
-        - name: rss
-          url: "/index.xml"
+  socialIcons:
+    - name: email
+      url: "mailto:hey_christophe@outlook.com"
+    - name: github
+      url: "https://github.com/Christophe1997"
+    - name: rss
+      url: "/index.xml"
 
-    analytics:
-        google:
-            SiteVerificationTag: "Neo VRAINS"
+  analytics:
+    google:
+      SiteVerificationTag: "Neo VRAINS"
+
+  outputs:
+    home:
+      - HTML
+      - RSS
+      - JSON # necessary for search
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "tags", "permalink", "summary", "content", "categories"]
