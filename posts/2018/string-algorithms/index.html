@@ -607,7 +607,7 @@ public class KeyIndexedCount {
 </span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>return</span><span class=w> </span><span class=n>N</span><span class=p>;</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w></span><span class=p>}</span><span class=w>
-</span></span></span></code></pre></td></tr></table></div></div><p>上述算法的效率取决于文本的内容, 在最坏的情况下时间复杂度为<del>NM, 而在最好的情况下为</del>N.</p><h3 id=kmp_knuth-morris-pratt_算法>KMP(<em>Knuth-Morris-Pratt</em>)算法<a hidden class=anchor aria-hidden=true href=#kmp_knuth-morris-pratt_算法>#</a></h3><p>KMP算法的主要思想是判断如何回退指针, 以避免不必要的回退, 而这只取决于模式本身. 事实上KMP算法是对确定有限状态自动机(<em>Deterministic finitestate
+</span></span></span></code></pre></td></tr></table></div></div><p>上述算法的效率取决于文本的内容, 在最坏的情况下时间复杂度为<del>NM, 而在最好的情况下为</del>N.</p><h3 id=kmpknuth-morris-pratt算法>KMP(<em>Knuth-Morris-Pratt</em>)算法<a hidden class=anchor aria-hidden=true href=#kmpknuth-morris-pratt算法>#</a></h3><p>KMP算法的主要思想是判断如何回退指针, 以避免不必要的回退, 而这只取决于模式本身. 事实上KMP算法是对确定有限状态自动机(<em>Deterministic finitestate
 automaton, DFA</em>)的模拟. DFA从0状态开始, 每次匹配成功都会将DFA带入下一个状态, 每次匹配失败则会使DFA回退到较早的一个状态.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
 </span><span class=lnt> 2
 </span><span class=lnt> 3

@@ -4,10 +4,19 @@
     <title>Things I&#39;ve Found on Neo VRAINS</title>
     <link>https://www.sdlinks.net/categories/things-ive-found/</link>
     <description>Recent content in Things I&#39;ve Found on Neo VRAINS</description>
-    <generator>Hugo -- 0.143.1</generator>
+    <generator>Hugo -- 0.144.2</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 16 Feb 2025 17:23:47 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 23 Feb 2025 21:05:33 +0800</lastBuildDate>
     <atom:link href="https://www.sdlinks.net/categories/things-ive-found/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My LLM codegen workflow atm</title>
+      <link>https://www.sdlinks.net/posts/2025/my-llm-codegen-workflow-atm/</link>
+      <pubDate>Sun, 23 Feb 2025 21:05:33 +0800</pubDate>
+      <guid>https://www.sdlinks.net/posts/2025/my-llm-codegen-workflow-atm/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/&#34;&gt;My LLM codegen workflow atm&lt;/a&gt;, Harper Reed在文中介绍了基于LLM的代码生成工作流。主要介绍了两种场景，开发一个新项目（Greenfield）以及老项目的持续迭代(Non-greenfield)。&lt;/p&gt;
+&lt;p&gt;新项目基于需求细化（spec），计划制定（todo）以及代码生成三部分来开展。老项目则通过生成代码上下文（&lt;a href=&#34;https://github.com/yamadashy/repomix&#34;&gt;repomix&lt;/a&gt;）来制定测试回归和代码审查任务。这对我来说是一个巨大的启发，准备找时间试一下其中描述的工作流程。&lt;/p&gt;
+&lt;p&gt;同时Harper Reed也给出了具体的Prompt，局限于目前LLM的特性，仍然需要通过&lt;a href=&#34;https://www.promptingguide.ai&#34;&gt;提示工程&lt;/a&gt;来引导AI生成我们需要的内容。前一阵子较火的&lt;a href=&#34;https://mp.weixin.qq.com/s/3Igd0u3ToUmPE-od_wzRKw&#34;&gt;DeepSeek从入门到精通&lt;/a&gt;也指出掌握提示语设计是AIGC时代的必备技能，在平时使用这些LLM工具中也感受到怎么清晰的向AI表达需求非常重要，因为你的提示语完全决定了AI生成的质量，进而决定了AI是否好用或者为你带来提效。另外，由于中文的特性（高上下文依赖）以及模型的训练数据分布，可能会出现提示效果不如英文的情况。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Go 1.24</title>
       <link>https://www.sdlinks.net/posts/2025/go1-24/</link>

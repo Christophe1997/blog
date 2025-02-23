@@ -4,10 +4,19 @@
     <title>Posts on Neo VRAINS</title>
     <link>https://www.sdlinks.net/posts/</link>
     <description>Recent content in Posts on Neo VRAINS</description>
-    <generator>Hugo -- 0.143.1</generator>
+    <generator>Hugo -- 0.144.2</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 16 Feb 2025 17:23:47 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 23 Feb 2025 21:05:33 +0800</lastBuildDate>
     <atom:link href="https://www.sdlinks.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My LLM codegen workflow atm</title>
+      <link>https://www.sdlinks.net/posts/2025/my-llm-codegen-workflow-atm/</link>
+      <pubDate>Sun, 23 Feb 2025 21:05:33 +0800</pubDate>
+      <guid>https://www.sdlinks.net/posts/2025/my-llm-codegen-workflow-atm/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/&#34;&gt;My LLM codegen workflow atm&lt;/a&gt;, Harper Reed在文中介绍了基于LLM的代码生成工作流。主要介绍了两种场景，开发一个新项目（Greenfield）以及老项目的持续迭代(Non-greenfield)。&lt;/p&gt;
+&lt;p&gt;新项目基于需求细化（spec），计划制定（todo）以及代码生成三部分来开展。老项目则通过生成代码上下文（&lt;a href=&#34;https://github.com/yamadashy/repomix&#34;&gt;repomix&lt;/a&gt;）来制定测试回归和代码审查任务。这对我来说是一个巨大的启发，准备找时间试一下其中描述的工作流程。&lt;/p&gt;
+&lt;p&gt;同时Harper Reed也给出了具体的Prompt，局限于目前LLM的特性，仍然需要通过&lt;a href=&#34;https://www.promptingguide.ai&#34;&gt;提示工程&lt;/a&gt;来引导AI生成我们需要的内容。前一阵子较火的&lt;a href=&#34;https://mp.weixin.qq.com/s/3Igd0u3ToUmPE-od_wzRKw&#34;&gt;DeepSeek从入门到精通&lt;/a&gt;也指出掌握提示语设计是AIGC时代的必备技能，在平时使用这些LLM工具中也感受到怎么清晰的向AI表达需求非常重要，因为你的提示语完全决定了AI生成的质量，进而决定了AI是否好用或者为你带来提效。另外，由于中文的特性（高上下文依赖）以及模型的训练数据分布，可能会出现提示效果不如英文的情况。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Go 1.24</title>
       <link>https://www.sdlinks.net/posts/2025/go1-24/</link>
@@ -681,7 +690,7 @@ Data Structures”里指出，数据结构这一概念通常有四种含义：&l
 &lt;li&gt;栈(&lt;em&gt;stack&lt;/em&gt;)对象随着子程序的调用和返回而被创建以及按照LIFO的顺序析构.&lt;/li&gt;
 &lt;li&gt;堆(&lt;em&gt;heap&lt;/em&gt;)对象可以在任何时候创建和析构, 其额外要求更加通用和昂贵的内存分配算法.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;静态分配_static-allocation_&#34;&gt;静态分配(&lt;em&gt;static allocation&lt;/em&gt;)&lt;/h2&gt;
+&lt;h2 id=&#34;静态分配static-allocation&#34;&gt;静态分配(&lt;em&gt;static allocation&lt;/em&gt;)&lt;/h2&gt;
 &lt;p&gt;静态分配最明显的例子就是全局对象, 当然全局对象不是唯一的例子. 构成程序机器语言翻译的指令也可以认为是静态分配的变量; 数字和字符串的常量当然也是静态分配
 的; 另外很多编译器会产生一系列的表用于支持运行时的debug, 动态类型检查, 垃圾回收, 异常处理等, 这些表也都是静态分配的. 静态分配的对象通常希望它们的值
 不在变化, 因此经常被分配在被保护的只读的内存中以方便在试图修改其值产生中断并抛出运行时错误.&lt;/p&gt;
@@ -695,7 +704,7 @@ time之后改变的值, 这些值可能依赖与其他在运行时才能确定�
 &lt;li&gt;临时变量, 通常是那些复杂计算过程的中间值, 一个优秀的编译器也会将它们保存在寄存器内.&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;bookkeeping information&lt;/em&gt;, 这些通常包含子程序的返回地址.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;基于栈的分配_stack-based-allocation_&#34;&gt;基于栈的分配(&lt;em&gt;stack-based allocation&lt;/em&gt;)&lt;/h2&gt;
+&lt;h2 id=&#34;基于栈的分配stack-based-allocation&#34;&gt;基于栈的分配(&lt;em&gt;stack-based allocation&lt;/em&gt;)&lt;/h2&gt;
 &lt;p&gt;一门语言如果想要支持递归, 那么在局部变量上采用静态分配的策略将不再适用(Fortran90之前不支持递归), 因为需要变量的个数是未知的. 所幸的是递归天然地适用
 于栈结构的分配策略. 每一个子程序在运行时都有一个栈帧(&lt;em&gt;frame&lt;/em&gt;, 或者称为活动记录, &lt;em&gt;activation record&lt;/em&gt;), 包含了传入参数, 局部变量, 临时变量, 以及
 bookkeeping信息. 通常传入参数位于帧的顶部, 方便被调用者定位参数, 而其他的布局则依赖于实现. 栈的维护是子程序调用序列的责任, 即调用者在调用前(序言,
