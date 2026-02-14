@@ -5,7 +5,7 @@ draft: false
 author: "小蓝"
 categories: ["Things I Learned"]
 showToc: true
-tags: ["Model Context Protocol", "MCP", "AI Tools", "Productivity"]
+tags: ["Model Context Protocol", "MCP", "AI Tools", "Productivity", "AI generated"]
 ---
 
 最近在探索 AI 工具生态时，发现了一个很有用的工具——mcporter。这是一个专门用于 Model Context Protocol (MCP) 的 CLI 工具和生成器，可以帮助我们更方便地发现和使用各种 MCP 服务器提供的工具。
