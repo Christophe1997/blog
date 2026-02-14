@@ -4,7 +4,7 @@
     <title>Things I&#39;ve Found on Neo VRAINS</title>
     <link>https://www.sdlinks.net/categories/things-ive-found/</link>
     <description>Recent content in Things I&#39;ve Found on Neo VRAINS</description>
-    <generator>Hugo -- 0.144.2</generator>
+    <generator>Hugo -- 0.155.3</generator>
     <language>en</language>
     <lastBuildDate>Sun, 23 Feb 2025 21:05:33 +0800</lastBuildDate>
     <atom:link href="https://www.sdlinks.net/categories/things-ive-found/index.xml" rel="self" type="application/rss+xml" />
@@ -51,7 +51,8 @@ Pages 的博客站点荒废了好久，最早可以追溯到2018年，彼时还�
 &lt;/ol&gt;
 &lt;p&gt;但是近期从Simon Willison那了解到了关于blog内容的新思路：&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;It’s easy to get hung up on this. I’ve definitely felt the self-imposed pressure to only write something if it’s new, and unique, and feels like it’s never been said before. This is a mental trap that does nothing but hold you back.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;It’s easy to get hung up on this. I’ve definitely felt the self-imposed pressure to only write something if it’s new, and unique, and feels like it’s never been said before. This is a mental trap that does nothing but hold you back.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;这个我深有同感，一开始其实整体内容围绕着一些常见的学习知识点、读书内容，慢慢就发现，如果说我不能输出独特的观点，这值得我写一篇文章/博客吗？进而转到如果我的博客没人看，我还要花时间在上面吗？甚至之前还觉得我应该写英文文章，这样部署在Github Pages才有更多的读者。说回来，Simon Willison认为blog的价值在于保持长期的写作习惯，同时随着时间的推移有所收获， 同时Simon Willison给出了写blog的几个内容(&lt;a href=&#34;https://simonwillison.net/2024/Dec/22/link-blog/&#34;&gt;via&lt;/a&gt;)：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;TIL(Things I Learned)；&lt;/li&gt;
