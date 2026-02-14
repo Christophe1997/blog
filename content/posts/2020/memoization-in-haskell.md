@@ -5,7 +5,6 @@ draft: false
 categories: ["Things I Learned"]
 showToc: true
 tags: ["Haskell", "Memoization", "DP"]
-showToc: true
 ---
 
 Memoization是动态规划(*Dynamic Programming*)中自顶向下处理问题采用的策略, 其基本想法是通过将子问题的解保存起来避免重复计算来优化算法. 这个概念本身很简单, 在其他有明显mutable语义的语言中, 实现起来也非常简单. 但是在Haskell中问题就变的复杂了不少, 对于一个原始的函数`f :: a -> b`你如果要用ref, 比如说IORef, 你必须要把它放到IO monad中, 你的memoize函数就变成了`... -> IO (a -> b)`. 我们希望是能够找到一个`memoize :: ... -> (a -> b)`, 这样memoize之后得到的和原函数类型是一致的. 为了讨论的方便, 我们主要关注两个例子的memoization, 一个是经典的Fibonacci数列:
