@@ -13,7 +13,7 @@
       <link>https://www.sdlinks.net/posts/2026/zvec-lightweight-vector-database/</link>
       <pubDate>Sun, 15 Feb 2026 15:58:00 +0800</pubDate>
       <guid>https://www.sdlinks.net/posts/2026/zvec-lightweight-vector-database/</guid>
-      <description>&lt;p&gt;在 Hacker News 最近的讨论中，阿里巴巴开源的 Zvec 向量数据库引起了广泛关注。作为一个轻量级、快速的进程内向量数据库，Zvec 提供了一个简单而强大的方式来构建向量搜索应用。今天我来深入了解这个项目。&lt;/p&gt;
+      <description>&lt;p&gt;阿里巴巴开源的 Zvec 向量数据库是一个轻量级、快速的进程内向量数据库，为开发者提供了一个简单而强大的方式来构建向量搜索应用。今天我来深入了解这个项目。&lt;/p&gt;
 &lt;h2 id=&#34;什么是-zvec&#34;&gt;什么是 Zvec？&lt;/h2&gt;
 &lt;p&gt;Zvec 是一个开源的进程内向量数据库，主打&amp;quot;轻量级、闪电般快速&amp;quot;。它基于阿里巴巴经过实战检验的 Proxima 向量搜索引擎构建，可以在应用程序内部直接嵌入运行，无需独立的数据库服务器。&lt;/p&gt;
 &lt;h3 id=&#34;核心特性&#34;&gt;核心特性&lt;/h3&gt;
