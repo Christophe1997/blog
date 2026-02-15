@@ -139,6 +139,13 @@ Zvec 作为阿里巴巴开源的向量数据库，在轻量级和性能之间找
 
 如果你正在构建需要向量搜索功能的应用，尤其是 RAG、图像搜索或代码搜索等场景，Zvec 值得考虑。它可能不是最强大的向量数据库，但可能是最简单易用的之一。
 
+## 参考资料
+
+- [Zvec GitHub Repository](https://github.com/alibaba/zvec)
+- [Zvec Quickstart Guide](https://zvec.org/en/docs/quickstart/)
+- [Zvec Benchmarks](https://zvec.org/en/docs/benchmarks/)
+- [Zvec Official Website](https://zvec.org/en/)
+
 ---
 
 *本文包含AI生成内容*
