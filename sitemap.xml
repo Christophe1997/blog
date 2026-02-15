@@ -2,13 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.sdlinks.net/tags/ai-generated/</loc>
-    <lastmod>2026-02-14T01:03:00+08:00</lastmod>
+    <loc>https://www.sdlinks.net/tags/ai/</loc>
+    <lastmod>2026-02-15T15:58:00+08:00</lastmod>
   </url><url>
-    <loc>https://www.sdlinks.net/tags/ai-tools/</loc>
-    <lastmod>2026-02-14T01:03:00+08:00</lastmod>
+    <loc>https://www.sdlinks.net/tags/ai-generated/</loc>
+    <lastmod>2026-02-15T15:58:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/tags/alibaba/</loc>
+    <lastmod>2026-02-15T15:58:00+08:00</lastmod>
   </url><url>
     <loc>https://www.sdlinks.net/categories/</loc>
+    <lastmod>2026-02-15T15:58:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/</loc>
+    <lastmod>2026-02-15T15:58:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/tags/open-source/</loc>
+    <lastmod>2026-02-15T15:58:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/posts/</loc>
+    <lastmod>2026-02-15T15:58:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/tags/search/</loc>
+    <lastmod>2026-02-15T15:58:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/tags/</loc>
+    <lastmod>2026-02-15T15:58:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/categories/things-i-learned/</loc>
+    <lastmod>2026-02-15T15:58:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/tags/vector-database/</loc>
+    <lastmod>2026-02-15T15:58:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/posts/2026/zvec-lightweight-vector-database/</loc>
+    <lastmod>2026-02-15T15:58:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/tags/ai-tools/</loc>
     <lastmod>2026-02-14T01:03:00+08:00</lastmod>
   </url><url>
     <loc>https://www.sdlinks.net/tags/mcp/</loc>
@@ -17,19 +47,7 @@
     <loc>https://www.sdlinks.net/tags/model-context-protocol/</loc>
     <lastmod>2026-02-14T01:03:00+08:00</lastmod>
   </url><url>
-    <loc>https://www.sdlinks.net/</loc>
-    <lastmod>2026-02-14T01:03:00+08:00</lastmod>
-  </url><url>
-    <loc>https://www.sdlinks.net/posts/</loc>
-    <lastmod>2026-02-14T01:03:00+08:00</lastmod>
-  </url><url>
     <loc>https://www.sdlinks.net/tags/productivity/</loc>
-    <lastmod>2026-02-14T01:03:00+08:00</lastmod>
-  </url><url>
-    <loc>https://www.sdlinks.net/tags/</loc>
-    <lastmod>2026-02-14T01:03:00+08:00</lastmod>
-  </url><url>
-    <loc>https://www.sdlinks.net/categories/things-i-learned/</loc>
     <lastmod>2026-02-14T01:03:00+08:00</lastmod>
   </url><url>
     <loc>https://www.sdlinks.net/posts/2026/discovering-mcp-tools-with-mcporter/</loc>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>AI Generated on Neo VRAINS</title>
-    <link>https://www.sdlinks.net/tags/ai-generated/</link>
-    <description>Recent content in AI Generated on Neo VRAINS</description>
+    <title>Alibaba on Neo VRAINS</title>
+    <link>https://www.sdlinks.net/tags/alibaba/</link>
+    <description>Recent content in Alibaba on Neo VRAINS</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>en</language>
     <lastBuildDate>Sun, 15 Feb 2026 15:58:00 +0800</lastBuildDate>
-    <atom:link href="https://www.sdlinks.net/tags/ai-generated/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.sdlinks.net/tags/alibaba/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Zvec：阿里巴巴开源的轻量级进程内向量数据库</title>
       <link>https://www.sdlinks.net/posts/2026/zvec-lightweight-vector-database/</link>
@@ -94,43 +94,6 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;支持的搜索类型&#34;&gt;支持的搜索类型&lt;/h3&gt;
 &lt;p&gt;Zvec 支持两种主要的搜索方式：&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>使用 mcporter 发现和管理 MCP 工具</title>
-      <link>https://www.sdlinks.net/posts/2026/discovering-mcp-tools-with-mcporter/</link>
-      <pubDate>Sat, 14 Feb 2026 01:03:00 +0800</pubDate>
-      <guid>https://www.sdlinks.net/posts/2026/discovering-mcp-tools-with-mcporter/</guid>
-      <description>&lt;p&gt;最近在探索 AI 工具生态时，发现了一个很有用的工具——mcporter。这是一个专门用于 Model Context Protocol (MCP) 的 CLI 工具和生成器，可以帮助我们更方便地发现和使用各种 MCP 服务器提供的工具。&lt;/p&gt;
-&lt;h2 id=&#34;什么是-mcp&#34;&gt;什么是 MCP？&lt;/h2&gt;
-&lt;p&gt;Model Context Protocol (MCP) 是一个开放标准，定义了 AI 助手如何与外部工具和服务进行通信。通过 MCP，我们可以将各种功能集成到 AI 助手中，比如文档查询、数据库访问、API 调用等。&lt;/p&gt;
-&lt;h2 id=&#34;mcporter-的核心功能&#34;&gt;mcporter 的核心功能&lt;/h2&gt;
-&lt;p&gt;mcporter 提供了几个关键功能：&lt;/p&gt;
-&lt;h3 id=&#34;1-服务器管理&#34;&gt;1. 服务器管理&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mcporter list                          &lt;span class=&#34;c1&#34;&gt;# 列出所有配置的 MCP 服务器&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mcporter list &amp;lt;server&amp;gt; --schema        &lt;span class=&#34;c1&#34;&gt;# 查看特定服务器的工具定义&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;这个功能让我能够快速了解有哪些可用的工具，以及每个工具的输入输出格式。&lt;/p&gt;
-&lt;h3 id=&#34;2-工具调用&#34;&gt;2. 工具调用&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mcporter call &amp;lt;selector&amp;gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;key&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;value ...&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;可以直接调用 MCP 工具，支持通过 HTTP URL 或服务器名.工具名的选择器来定位。&lt;/p&gt;
-&lt;h3 id=&#34;3-配置管理&#34;&gt;3. 配置管理&lt;/h3&gt;
-&lt;p&gt;mcporter 会自动从 &lt;code&gt;config/mcporter.json&lt;/code&gt; 加载服务器配置，也支持从编辑器（如 Cursor、Claude）导入配置。&lt;/p&gt;
-&lt;h2 id=&#34;实际应用场景&#34;&gt;实际应用场景&lt;/h2&gt;
-&lt;p&gt;配置好 mcporter 后，我发现它在以下几个场景特别有用：&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
