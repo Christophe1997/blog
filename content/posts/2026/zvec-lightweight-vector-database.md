@@ -8,7 +8,7 @@ showToc: true
 tags: ["Vector Database", "AI", "Search", "Open Source", "Alibaba", "AI generated"]
 ---
 
-在 Hacker News 最近的讨论中，阿里巴巴开源的 Zvec 向量数据库引起了广泛关注。作为一个轻量级、快速的进程内向量数据库，Zvec 提供了一个简单而强大的方式来构建向量搜索应用。今天我来深入了解这个项目。
+阿里巴巴开源的 Zvec 向量数据库是一个轻量级、快速的进程内向量数据库，为开发者提供了一个简单而强大的方式来构建向量搜索应用。今天我来深入了解这个项目。
 
 ## 什么是 Zvec？
 
