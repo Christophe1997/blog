@@ -13,19 +13,20 @@
       <link>https://www.sdlinks.net/posts/2026/zvec-lightweight-vector-database/</link>
       <pubDate>Sun, 15 Feb 2026 15:58:00 +0800</pubDate>
       <guid>https://www.sdlinks.net/posts/2026/zvec-lightweight-vector-database/</guid>
-      <description>&lt;p&gt;阿里巴巴开源的 Zvec 向量数据库是一个轻量级、快速的进程内向量数据库，为开发者提供了一个简单而强大的方式来构建向量搜索应用。今天我来深入了解这个项目。&lt;/p&gt;
+      <description>&lt;p&gt;阿里巴巴开源的 Zvec 向量数据库是一个轻量级、快速的进程内向量数据库，为开发者提供了一个简单而强大的方式来构建向量搜索应用。在 AI 和向量搜索技术快速发展的今天，我们来深入了解这个值得关注的项目。&lt;/p&gt;
 &lt;h2 id=&#34;什么是-zvec&#34;&gt;什么是 Zvec？&lt;/h2&gt;
-&lt;p&gt;Zvec 是一个开源的进程内向量数据库，主打&amp;quot;轻量级、闪电般快速&amp;quot;。它基于阿里巴巴经过实战检验的 Proxima 向量搜索引擎构建，可以在应用程序内部直接嵌入运行，无需独立的数据库服务器。&lt;/p&gt;
+&lt;p&gt;Zvec 是一个开源的进程内向量数据库，主打&amp;quot;轻量级、闪电般快速&amp;quot;。与传统的独立向量数据库服务不同，Zvec 采用进程内架构，可以直接嵌入到应用程序中运行。它基于阿里巴巴经过实战检验的 Proxima 向量搜索引擎构建，继承了阿里巴巴在高并发、大规模场景下的技术积累。&lt;/p&gt;
 &lt;h3 id=&#34;核心特性&#34;&gt;核心特性&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;极快的速度&lt;/strong&gt;：能够在毫秒级别搜索数十亿个向量&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;极快的速度&lt;/strong&gt;：能够在毫秒级别搜索数十亿个向量，性能表现优异&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;开箱即用&lt;/strong&gt;：安装后几秒钟即可开始使用，无需复杂的服务器配置&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;多种向量支持&lt;/strong&gt;：同时支持密集向量（dense vectors）和稀疏向量（sparse vectors）&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;混合搜索&lt;/strong&gt;：可以结合语义相似度和结构化过滤条件进行精确搜索&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;跨平台运行&lt;/strong&gt;：作为进程内库，可以在笔记本、服务器、CLI 工具甚至边缘设备上运行&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;数据持久化&lt;/strong&gt;：支持本地文件存储，数据不会因为进程退出而丢失&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;快速上手&#34;&gt;快速上手&lt;/h2&gt;
-&lt;p&gt;Zvec 目前支持 Python 和 Node.js 两种语言，Python 版本支持 3.10-3.12。&lt;/p&gt;
+&lt;p&gt;Zvec 目前支持 Python 和 Node.js 两种语言，Python 版本支持 3.10-3.12，覆盖了主流的开发环境。&lt;/p&gt;
 &lt;h3 id=&#34;安装&#34;&gt;安装&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -35,7 +36,17 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip install zvec
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;或者使用 Node.js：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;npm install @zvec/zvec
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;基本使用示例&#34;&gt;基本使用示例&lt;/h3&gt;
+&lt;p&gt;让我们通过一个完整的例子来了解 Zvec 的基本用法：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -73,7 +84,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;vectors&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;zvec&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;VectorSchema&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;embedding&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;zvec&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DataType&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;VECTOR_FP32&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 创建集合&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 创建集合（本地文件存储）&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;collection&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;zvec&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;create_and_open&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;./zvec_example&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;schema&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;schema&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 插入文档&lt;/span&gt;
@@ -92,8 +103,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;results&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;支持的搜索类型&#34;&gt;支持的搜索类型&lt;/h3&gt;
-&lt;p&gt;Zvec 支持两种主要的搜索方式：&lt;/p&gt;</description>
+&lt;/div&gt;&lt;p&gt;这个简单的例子展示了 Zvec 的三个核心操作：定义 schema、插入数据和搜索查询。&lt;/p&gt;</description>
     </item>
     <item>
       <title>使用 mcporter 发现和管理 MCP 工具</title>
