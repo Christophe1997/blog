@@ -4,10 +4,32 @@
     <title>Posts on Neo VRAINS</title>
     <link>https://www.sdlinks.net/posts/</link>
     <description>Recent content in Posts on Neo VRAINS</description>
-    <generator>Hugo -- 0.155.3</generator>
+    <generator>Hugo -- 0.156.0</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 15 Feb 2026 15:58:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 25 Feb 2026 23:39:00 +0800</lastBuildDate>
     <atom:link href="https://www.sdlinks.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git的魔法配置文件</title>
+      <link>https://www.sdlinks.net/posts/2026/git-magic-files/</link>
+      <pubDate>Wed, 25 Feb 2026 23:39:00 +0800</pubDate>
+      <guid>https://www.sdlinks.net/posts/2026/git-magic-files/</guid>
+      <description>&lt;p&gt;Git 支持许多配置文件来变更其行为，这篇博客详细介绍了各种配置文件的作用。&lt;/p&gt;
+&lt;h2 id=&#34;必备配置gitignore&#34;&gt;必备配置：&lt;code&gt;.gitignore&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;用的最多，甚至可以说每个项目必备。定义哪些文件不应该被 Git 跟踪。&lt;/p&gt;
+&lt;h2 id=&#34;其他实用配置&#34;&gt;其他实用配置&lt;/h2&gt;
+&lt;h3 id=&#34;gitattributes&#34;&gt;&lt;code&gt;.gitattributes&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;配置 Git 如何处理特定文件，如行尾归一化、二进制文件标记、自定义 diff 驱动等。&lt;/p&gt;
+&lt;h3 id=&#34;lfsconfig&#34;&gt;&lt;code&gt;.lfsconfig&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Git LFS 的配置文件，让团队可以使用统一的 LFS 设置。&lt;/p&gt;
+&lt;h3 id=&#34;gitmodules&#34;&gt;&lt;code&gt;.gitmodules&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;子模块配置文件，用于管理嵌套的 Git 仓库依赖。&lt;/p&gt;
+&lt;h3 id=&#34;mailmap&#34;&gt;&lt;code&gt;.mailmap&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;邮箱映射，解决 contributors 更换邮箱或姓名后显示为多个人的问题——再也不会出现两个我了。&lt;/p&gt;
+&lt;h3 id=&#34;gitmessage&#34;&gt;&lt;code&gt;.gitmessage&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;配置提交消息的模板。但需要每次 clone 后手动运行 &lt;code&gt;git config commit.template .gitmessage&lt;/code&gt;，所以不是常规的选择，大多数项目更喜欢用 commit-msg hooks。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;参考：&lt;/strong&gt; &lt;a href=&#34;https://nesbitt.io/2026/02/05/git-magic-files.html&#34;&gt;Git&amp;rsquo;s Magic Files - nesbitt.io&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Zvec：阿里巴巴开源的轻量级进程内向量数据库</title>
       <link>https://www.sdlinks.net/posts/2026/zvec-lightweight-vector-database/</link>

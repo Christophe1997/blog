@@ -4,22 +4,43 @@
     <title>Tags on Neo VRAINS</title>
     <link>https://www.sdlinks.net/tags/</link>
     <description>Recent content in Tags on Neo VRAINS</description>
-    <generator>Hugo -- 0.155.3</generator>
+    <generator>Hugo -- 0.156.0</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 15 Feb 2026 15:58:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 25 Feb 2026 23:39:00 +0800</lastBuildDate>
     <atom:link href="https://www.sdlinks.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Generated</title>
+      <link>https://www.sdlinks.net/tags/ai-generated/</link>
+      <pubDate>Wed, 25 Feb 2026 23:39:00 +0800</pubDate>
+      <guid>https://www.sdlinks.net/tags/ai-generated/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Configuration</title>
+      <link>https://www.sdlinks.net/tags/configuration/</link>
+      <pubDate>Wed, 25 Feb 2026 23:39:00 +0800</pubDate>
+      <guid>https://www.sdlinks.net/tags/configuration/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Git</title>
+      <link>https://www.sdlinks.net/tags/git/</link>
+      <pubDate>Wed, 25 Feb 2026 23:39:00 +0800</pubDate>
+      <guid>https://www.sdlinks.net/tags/git/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Productivity</title>
+      <link>https://www.sdlinks.net/tags/productivity/</link>
+      <pubDate>Wed, 25 Feb 2026 23:39:00 +0800</pubDate>
+      <guid>https://www.sdlinks.net/tags/productivity/</guid>
+      <description></description>
+    </item>
     <item>
       <title>AI</title>
       <link>https://www.sdlinks.net/tags/ai/</link>
       <pubDate>Sun, 15 Feb 2026 15:58:00 +0800</pubDate>
       <guid>https://www.sdlinks.net/tags/ai/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>AI Generated</title>
-      <link>https://www.sdlinks.net/tags/ai-generated/</link>
-      <pubDate>Sun, 15 Feb 2026 15:58:00 +0800</pubDate>
-      <guid>https://www.sdlinks.net/tags/ai-generated/</guid>
       <description></description>
     </item>
     <item>
@@ -69,13 +90,6 @@
       <link>https://www.sdlinks.net/tags/model-context-protocol/</link>
       <pubDate>Sat, 14 Feb 2026 01:03:00 +0800</pubDate>
       <guid>https://www.sdlinks.net/tags/model-context-protocol/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Productivity</title>
-      <link>https://www.sdlinks.net/tags/productivity/</link>
-      <pubDate>Sat, 14 Feb 2026 01:03:00 +0800</pubDate>
-      <guid>https://www.sdlinks.net/tags/productivity/</guid>
       <description></description>
     </item>
     <item>
@@ -272,13 +286,6 @@
       <link>https://www.sdlinks.net/tags/cheat-sheet/</link>
       <pubDate>Sun, 11 Mar 2018 13:07:40 +0000</pubDate>
       <guid>https://www.sdlinks.net/tags/cheat-sheet/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Git</title>
-      <link>https://www.sdlinks.net/tags/git/</link>
-      <pubDate>Sun, 11 Mar 2018 13:07:40 +0000</pubDate>
-      <guid>https://www.sdlinks.net/tags/git/</guid>
       <description></description>
     </item>
   </channel>
