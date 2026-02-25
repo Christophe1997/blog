@@ -34,3 +34,7 @@ Git LFS 的配置文件，让团队可以使用统一的 LFS 设置。
 ---
 
 **参考：** [Git's Magic Files - nesbitt.io](https://nesbitt.io/2026/02/05/git-magic-files.html)
+
+---
+
+*本文包含AI生成内容*
