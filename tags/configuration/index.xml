@@ -28,7 +28,9 @@
 &lt;h3 id=&#34;gitmessage&#34;&gt;&lt;code&gt;.gitmessage&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;配置提交消息的模板。但需要每次 clone 后手动运行 &lt;code&gt;git config commit.template .gitmessage&lt;/code&gt;，所以不是常规的选择，大多数项目更喜欢用 commit-msg hooks。&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;参考：&lt;/strong&gt; &lt;a href=&#34;https://nesbitt.io/2026/02/05/git-magic-files.html&#34;&gt;Git&amp;rsquo;s Magic Files - nesbitt.io&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;strong&gt;参考：&lt;/strong&gt; &lt;a href=&#34;https://nesbitt.io/2026/02/05/git-magic-files.html&#34;&gt;Git&amp;rsquo;s Magic Files - nesbitt.io&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;本文包含AI生成内容&lt;/em&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
