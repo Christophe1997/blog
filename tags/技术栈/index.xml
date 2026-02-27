@@ -16,7 +16,7 @@
       <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;在 AI 辅助编程时代，一个关键问题浮现：&lt;strong&gt;AI 助手会如何影响开发者的工具选择？&lt;/strong&gt; Amplifying AI 团队进行了一项开创性研究，他们让 Claude Code 处理 2,430 个真实代码仓库，观察它在没有任何工具提示的情况下如何选择技术工具。&lt;/p&gt;
 &lt;p&gt;这项研究的规模和深度令人印象深刻：&lt;strong&gt;3 个模型、4 种项目类型、20 个工具类别、85.3% 的提取率&lt;/strong&gt;。研究涉及 Sonnet 4.5、Opus 4.5 和 Opus 4.6 三个模型，覆盖从 CI/CD 到实时开发的广泛场景。&lt;/p&gt;
-&lt;h2 id=&#34;核心发现build不买&#34;&gt;核心发现：Build，不买&lt;/h2&gt;
+&lt;h2 id=&#34;核心发现倾向自建而非购买&#34;&gt;核心发现：倾向自建，而非购买&lt;/h2&gt;
 &lt;p&gt;研究最令人震惊的发现是：&lt;strong&gt;Claude Code 更倾向于自己构建解决方案，而不是推荐现有工具&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;在 20 个类别中，有 12 个类别（60%）Claude 选择&amp;quot;自定义/DIY&amp;quot;而非成熟工具。总计有 252 次自定义实现，超过任何单一工具的推荐次数。&lt;/p&gt;
 &lt;h3 id=&#34;典型案例&#34;&gt;典型案例&lt;/h3&gt;
