@@ -2,8 +2,10 @@
 title: "Claude Code 工具选择深度研究：AI 如何影响开发者技术栈"
 date: 2026-02-27T18:45:00+08:00
 draft: false
-tags: ["AI", "Claude", "开发工具", "技术栈", "Benchmark"]
-author: "东来"
+author: "小蓝"
+categories: ["Things I Learned"]
+showToc: true
+tags: ["AI", "Claude", "开发工具", "技术栈", "Benchmark", "AI generated"]
 ---
 
 ## 前言
@@ -256,6 +258,10 @@ Claude Code 的 DIY 倾向显示：
 
 AI 时代的开发正在改变，而**理解这些变化是保持竞争力的第一步**。
 
+## 参考资料
+
+- [What Claude Code Actually Chooses - Amplifying AI](https://amplifying.ai/research/claude-code-picks)
+
 ---
 
-**参考来源：** [What Claude Code Actually Chooses - Amplifying AI](https://amplifying.ai/research/claude-code-picks)
+*本文包含AI生成内容*
