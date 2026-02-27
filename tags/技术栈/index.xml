@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>技术栈 on Neo VRAINS</title>
+    <link>https://www.sdlinks.net/tags/%E6%8A%80%E6%9C%AF%E6%A0%88/</link>
+    <description>Recent content in 技术栈 on Neo VRAINS</description>
+    <generator>Hugo -- 0.157.0</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 27 Feb 2026 18:45:00 +0800</lastBuildDate>
+    <atom:link href="https://www.sdlinks.net/tags/%E6%8A%80%E6%9C%AF%E6%A0%88/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Claude Code 工具选择深度研究：AI 如何影响开发者技术栈</title>
+      <link>https://www.sdlinks.net/posts/2026/claude-code-ai-tool-selection-research/</link>
+      <pubDate>Fri, 27 Feb 2026 18:45:00 +0800</pubDate>
+      <guid>https://www.sdlinks.net/posts/2026/claude-code-ai-tool-selection-research/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;在 AI 辅助编程时代，一个关键问题浮现：&lt;strong&gt;AI 助手会如何影响开发者的工具选择？&lt;/strong&gt; Amplifying AI 团队进行了一项开创性研究，他们让 Claude Code 处理 2,430 个真实代码仓库，观察它在没有任何工具提示的情况下如何选择技术工具。&lt;/p&gt;
+&lt;p&gt;这项研究的规模和深度令人印象深刻：&lt;strong&gt;3 个模型、4 种项目类型、20 个工具类别、85.3% 的提取率&lt;/strong&gt;。研究涉及 Sonnet 4.5、Opus 4.5 和 Opus 4.6 三个模型，覆盖从 CI/CD 到实时开发的广泛场景。&lt;/p&gt;
+&lt;h2 id=&#34;核心发现build不买&#34;&gt;核心发现：Build，不买&lt;/h2&gt;
+&lt;p&gt;研究最令人震惊的发现是：&lt;strong&gt;Claude Code 更倾向于自己构建解决方案，而不是推荐现有工具&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;在 20 个类别中，有 12 个类别（60%）Claude 选择&amp;quot;自定义/DIY&amp;quot;而非成熟工具。总计有 252 次自定义实现，超过任何单一工具的推荐次数。&lt;/p&gt;
+&lt;h3 id=&#34;典型案例&#34;&gt;典型案例&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;特性标志（Feature Flags）：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;预期：推荐 LaunchDarkly 等现成服务&lt;/li&gt;
+&lt;li&gt;实际：自己构建配置系统，使用环境变量 + 百分比控制功能开关&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Python 认证：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;预期：推荐 Auth0、Passport.js 等库&lt;/li&gt;
+&lt;li&gt;实际：从零编写 JWT + bcrypt 实现（100% DIY 比例）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;缓存：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;预期：推荐 Redis、Memcached&lt;/li&gt;
+&lt;li&gt;实际：实现内存 TTL 包装器&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这种倾向在以下领域尤为明显：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;特性标志：69% DIY&lt;/li&gt;
+&lt;li&gt;Python 认证：100% DIY&lt;/li&gt;
+&lt;li&gt;可观测性：22% DIY&lt;/li&gt;
+&lt;li&gt;整体认证：48% DIY&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;默认工具栈javascript-生态的主导地位&#34;&gt;默认工具栈：JavaScript 生态的主导地位&lt;/h2&gt;
+&lt;p&gt;当 Claude Code 确实选择推荐工具时，它的偏好非常明确：&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -2,6 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.sdlinks.net/tags/ai/</loc>
+    <lastmod>2026-02-27T18:45:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/tags/benchmark/</loc>
+    <lastmod>2026-02-27T18:45:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/tags/claude/</loc>
+    <lastmod>2026-02-27T18:45:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/posts/2026/claude-code-ai-tool-selection-research/</loc>
+    <lastmod>2026-02-27T18:45:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/</loc>
+    <lastmod>2026-02-27T18:45:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/posts/</loc>
+    <lastmod>2026-02-27T18:45:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/tags/</loc>
+    <lastmod>2026-02-27T18:45:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2026-02-27T18:45:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/tags/%E6%8A%80%E6%9C%AF%E6%A0%88/</loc>
+    <lastmod>2026-02-27T18:45:00+08:00</lastmod>
+  </url><url>
     <loc>https://www.sdlinks.net/tags/ai-generated/</loc>
     <lastmod>2026-02-25T23:39:00+08:00</lastmod>
   </url><url>
@@ -17,23 +44,11 @@
     <loc>https://www.sdlinks.net/posts/2026/git-magic-files/</loc>
     <lastmod>2026-02-25T23:39:00+08:00</lastmod>
   </url><url>
-    <loc>https://www.sdlinks.net/</loc>
-    <lastmod>2026-02-25T23:39:00+08:00</lastmod>
-  </url><url>
-    <loc>https://www.sdlinks.net/posts/</loc>
-    <lastmod>2026-02-25T23:39:00+08:00</lastmod>
-  </url><url>
     <loc>https://www.sdlinks.net/tags/productivity/</loc>
-    <lastmod>2026-02-25T23:39:00+08:00</lastmod>
-  </url><url>
-    <loc>https://www.sdlinks.net/tags/</loc>
     <lastmod>2026-02-25T23:39:00+08:00</lastmod>
   </url><url>
     <loc>https://www.sdlinks.net/categories/things-i-learned/</loc>
     <lastmod>2026-02-25T23:39:00+08:00</lastmod>
-  </url><url>
-    <loc>https://www.sdlinks.net/tags/ai/</loc>
-    <lastmod>2026-02-15T15:58:00+08:00</lastmod>
   </url><url>
     <loc>https://www.sdlinks.net/tags/alibaba/</loc>
     <lastmod>2026-02-15T15:58:00+08:00</lastmod>
