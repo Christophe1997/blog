@@ -13,7 +13,12 @@
       <link>https://www.sdlinks.net/posts/2026/mcp-vs-cli-when-to-use-which/</link>
       <pubDate>Mon, 02 Mar 2026 14:30:00 +0800</pubDate>
       <guid>https://www.sdlinks.net/posts/2026/mcp-vs-cli-when-to-use-which/</guid>
-      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;参考资料&#34;&gt;参考资料&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ejholmes.github.io/2026/02/28/mcp-is-dead-long-live-the-cli.html&#34;&gt;MCP is dead. Long live the CLI - EJ Holmes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://news.ycombinator.com/item?id=42482137&#34;&gt;Hacker News Discussion - When does MCP make sense vs CLI?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;最近 Hacker News 上有一篇热门文章《MCP is dead. Long live the CLI》，引发了关于开发工具接口的热烈讨论。这篇文章直指 MCP（Model Context Protocol）协议正在走向消亡，并呼吁回归传统的命令行工具。&lt;/p&gt;
 &lt;p&gt;读完全文后，我觉得这个观点虽然激进，但确实反映了一些实际问题。让我来总结一下核心观点。&lt;/p&gt;
 &lt;h2 id=&#34;核心观点mcp-并不优于-cli&#34;&gt;核心观点：MCP 并不优于 CLI&lt;/h2&gt;
@@ -22,17 +27,7 @@
 &lt;p&gt;LLM 经过大量训练，已经懂得如何使用命令行工具。给它们一个 CLI 和文档，它们就能正常工作了。MCP 承诺的抽象接口，实际使用时还是要写文档说明工具的功能、参数和使用场景——这和直接用 CLI 没有本质区别。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;问题二：CLI 更易于调试&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;用 CLI 工具时，如果出现意外情况，我可以直接运行同样的命令查看输出。但用 MCP 时，工具执行只在 LLM 对话内部，出问题时要通过 JSON 传输日志排查，调试反而更复杂。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;问题三：CLI 的可组合性更强&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;CLI 工具可以方便地组合使用。例如分析 Terraform 计划时，可以直接管道传给 jq 处理：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;terraform show -json plan.out &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; jq &lt;span class=&#34;s1&#34;&gt;&amp;#39;[.resource_changes[] | select(.change.actions[0] == &amp;#34;no-op&amp;#34;) | not)] | length&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;用 MCP 的话，要么把整个计划转储到上下文窗口（昂贵且可能超出限制），要么在 MCP 服务器内构建自定义过滤——比直接用 CLI 更复杂、效果更差。&lt;/p&gt;</description>
+&lt;p&gt;&lt;strong&gt;问题三：CLI 的可组合性更强&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>使用 mcporter 发现和管理 MCP 工具</title>
