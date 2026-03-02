@@ -6,8 +6,27 @@
     <description>Recent content in Posts on Neo VRAINS</description>
     <generator>Hugo -- 0.157.0</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Feb 2026 18:45:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 02 Mar 2026 14:30:00 +0800</lastBuildDate>
     <atom:link href="https://www.sdlinks.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MCP vs CLI：何时该用什么协议？</title>
+      <link>https://www.sdlinks.net/posts/2026/mcp-vs-cli-when-to-use-which/</link>
+      <pubDate>Mon, 02 Mar 2026 14:30:00 +0800</pubDate>
+      <guid>https://www.sdlinks.net/posts/2026/mcp-vs-cli-when-to-use-which/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;最近，EJ Holmes 写了一篇颇具争议的文章《MCP is dead. Long live the CLI》，直指 MCP（Model Context Protocol）已经走向消亡。这篇文章在 Hacker News 上引发了 218 条评论的热烈讨论。&lt;/p&gt;
+&lt;p&gt;作为开发者，我读完全文后发现，作者的观点虽然激进，但切中了一些实际问题。今天这篇文章让我重新思考：&lt;strong&gt;在 AI 辅助开发的时代，我们到底需要什么样的工具接口？&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;mcp-的承诺与现实&#34;&gt;MCP 的承诺与现实&lt;/h2&gt;
+&lt;p&gt;当 Anthropic 宣布 MCP 时，行业集体&amp;quot;失去理智&amp;quot;。各家公司争先恐后地部署 MCP 服务器，只为证明自己是&amp;quot;AI 原生&amp;quot;。大量资源涌入新端点、新协议、新授权方案——所有这些都是为了让 LLM 能与它们已经能对话的服务进行对话。&lt;/p&gt;
+&lt;p&gt;坦白说，我一开始也没完全理解 MCP 的需求。LLM 擅长什么？给它们一个 CLI 和一些文档，它们就能干活了。&lt;/p&gt;
+&lt;p&gt;MCP 承诺更清洁的接口，但实践中我发现自己还是要写同样的文档：每个工具做什么、接受什么参数，最重要的是什么时候用它们。LLM 并不需要一个新协议。&lt;/p&gt;
+&lt;h2 id=&#34;cli-的永恒价值&#34;&gt;CLI 的永恒价值&lt;/h2&gt;
+&lt;p&gt;CLI 是为人类设计的，但对机器同样有效。当 Claude 在 Jira 上做了一些意想不到的操作时，我可以运行同样的 &lt;code&gt;jira issue view&lt;/code&gt; 命令，看到它确切看到了什么。同样的输入，同样的输出，没有神秘感。&lt;/p&gt;
+&lt;p&gt;用 MCP，工具只存在于 LLM 会话中。出问题时，我不再是直接运行命令，而是在 JSON 传输日志中摸索。调试不应该需要协议解码器。&lt;/p&gt;
+&lt;h2 id=&#34;可组合性cli-的绝对优势&#34;&gt;可组合性：CLI 的绝对优势&lt;/h2&gt;
+&lt;p&gt;这里差异变得巨大。CLI 可以组合。我可以通过管道传递给 jq，用 grep 链接，重定向到文件。这不只是方便，往往是唯一实用的方法。&lt;/p&gt;
+&lt;p&gt;考虑分析大型 Terraform 计划：&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Claude Code 工具选择深度研究：AI 如何影响开发者技术栈</title>
       <link>https://www.sdlinks.net/posts/2026/claude-code-ai-tool-selection-research/</link>
