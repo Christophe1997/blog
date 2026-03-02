@@ -14,18 +14,25 @@
       <pubDate>Mon, 02 Mar 2026 14:30:00 +0800</pubDate>
       <guid>https://www.sdlinks.net/posts/2026/mcp-vs-cli-when-to-use-which/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;最近，EJ Holmes 写了一篇颇具争议的文章《MCP is dead. Long live the CLI》，直指 MCP（Model Context Protocol）已经走向消亡。这篇文章在 Hacker News 上引发了 218 条评论的热烈讨论。&lt;/p&gt;
-&lt;p&gt;作为开发者，我读完全文后发现，作者的观点虽然激进，但切中了一些实际问题。今天这篇文章让我重新思考：&lt;strong&gt;在 AI 辅助开发的时代，我们到底需要什么样的工具接口？&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;mcp-的承诺与现实&#34;&gt;MCP 的承诺与现实&lt;/h2&gt;
-&lt;p&gt;当 Anthropic 宣布 MCP 时，行业集体&amp;quot;失去理智&amp;quot;。各家公司争先恐后地部署 MCP 服务器，只为证明自己是&amp;quot;AI 原生&amp;quot;。大量资源涌入新端点、新协议、新授权方案——所有这些都是为了让 LLM 能与它们已经能对话的服务进行对话。&lt;/p&gt;
-&lt;p&gt;坦白说，我一开始也没完全理解 MCP 的需求。LLM 擅长什么？给它们一个 CLI 和一些文档，它们就能干活了。&lt;/p&gt;
-&lt;p&gt;MCP 承诺更清洁的接口，但实践中我发现自己还是要写同样的文档：每个工具做什么、接受什么参数，最重要的是什么时候用它们。LLM 并不需要一个新协议。&lt;/p&gt;
-&lt;h2 id=&#34;cli-的永恒价值&#34;&gt;CLI 的永恒价值&lt;/h2&gt;
-&lt;p&gt;CLI 是为人类设计的，但对机器同样有效。当 Claude 在 Jira 上做了一些意想不到的操作时，我可以运行同样的 &lt;code&gt;jira issue view&lt;/code&gt; 命令，看到它确切看到了什么。同样的输入，同样的输出，没有神秘感。&lt;/p&gt;
-&lt;p&gt;用 MCP，工具只存在于 LLM 会话中。出问题时，我不再是直接运行命令，而是在 JSON 传输日志中摸索。调试不应该需要协议解码器。&lt;/p&gt;
-&lt;h2 id=&#34;可组合性cli-的绝对优势&#34;&gt;可组合性：CLI 的绝对优势&lt;/h2&gt;
-&lt;p&gt;这里差异变得巨大。CLI 可以组合。我可以通过管道传递给 jq，用 grep 链接，重定向到文件。这不只是方便，往往是唯一实用的方法。&lt;/p&gt;
-&lt;p&gt;考虑分析大型 Terraform 计划：&lt;/p&gt;</description>
+&lt;p&gt;最近 Hacker News 上有一篇热门文章《MCP is dead. Long live the CLI》，引发了关于开发工具接口的热烈讨论。这篇文章直指 MCP（Model Context Protocol）协议正在走向消亡，并呼吁回归传统的命令行工具。&lt;/p&gt;
+&lt;p&gt;读完全文后，我觉得这个观点虽然激进，但确实反映了一些实际问题。让我来总结一下核心观点。&lt;/p&gt;
+&lt;h2 id=&#34;核心观点mcp-并不优于-cli&#34;&gt;核心观点：MCP 并不优于 CLI&lt;/h2&gt;
+&lt;p&gt;作者认为，当 Anthropic 推出 MCP 时，整个行业盲目跟风，各家公司争先恐后部署 MCP 服务器，只为证明自己是&amp;quot;AI 原生&amp;quot;。但实际上，MCP 提供的所谓&amp;quot;更清洁接口&amp;quot;，在实践中并没有带来真正的改进。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;问题一：LLM 不需要新协议&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;LLM 经过大量训练，已经懂得如何使用命令行工具。给它们一个 CLI 和文档，它们就能正常工作了。MCP 承诺的抽象接口，实际使用时还是要写文档说明工具的功能、参数和使用场景——这和直接用 CLI 没有本质区别。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;问题二：CLI 更易于调试&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;用 CLI 工具时，如果出现意外情况，我可以直接运行同样的命令查看输出。但用 MCP 时，工具执行只在 LLM 对话内部，出问题时要通过 JSON 传输日志排查，调试反而更复杂。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;问题三：CLI 的可组合性更强&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;CLI 工具可以方便地组合使用。例如分析 Terraform 计划时，可以直接管道传给 jq 处理：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;terraform show -json plan.out &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; jq &lt;span class=&#34;s1&#34;&gt;&amp;#39;[.resource_changes[] | select(.change.actions[0] == &amp;#34;no-op&amp;#34;) | not)] | length&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;用 MCP 的话，要么把整个计划转储到上下文窗口（昂贵且可能超出限制），要么在 MCP 服务器内构建自定义过滤——比直接用 CLI 更复杂、效果更差。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Claude Code 工具选择深度研究：AI 如何影响开发者技术栈</title>
