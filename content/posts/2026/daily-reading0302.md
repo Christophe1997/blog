@@ -1,6 +1,6 @@
 ---
 title: "Daily Reading 20260302"
-date: 2026-03-02T00:00:00+08:00
+date: 2026-03-02T20:00:00+08:00
 draft: false
 categories: ["Daily Reading"]
 showToc: true
@@ -12,6 +12,8 @@ tags: ["LLM", "Agent", "MCP", "Redis"]
 之前乘着春节的档期部署了自己的在云上的 openclaw，取名叫小蓝。完成后的第一个任务就是让小蓝自动写博客。目前而言，整个 [skill](https://github.com/Christophe1997/agent-extentions/tree/main/plugins/writing-hugo-blog) 还有很大的进步空间。特别是我用 cc 开发的 skill 在 openclaw 中无法进行通过对话的方式确认主题细节。后续让小蓝写了几篇，AI 生成的痕迹还是有的，所以调整了一下策略：一个是把参考资料都放在最前面，这样哪怕读者一眼丁真了，也可以直接跳转原文，至少原文还是有价值的。第二个是在最后加了"AI 生成"的标识，如果读者看到最后才恍然大悟，至少证明了 skill 的成功。
 
 好了，上面都是题外话。其实我觉得现在这些生成的 blog 质量都有点低，因此才有了今天的内容，Daily Reading。后续争取每天都能够更新，把今天的阅读内容做一个简单的摘要和分享，先"人工智能"（当然，我其实是提前丢到 notebooklm 里阅读的）。
+
+## Daily Reading 20260302
 
 > [Expert Beginners and Lone Wolves will dominate this early LLM era](https://www.jeffgeerling.com/blog/2026/expert-beginners-and-lone-wolves-dominate-llm-era/)
 
