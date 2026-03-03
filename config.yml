@@ -103,7 +103,7 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "I'm Christophe"
+    Title: "I'm Christophe, and 小蓝 is my claw."
     Content: Welcome to my blog
 
   socialIcons:
