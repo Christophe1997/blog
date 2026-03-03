@@ -6,8 +6,26 @@
     <description>Recent content on Neo VRAINS</description>
     <generator>Hugo -- 0.157.0</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 02 Mar 2026 14:30:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 02 Mar 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://www.sdlinks.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Daily Reading 20260302</title>
+      <link>https://www.sdlinks.net/posts/2026/daily-reading0302/</link>
+      <pubDate>Mon, 02 Mar 2026 20:00:00 +0800</pubDate>
+      <guid>https://www.sdlinks.net/posts/2026/daily-reading0302/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;之前乘着春节的档期部署了自己的在云上的 openclaw，取名叫小蓝。完成后的第一个任务就是让小蓝自动写博客。目前而言，整个 &lt;a href=&#34;https://github.com/Christophe1997/agent-extentions/tree/main/plugins/writing-hugo-blog&#34;&gt;skill&lt;/a&gt; 还有很大的进步空间。特别是我用 cc 开发的 skill 在 openclaw 中无法进行通过对话的方式确认主题细节。后续让小蓝写了几篇，AI 生成的痕迹还是有的，所以调整了一下策略：一个是把参考资料都放在最前面，这样哪怕读者一眼丁真了，也可以直接跳转原文，至少原文还是有价值的。第二个是在最后加了&amp;quot;AI 生成&amp;quot;的标识，如果读者看到最后才恍然大悟，至少证明了 skill 的成功。&lt;/p&gt;
+&lt;p&gt;好了，上面都是题外话。其实我觉得现在这些生成的 blog 质量都有点低，因此才有了今天的内容，Daily Reading。后续争取每天都能够更新，把今天的阅读内容做一个简单的摘要和分享，先&amp;quot;人工智能&amp;quot;（当然，我其实是提前丢到 notebooklm 里阅读的）。&lt;/p&gt;
+&lt;h2 id=&#34;daily-reading-20260302&#34;&gt;Daily Reading 20260302&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.jeffgeerling.com/blog/2026/expert-beginners-and-lone-wolves-dominate-llm-era/&#34;&gt;Expert Beginners and Lone Wolves will dominate this early LLM era&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;本文描述了 AI 发展后续的一个有意思的现象，程序员将出现两级分化。一边是专家型新手（expert Beginners），借助 AI 编程工具感觉自己无所不能的初级开发者；另外一边是独狼开发者（Lone Wolves），经历过 AI 时代之前的历练的资深开发者，他们能够开一人公司，指挥多个 agent 来干活。换句话说，中间的那部分会逐渐消失，出现断层。我不禁思考我在哪个层级，想来还是在这个中间层，原来我还是未来的稀有种。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://news.ycombinator.com/item?id=47208398&#34;&gt;When does MCP make sense vs CLI?&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这个讨论其实也非常有意思。一开始 MCP 出来的时候，其实大家都在追求构建 MCP。但是到了 Openclaw，或者其实随着 skill 的提出，MCP 的优势就开始动摇了。我现在在公司的开发 Agent，就是把所有需要的接口做成了 MCP 的工具，来拓展部署在线上的 Agent 的能力。但我最近接触 cc 的 plugin 之后，如果我们每个人都用 cc，那其实开发一套 cc 的 plugin 就可以，这里可以要 MCP，也可以不要。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>MCP vs CLI：何时该用什么协议？</title>
       <link>https://www.sdlinks.net/posts/2026/mcp-vs-cli-when-to-use-which/</link>
@@ -28,23 +46,6 @@
 &lt;p&gt;&lt;strong&gt;问题二：CLI 更易于调试&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;用 CLI 工具时，如果出现意外情况，我可以直接运行同样的命令查看输出。但用 MCP 时，工具执行只在 LLM 对话内部，出问题时要通过 JSON 传输日志排查，调试反而更复杂。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;问题三：CLI 的可组合性更强&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Daily Reading 20260302</title>
-      <link>https://www.sdlinks.net/posts/2026/daily-reading0302/</link>
-      <pubDate>Mon, 02 Mar 2026 00:00:00 +0800</pubDate>
-      <guid>https://www.sdlinks.net/posts/2026/daily-reading0302/</guid>
-      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;之前乘着春节的档期部署了自己的在云上的 openclaw，取名叫小蓝。完成后的第一个任务就是让小蓝自动写博客。目前而言，整个 &lt;a href=&#34;https://github.com/Christophe1997/agent-extentions/tree/main/plugins/writing-hugo-blog&#34;&gt;skill&lt;/a&gt; 还有很大的进步空间。特别是我用 cc 开发的 skill 在 openclaw 中无法进行通过对话的方式确认主题细节。后续让小蓝写了几篇，AI 生成的痕迹还是有的，所以调整了一下策略：一个是把参考资料都放在最前面，这样哪怕读者一眼丁真了，也可以直接跳转原文，至少原文还是有价值的。第二个是在最后加了&amp;quot;AI 生成&amp;quot;的标识，如果读者看到最后才恍然大悟，至少证明了 skill 的成功。&lt;/p&gt;
-&lt;p&gt;好了，上面都是题外话。其实我觉得现在这些生成的 blog 质量都有点低，因此才有了今天的内容，Daily Reading。后续争取每天都能够更新，把今天的阅读内容做一个简单的摘要和分享，先&amp;quot;人工智能&amp;quot;（当然，我其实是提前丢到 notebooklm 里阅读的）。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.jeffgeerling.com/blog/2026/expert-beginners-and-lone-wolves-dominate-llm-era/&#34;&gt;Expert Beginners and Lone Wolves will dominate this early LLM era&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;本文描述了 AI 发展后续的一个有意思的现象，程序员将出现两级分化。一边是专家型新手（expert Beginners），借助 AI 编程工具感觉自己无所不能的初级开发者；另外一边是独狼开发者（Lone Wolves），经历过 AI 时代之前的历练的资深开发者，他们能够开一人公司，指挥多个 agent 来干活。换句话说，中间的那部分会逐渐消失，出现断层。我不禁思考我在哪个层级，想来还是在这个中间层，原来我还是未来的稀有种。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://news.ycombinator.com/item?id=47208398&#34;&gt;When does MCP make sense vs CLI?&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;这个讨论其实也非常有意思。一开始 MCP 出来的时候，其实大家都在追求构建 MCP。但是到了 Openclaw，或者其实随着 skill 的提出，MCP 的优势就开始动摇了。我现在在公司的开发 Agent，就是把所有需要的接口做成了 MCP 的工具，来拓展部署在线上的 Agent 的能力。但我最近接触 cc 的 plugin 之后，如果我们每个人都用 cc，那其实开发一套 cc 的 plugin 就可以，这里可以要 MCP，也可以不要。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Claude Code 工具选择深度研究：AI 如何影响开发者技术栈</title>
