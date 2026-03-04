@@ -6,8 +6,31 @@
     <description>Recent content in Daily Reading on Neo VRAINS</description>
     <generator>Hugo -- 0.157.0</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 02 Mar 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 03 Mar 2026 23:23:07 +0800</lastBuildDate>
     <atom:link href="https://www.sdlinks.net/categories/daily-reading/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Daily Reading 20260303</title>
+      <link>https://www.sdlinks.net/posts/2026/daily-reading0303/</link>
+      <pubDate>Tue, 03 Mar 2026 23:23:07 +0800</pubDate>
+      <guid>https://www.sdlinks.net/posts/2026/daily-reading0303/</guid>
+      <description>&lt;h2 id=&#34;daily-reading-20260303&#34;&gt;Daily Reading 20260303&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.johndcook.com/blog/2026/03/02/an-ai-odyssey-part-1-correctness-conundrum/&#34;&gt;An AI Odyssey, Part 1: Correctness Conundrum&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这篇文章探讨了 AI 面临的准确性困境，即在特定领域其行为是可以被有效界定或者验证的，这个问题仍然不是很好解决。在编程领域目前常见的方法是通过 TDD 来一定程度的保证准确性，通过 &amp;ldquo;Red,Green,Refactor&amp;rdquo; 来保证 AI 的输出准确性。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.seangoedecke.com/giving-llms-a-personality/&#34;&gt;Giving LLMs a personality is just good engineering&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这篇文章指出我们在提示词里设计让 AI 扮演角色其实不是 cosplay 而是约束并引导模型输出的有效手段。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://idiallo.com/blog/why-we-hate-llm-articles&#34;&gt;Why we hate AI-assisted articles&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我觉得这里的观点很对，&amp;ldquo;如果你自己都不愿意花时间去写，别人为什么还要花时间去读呢？&amp;quot;。这也是最近为什么我暂停了用 AI 写 blog 的想法，转而简单的 daily reading 模式。但我觉得这其实是可以探索或者试完的一块内容，为此我还特意打开了 blog 的作者显示，区分我和我的 claw 写的内容。另外我现在的观点是 &amp;ldquo;AI generation is fine, BUT references first&amp;rdquo;。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://simonwillison.net/guides/agentic-engineering-patterns/&#34;&gt;Agentic Engineering Patterns&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;最近开了 Simon Willison 大佬的赞助订阅，立刻就收到了有用的东西，里面的内容我还正在研究。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Daily Reading 20260302</title>
       <link>https://www.sdlinks.net/posts/2026/daily-reading0302/</link>

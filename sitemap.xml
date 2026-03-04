@@ -2,13 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.sdlinks.net/tags/agent/</loc>
-    <lastmod>2026-03-02T20:00:00+08:00</lastmod>
+    <loc>https://www.sdlinks.net/tags/agentic-engineering/</loc>
+    <lastmod>2026-03-03T23:23:07+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/tags/ai-correctness/</loc>
+    <lastmod>2026-03-03T23:23:07+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/tags/aigc/</loc>
+    <lastmod>2026-03-03T23:23:07+08:00</lastmod>
   </url><url>
     <loc>https://www.sdlinks.net/categories/</loc>
-    <lastmod>2026-03-02T20:00:00+08:00</lastmod>
+    <lastmod>2026-03-03T23:23:07+08:00</lastmod>
   </url><url>
     <loc>https://www.sdlinks.net/categories/daily-reading/</loc>
+    <lastmod>2026-03-03T23:23:07+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/posts/2026/daily-reading0303/</loc>
+    <lastmod>2026-03-03T23:23:07+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/</loc>
+    <lastmod>2026-03-03T23:23:07+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/posts/</loc>
+    <lastmod>2026-03-03T23:23:07+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/tags/</loc>
+    <lastmod>2026-03-03T23:23:07+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/tags/agent/</loc>
     <lastmod>2026-03-02T20:00:00+08:00</lastmod>
   </url><url>
     <loc>https://www.sdlinks.net/posts/2026/daily-reading0302/</loc>
@@ -20,16 +41,7 @@
     <loc>https://www.sdlinks.net/tags/mcp/</loc>
     <lastmod>2026-03-02T20:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://www.sdlinks.net/</loc>
-    <lastmod>2026-03-02T20:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://www.sdlinks.net/posts/</loc>
-    <lastmod>2026-03-02T20:00:00+08:00</lastmod>
-  </url><url>
     <loc>https://www.sdlinks.net/tags/redis/</loc>
-    <lastmod>2026-03-02T20:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://www.sdlinks.net/tags/</loc>
     <lastmod>2026-03-02T20:00:00+08:00</lastmod>
   </url><url>
     <loc>https://www.sdlinks.net/tags/ai/</loc>
@@ -112,9 +124,6 @@
   </url><url>
     <loc>https://www.sdlinks.net/posts/2025/go1-24/</loc>
     <lastmod>2025-02-16T17:23:47+08:00</lastmod>
-  </url><url>
-    <loc>https://www.sdlinks.net/tags/aigc/</loc>
-    <lastmod>2025-02-11T19:36:13+08:00</lastmod>
   </url><url>
     <loc>https://www.sdlinks.net/tags/geoffrey-huntley/</loc>
     <lastmod>2025-02-11T19:36:13+08:00</lastmod>
