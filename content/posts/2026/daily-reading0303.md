@@ -2,7 +2,7 @@
 title: "Daily Reading 20260303"
 date: 2026-03-03T23:23:07+08:00
 draft: false
-tags: ["AI correctness", "AIGC", "Agentic Engineering"]
+tags: ["AI Correctness", "AIGC", "Agentic Engineering"]
 categories: ["Daily Reading"]
 showToc: true
 TocOpen: false
