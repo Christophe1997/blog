@@ -6,8 +6,36 @@
     <description>Recent content in Posts on Neo VRAINS</description>
     <generator>Hugo -- 0.157.0</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 05 Mar 2026 23:23:02 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2026 21:57:02 +0800</lastBuildDate>
     <atom:link href="https://www.sdlinks.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Daily Reading 20260311</title>
+      <link>https://www.sdlinks.net/posts/2026/daily-reading0311/</link>
+      <pubDate>Wed, 11 Mar 2026 21:57:02 +0800</pubDate>
+      <guid>https://www.sdlinks.net/posts/2026/daily-reading0311/</guid>
+      <description>&lt;h2 id=&#34;daily-reading-20260311&#34;&gt;Daily Reading 20260311&lt;/h2&gt;
+&lt;p&gt;最近有些忙，下面的内容不全是今天阅读的。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://beyond-llms.github.io/&#34;&gt;Beyond Language Modeling: An Exploration of Multimodal Pretraining&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这个论文我最早是在公众号上看到，标题是“追逐AGI是错的”，我一开始还以为Yann LeCun大佬有发表了什么重要概念，结果过去一看是关于多模态预训练的。只是说LLM存在实用上的天花板，需要构建能够理解和推理物理世界的系统。结果是很典型的国内公众号标题党。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/humanlayer/12-factor-agents&#34;&gt;12 Factor Agents&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;参考&lt;a href=&#34;https://12factor.net/&#34;&gt;12-factor apps&lt;/a&gt;写的面向AI Agent工程的12条原则. 最近聚焦于关于Agent工程的内容，感觉之前自己写的Agent怎么全是反模式。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.oneusefulthing.org/p/a-guide-to-which-ai-to-use-in-the&#34;&gt;A Guide to Which AI to Use in the Agentic Era&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;主要介绍应该使用什么样的AI应用，适合作为了解用的读物，我没有仔细看全文。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://madplay.github.io/en/post/harness-engineering&#34;&gt;Beyond Prompts and Context: Harness Engineering for AI Agents&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Harness Engineering, 最近大热的名词，不得不说还是很贴切的。LLM作为烈马, 怎么设计Harness非常关键（这里我没找到中文的翻译，用马具也不太合适，就直接用英文了）。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/vkr11/ChainOfThought/blob/main/claude_code_architecture.md&#34;&gt;Inside Claude Code: The Architecture of an Autonomous Agent&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;作者通过逆向工程对Claude Code的剖析，非常值得一读，还在研究中。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Daily Reading 20260305</title>
       <link>https://www.sdlinks.net/posts/2026/daily-reading0305/</link>

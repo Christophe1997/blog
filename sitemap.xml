@@ -2,25 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.sdlinks.net/tags/agi/</loc>
+    <lastmod>2026-03-11T21:57:02+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/categories/</loc>
+    <lastmod>2026-03-11T21:57:02+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/categories/daily-reading/</loc>
+    <lastmod>2026-03-11T21:57:02+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/posts/2026/daily-reading0311/</loc>
+    <lastmod>2026-03-11T21:57:02+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/</loc>
+    <lastmod>2026-03-11T21:57:02+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/posts/</loc>
+    <lastmod>2026-03-11T21:57:02+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/tags/</loc>
+    <lastmod>2026-03-11T21:57:02+08:00</lastmod>
+  </url><url>
     <loc>https://www.sdlinks.net/tags/agentic-engineering/</loc>
     <lastmod>2026-03-05T23:23:02+08:00</lastmod>
   </url><url>
-    <loc>https://www.sdlinks.net/categories/</loc>
-    <lastmod>2026-03-05T23:23:02+08:00</lastmod>
-  </url><url>
-    <loc>https://www.sdlinks.net/categories/daily-reading/</loc>
-    <lastmod>2026-03-05T23:23:02+08:00</lastmod>
-  </url><url>
     <loc>https://www.sdlinks.net/posts/2026/daily-reading0305/</loc>
-    <lastmod>2026-03-05T23:23:02+08:00</lastmod>
-  </url><url>
-    <loc>https://www.sdlinks.net/</loc>
-    <lastmod>2026-03-05T23:23:02+08:00</lastmod>
-  </url><url>
-    <loc>https://www.sdlinks.net/posts/</loc>
-    <lastmod>2026-03-05T23:23:02+08:00</lastmod>
-  </url><url>
-    <loc>https://www.sdlinks.net/tags/</loc>
     <lastmod>2026-03-05T23:23:02+08:00</lastmod>
   </url><url>
     <loc>https://www.sdlinks.net/tags/ai-correctness/</loc>
