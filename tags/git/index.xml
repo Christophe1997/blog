@@ -10,9 +10,9 @@
     <atom:link href="https://www.sdlinks.net/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git的魔法配置文件</title>
-      <link>https://www.sdlinks.net/posts/2026/git-magic-files/</link>
+      <link>https://www.sdlinks.net/posts/2026/02/git-magic-files/</link>
       <pubDate>Wed, 25 Feb 2026 23:39:00 +0800</pubDate>
-      <guid>https://www.sdlinks.net/posts/2026/git-magic-files/</guid>
+      <guid>https://www.sdlinks.net/posts/2026/02/git-magic-files/</guid>
       <description>&lt;p&gt;Git 支持许多配置文件来变更其行为，这篇博客详细介绍了各种配置文件的作用。&lt;/p&gt;
 &lt;h2 id=&#34;必备配置gitignore&#34;&gt;必备配置：&lt;code&gt;.gitignore&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;用的最多，甚至可以说每个项目必备。定义哪些文件不应该被 Git 跟踪。&lt;/p&gt;

@@ -10,9 +10,9 @@
     <atom:link href="https://www.sdlinks.net/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MCP vs CLI：何时该用什么协议？</title>
-      <link>https://www.sdlinks.net/posts/2026/mcp-vs-cli-when-to-use-which/</link>
+      <link>https://www.sdlinks.net/posts/2026/03/mcp-vs-cli-when-to-use-which/</link>
       <pubDate>Mon, 02 Mar 2026 14:30:00 +0800</pubDate>
-      <guid>https://www.sdlinks.net/posts/2026/mcp-vs-cli-when-to-use-which/</guid>
+      <guid>https://www.sdlinks.net/posts/2026/03/mcp-vs-cli-when-to-use-which/</guid>
       <description>&lt;h2 id=&#34;参考资料&#34;&gt;参考资料&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://ejholmes.github.io/2026/02/28/mcp-is-dead-long-live-the-cli.html&#34;&gt;MCP is dead. Long live the CLI - EJ Holmes&lt;/a&gt;&lt;/li&gt;
@@ -31,9 +31,9 @@
     </item>
     <item>
       <title>Claude Code 工具选择深度研究：AI 如何影响开发者技术栈</title>
-      <link>https://www.sdlinks.net/posts/2026/claude-code-ai-tool-selection-research/</link>
+      <link>https://www.sdlinks.net/posts/2026/02/claude-code-ai-tool-selection-research/</link>
       <pubDate>Fri, 27 Feb 2026 18:45:00 +0800</pubDate>
-      <guid>https://www.sdlinks.net/posts/2026/claude-code-ai-tool-selection-research/</guid>
+      <guid>https://www.sdlinks.net/posts/2026/02/claude-code-ai-tool-selection-research/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;在 AI 辅助编程时代，一个关键问题浮现：&lt;strong&gt;AI 助手会如何影响开发者的工具选择？&lt;/strong&gt; Amplifying AI 团队进行了一项开创性研究，他们让 Claude Code 处理 2,430 个真实代码仓库，观察它在没有任何工具提示的情况下如何选择技术工具。&lt;/p&gt;
 &lt;p&gt;这项研究的规模和深度令人印象深刻：&lt;strong&gt;3 个模型、4 种项目类型、20 个工具类别、85.3% 的提取率&lt;/strong&gt;。研究涉及 Sonnet 4.5、Opus 4.5 和 Opus 4.6 三个模型，覆盖从 CI/CD 到实时开发的广泛场景。&lt;/p&gt;

@@ -10,9 +10,9 @@
     <atom:link href="https://www.sdlinks.net/tags/agent/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Daily Reading 20260302</title>
-      <link>https://www.sdlinks.net/posts/2026/daily-reading0302/</link>
+      <link>https://www.sdlinks.net/posts/2026/03/daily-reading0302/</link>
       <pubDate>Mon, 02 Mar 2026 20:00:00 +0800</pubDate>
-      <guid>https://www.sdlinks.net/posts/2026/daily-reading0302/</guid>
+      <guid>https://www.sdlinks.net/posts/2026/03/daily-reading0302/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;之前乘着春节的档期部署了自己的在云上的 openclaw，取名叫小蓝。完成后的第一个任务就是让小蓝自动写博客。目前而言，整个 &lt;a href=&#34;https://github.com/Christophe1997/agent-extentions/tree/main/plugins/writing-hugo-blog&#34;&gt;skill&lt;/a&gt; 还有很大的进步空间。特别是我用 cc 开发的 skill 在 openclaw 中无法进行通过对话的方式确认主题细节。后续让小蓝写了几篇，AI 生成的痕迹还是有的，所以调整了一下策略：一个是把参考资料都放在最前面，这样哪怕读者一眼丁真了，也可以直接跳转原文，至少原文还是有价值的。第二个是在最后加了&amp;quot;AI 生成&amp;quot;的标识，如果读者看到最后才恍然大悟，至少证明了 skill 的成功。&lt;/p&gt;
 &lt;p&gt;好了，上面都是题外话。其实我觉得现在这些生成的 blog 质量都有点低，因此才有了今天的内容，Daily Reading。后续争取每天都能够更新，把今天的阅读内容做一个简单的摘要和分享，先&amp;quot;人工智能&amp;quot;（当然，我其实是提前丢到 notebooklm 里阅读的）。&lt;/p&gt;

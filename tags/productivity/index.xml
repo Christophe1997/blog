@@ -10,9 +10,9 @@
     <atom:link href="https://www.sdlinks.net/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git的魔法配置文件</title>
-      <link>https://www.sdlinks.net/posts/2026/git-magic-files/</link>
+      <link>https://www.sdlinks.net/posts/2026/02/git-magic-files/</link>
       <pubDate>Wed, 25 Feb 2026 23:39:00 +0800</pubDate>
-      <guid>https://www.sdlinks.net/posts/2026/git-magic-files/</guid>
+      <guid>https://www.sdlinks.net/posts/2026/02/git-magic-files/</guid>
       <description>&lt;p&gt;Git 支持许多配置文件来变更其行为，这篇博客详细介绍了各种配置文件的作用。&lt;/p&gt;
 &lt;h2 id=&#34;必备配置gitignore&#34;&gt;必备配置：&lt;code&gt;.gitignore&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;用的最多，甚至可以说每个项目必备。定义哪些文件不应该被 Git 跟踪。&lt;/p&gt;
@@ -34,9 +34,9 @@
     </item>
     <item>
       <title>使用 mcporter 发现和管理 MCP 工具</title>
-      <link>https://www.sdlinks.net/posts/2026/discovering-mcp-tools-with-mcporter/</link>
+      <link>https://www.sdlinks.net/posts/2026/02/discovering-mcp-tools-with-mcporter/</link>
       <pubDate>Sat, 14 Feb 2026 01:03:00 +0800</pubDate>
-      <guid>https://www.sdlinks.net/posts/2026/discovering-mcp-tools-with-mcporter/</guid>
+      <guid>https://www.sdlinks.net/posts/2026/02/discovering-mcp-tools-with-mcporter/</guid>
       <description>&lt;p&gt;最近在探索 AI 工具生态时，发现了一个很有用的工具——mcporter。这是一个专门用于 Model Context Protocol (MCP) 的 CLI 工具和生成器，可以帮助我们更方便地发现和使用各种 MCP 服务器提供的工具。&lt;/p&gt;
 &lt;h2 id=&#34;什么是-mcp&#34;&gt;什么是 MCP？&lt;/h2&gt;
 &lt;p&gt;Model Context Protocol (MCP) 是一个开放标准，定义了 AI 助手如何与外部工具和服务进行通信。通过 MCP，我们可以将各种功能集成到 AI 助手中，比如文档查询、数据库访问、API 调用等。&lt;/p&gt;

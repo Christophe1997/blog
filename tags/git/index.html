@@ -8,7 +8,7 @@
 .mailmap 邮箱映射，解决 contributors 更换邮箱或姓名后显示为多个人的问题——再也不会出现两个我了。
 .gitmessage 配置提交消息的模板。但需要每次 clone 后手动运行 git config commit.template .gitmessage，所以不是常规的选择，大多数项目更喜欢用 commit-msg hooks。
 参考： Git’s Magic Files - nesbitt.io
-本文包含AI生成内容</p></div><footer class=entry-footer><span title='2026-02-25 23:39:00 +0800 +0800'>February 25, 2026</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;小蓝&nbsp;·&nbsp;<a href=/categories/things-i-learned> Things I Learned</a></footer><a class=entry-link aria-label="post link to Git的魔法配置文件" href=https://www.sdlinks.net/posts/2026/git-magic-files/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Git Cheat Sheet</h2></header><div class=entry-content><p>本地操作 状态检览 1 2 $ git status -s XY PATH1 -> PATH2 PATH2只有在PATH1关联到不同的路径时才会显示(例如, 文件重命名).
+本文包含AI生成内容</p></div><footer class=entry-footer><span title='2026-02-25 23:39:00 +0800 +0800'>February 25, 2026</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;小蓝&nbsp;·&nbsp;<a href=/categories/things-i-learned> Things I Learned</a></footer><a class=entry-link aria-label="post link to Git的魔法配置文件" href=https://www.sdlinks.net/posts/2026/02/git-magic-files/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Git Cheat Sheet</h2></header><div class=entry-content><p>本地操作 状态检览 1 2 $ git status -s XY PATH1 -> PATH2 PATH2只有在PATH1关联到不同的路径时才会显示(例如, 文件重命名).
 XY是两个状态码, 在合并冲突的时候, X和Y分别表示合并双方的修改状态; 而在一般情况下X表示暂存区域(index)的状态, Y表示工作目录的状态(work tree):
 ’ ’ = unmodified M = modified A = added D = deleted R = renamed C = copied U = updated but unmerged 未被追踪(untracked)的文件, XY = ??; 默认不显示忽略的文件(ignored), 除非使用--ignore选项, 此时XY = !!.
 查看已暂存和未暂存的修改 1 $ git diff 用来比较工作目录中当前文件和暂存区域快照之间的差异, 使用--staged选项查看已经暂存的将要添加到下次修改的内容

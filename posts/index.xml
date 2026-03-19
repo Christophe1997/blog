@@ -10,9 +10,9 @@
     <atom:link href="https://www.sdlinks.net/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Daily Reading 20260311</title>
-      <link>https://www.sdlinks.net/posts/2026/daily-reading0311/</link>
+      <link>https://www.sdlinks.net/posts/2026/03/daily-reading0311/</link>
       <pubDate>Wed, 11 Mar 2026 21:57:02 +0800</pubDate>
-      <guid>https://www.sdlinks.net/posts/2026/daily-reading0311/</guid>
+      <guid>https://www.sdlinks.net/posts/2026/03/daily-reading0311/</guid>
       <description>&lt;h2 id=&#34;daily-reading-20260311&#34;&gt;Daily Reading 20260311&lt;/h2&gt;
 &lt;p&gt;最近有些忙，下面的内容不全是今天阅读的。&lt;/p&gt;
 &lt;blockquote&gt;
@@ -36,9 +36,9 @@
     </item>
     <item>
       <title>Daily Reading 20260305</title>
-      <link>https://www.sdlinks.net/posts/2026/daily-reading0305/</link>
+      <link>https://www.sdlinks.net/posts/2026/03/daily-reading0305/</link>
       <pubDate>Thu, 05 Mar 2026 23:23:02 +0800</pubDate>
-      <guid>https://www.sdlinks.net/posts/2026/daily-reading0305/</guid>
+      <guid>https://www.sdlinks.net/posts/2026/03/daily-reading0305/</guid>
       <description>&lt;h2 id=&#34;daily-reading-20260305&#34;&gt;Daily Reading 20260305&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://simonwillison.net/guides/agentic-engineering-patterns/&#34;&gt;Agentic Engineering Patterns&lt;/a&gt;&lt;/p&gt;
@@ -68,9 +68,9 @@ Ross Cox 的&lt;a href=&#34;https://groups.google.com/g/golang-dev/c/4Li4Ovd_ehE
     </item>
     <item>
       <title>Daily Reading 20260303</title>
-      <link>https://www.sdlinks.net/posts/2026/daily-reading0303/</link>
+      <link>https://www.sdlinks.net/posts/2026/03/daily-reading0303/</link>
       <pubDate>Tue, 03 Mar 2026 23:23:07 +0800</pubDate>
-      <guid>https://www.sdlinks.net/posts/2026/daily-reading0303/</guid>
+      <guid>https://www.sdlinks.net/posts/2026/03/daily-reading0303/</guid>
       <description>&lt;h2 id=&#34;daily-reading-20260303&#34;&gt;Daily Reading 20260303&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.johndcook.com/blog/2026/03/02/an-ai-odyssey-part-1-correctness-conundrum/&#34;&gt;An AI Odyssey, Part 1: Correctness Conundrum&lt;/a&gt;&lt;/p&gt;
@@ -91,9 +91,9 @@ Ross Cox 的&lt;a href=&#34;https://groups.google.com/g/golang-dev/c/4Li4Ovd_ehE
     </item>
     <item>
       <title>Daily Reading 20260302</title>
-      <link>https://www.sdlinks.net/posts/2026/daily-reading0302/</link>
+      <link>https://www.sdlinks.net/posts/2026/03/daily-reading0302/</link>
       <pubDate>Mon, 02 Mar 2026 20:00:00 +0800</pubDate>
-      <guid>https://www.sdlinks.net/posts/2026/daily-reading0302/</guid>
+      <guid>https://www.sdlinks.net/posts/2026/03/daily-reading0302/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;之前乘着春节的档期部署了自己的在云上的 openclaw，取名叫小蓝。完成后的第一个任务就是让小蓝自动写博客。目前而言，整个 &lt;a href=&#34;https://github.com/Christophe1997/agent-extentions/tree/main/plugins/writing-hugo-blog&#34;&gt;skill&lt;/a&gt; 还有很大的进步空间。特别是我用 cc 开发的 skill 在 openclaw 中无法进行通过对话的方式确认主题细节。后续让小蓝写了几篇，AI 生成的痕迹还是有的，所以调整了一下策略：一个是把参考资料都放在最前面，这样哪怕读者一眼丁真了，也可以直接跳转原文，至少原文还是有价值的。第二个是在最后加了&amp;quot;AI 生成&amp;quot;的标识，如果读者看到最后才恍然大悟，至少证明了 skill 的成功。&lt;/p&gt;
 &lt;p&gt;好了，上面都是题外话。其实我觉得现在这些生成的 blog 质量都有点低，因此才有了今天的内容，Daily Reading。后续争取每天都能够更新，把今天的阅读内容做一个简单的摘要和分享，先&amp;quot;人工智能&amp;quot;（当然，我其实是提前丢到 notebooklm 里阅读的）。&lt;/p&gt;
@@ -109,9 +109,9 @@ Ross Cox 的&lt;a href=&#34;https://groups.google.com/g/golang-dev/c/4Li4Ovd_ehE
     </item>
     <item>
       <title>MCP vs CLI：何时该用什么协议？</title>
-      <link>https://www.sdlinks.net/posts/2026/mcp-vs-cli-when-to-use-which/</link>
+      <link>https://www.sdlinks.net/posts/2026/03/mcp-vs-cli-when-to-use-which/</link>
       <pubDate>Mon, 02 Mar 2026 14:30:00 +0800</pubDate>
-      <guid>https://www.sdlinks.net/posts/2026/mcp-vs-cli-when-to-use-which/</guid>
+      <guid>https://www.sdlinks.net/posts/2026/03/mcp-vs-cli-when-to-use-which/</guid>
       <description>&lt;h2 id=&#34;参考资料&#34;&gt;参考资料&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://ejholmes.github.io/2026/02/28/mcp-is-dead-long-live-the-cli.html&#34;&gt;MCP is dead. Long live the CLI - EJ Holmes&lt;/a&gt;&lt;/li&gt;
@@ -130,9 +130,9 @@ Ross Cox 的&lt;a href=&#34;https://groups.google.com/g/golang-dev/c/4Li4Ovd_ehE
     </item>
     <item>
       <title>Claude Code 工具选择深度研究：AI 如何影响开发者技术栈</title>
-      <link>https://www.sdlinks.net/posts/2026/claude-code-ai-tool-selection-research/</link>
+      <link>https://www.sdlinks.net/posts/2026/02/claude-code-ai-tool-selection-research/</link>
       <pubDate>Fri, 27 Feb 2026 18:45:00 +0800</pubDate>
-      <guid>https://www.sdlinks.net/posts/2026/claude-code-ai-tool-selection-research/</guid>
+      <guid>https://www.sdlinks.net/posts/2026/02/claude-code-ai-tool-selection-research/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;在 AI 辅助编程时代，一个关键问题浮现：&lt;strong&gt;AI 助手会如何影响开发者的工具选择？&lt;/strong&gt; Amplifying AI 团队进行了一项开创性研究，他们让 Claude Code 处理 2,430 个真实代码仓库，观察它在没有任何工具提示的情况下如何选择技术工具。&lt;/p&gt;
 &lt;p&gt;这项研究的规模和深度令人印象深刻：&lt;strong&gt;3 个模型、4 种项目类型、20 个工具类别、85.3% 的提取率&lt;/strong&gt;。研究涉及 Sonnet 4.5、Opus 4.5 和 Opus 4.6 三个模型，覆盖从 CI/CD 到实时开发的广泛场景。&lt;/p&gt;
@@ -167,9 +167,9 @@ Ross Cox 的&lt;a href=&#34;https://groups.google.com/g/golang-dev/c/4Li4Ovd_ehE
     </item>
     <item>
       <title>Git的魔法配置文件</title>
-      <link>https://www.sdlinks.net/posts/2026/git-magic-files/</link>
+      <link>https://www.sdlinks.net/posts/2026/02/git-magic-files/</link>
       <pubDate>Wed, 25 Feb 2026 23:39:00 +0800</pubDate>
-      <guid>https://www.sdlinks.net/posts/2026/git-magic-files/</guid>
+      <guid>https://www.sdlinks.net/posts/2026/02/git-magic-files/</guid>
       <description>&lt;p&gt;Git 支持许多配置文件来变更其行为，这篇博客详细介绍了各种配置文件的作用。&lt;/p&gt;
 &lt;h2 id=&#34;必备配置gitignore&#34;&gt;必备配置：&lt;code&gt;.gitignore&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;用的最多，甚至可以说每个项目必备。定义哪些文件不应该被 Git 跟踪。&lt;/p&gt;
@@ -191,9 +191,9 @@ Ross Cox 的&lt;a href=&#34;https://groups.google.com/g/golang-dev/c/4Li4Ovd_ehE
     </item>
     <item>
       <title>Zvec：阿里巴巴开源的轻量级进程内向量数据库</title>
-      <link>https://www.sdlinks.net/posts/2026/zvec-lightweight-vector-database/</link>
+      <link>https://www.sdlinks.net/posts/2026/02/zvec-lightweight-vector-database/</link>
       <pubDate>Sun, 15 Feb 2026 15:58:00 +0800</pubDate>
-      <guid>https://www.sdlinks.net/posts/2026/zvec-lightweight-vector-database/</guid>
+      <guid>https://www.sdlinks.net/posts/2026/02/zvec-lightweight-vector-database/</guid>
       <description>&lt;p&gt;阿里巴巴开源的 Zvec 向量数据库是一个轻量级、快速的进程内向量数据库，为开发者提供了一个简单而强大的方式来构建向量搜索应用。在 AI 和向量搜索技术快速发展的今天，我们来深入了解这个值得关注的项目。&lt;/p&gt;
 &lt;h2 id=&#34;什么是-zvec&#34;&gt;什么是 Zvec？&lt;/h2&gt;
 &lt;p&gt;Zvec 是一个开源的进程内向量数据库，主打&amp;quot;轻量级、闪电般快速&amp;quot;。与传统的独立向量数据库服务不同，Zvec 采用进程内架构，可以直接嵌入到应用程序中运行。它基于阿里巴巴经过实战检验的 Proxima 向量搜索引擎构建，继承了阿里巴巴在高并发、大规模场景下的技术积累。&lt;/p&gt;
@@ -288,9 +288,9 @@ Ross Cox 的&lt;a href=&#34;https://groups.google.com/g/golang-dev/c/4Li4Ovd_ehE
     </item>
     <item>
       <title>使用 mcporter 发现和管理 MCP 工具</title>
-      <link>https://www.sdlinks.net/posts/2026/discovering-mcp-tools-with-mcporter/</link>
+      <link>https://www.sdlinks.net/posts/2026/02/discovering-mcp-tools-with-mcporter/</link>
       <pubDate>Sat, 14 Feb 2026 01:03:00 +0800</pubDate>
-      <guid>https://www.sdlinks.net/posts/2026/discovering-mcp-tools-with-mcporter/</guid>
+      <guid>https://www.sdlinks.net/posts/2026/02/discovering-mcp-tools-with-mcporter/</guid>
       <description>&lt;p&gt;最近在探索 AI 工具生态时，发现了一个很有用的工具——mcporter。这是一个专门用于 Model Context Protocol (MCP) 的 CLI 工具和生成器，可以帮助我们更方便地发现和使用各种 MCP 服务器提供的工具。&lt;/p&gt;
 &lt;h2 id=&#34;什么是-mcp&#34;&gt;什么是 MCP？&lt;/h2&gt;
 &lt;p&gt;Model Context Protocol (MCP) 是一个开放标准，定义了 AI 助手如何与外部工具和服务进行通信。通过 MCP，我们可以将各种功能集成到 AI 助手中，比如文档查询、数据库访问、API 调用等。&lt;/p&gt;

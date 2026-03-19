@@ -10,9 +10,9 @@
     <atom:link href="https://www.sdlinks.net/tags/cli/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MCP vs CLI：何时该用什么协议？</title>
-      <link>https://www.sdlinks.net/posts/2026/mcp-vs-cli-when-to-use-which/</link>
+      <link>https://www.sdlinks.net/posts/2026/03/mcp-vs-cli-when-to-use-which/</link>
       <pubDate>Mon, 02 Mar 2026 14:30:00 +0800</pubDate>
-      <guid>https://www.sdlinks.net/posts/2026/mcp-vs-cli-when-to-use-which/</guid>
+      <guid>https://www.sdlinks.net/posts/2026/03/mcp-vs-cli-when-to-use-which/</guid>
       <description>&lt;h2 id=&#34;参考资料&#34;&gt;参考资料&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://ejholmes.github.io/2026/02/28/mcp-is-dead-long-live-the-cli.html&#34;&gt;MCP is dead. Long live the CLI - EJ Holmes&lt;/a&gt;&lt;/li&gt;
