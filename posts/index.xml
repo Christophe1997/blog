@@ -6,8 +6,31 @@
     <description>Recent content in Posts on Neo VRAINS</description>
     <generator>Hugo -- 0.158.0</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 11 Mar 2026 21:57:02 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 19 Mar 2026 19:14:02 +0800</lastBuildDate>
     <atom:link href="https://www.sdlinks.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Daily Reading 20260319</title>
+      <link>https://www.sdlinks.net/posts/2026/03/daily-reading0319/</link>
+      <pubDate>Thu, 19 Mar 2026 19:14:02 +0800</pubDate>
+      <guid>https://www.sdlinks.net/posts/2026/03/daily-reading0319/</guid>
+      <description>&lt;h2 id=&#34;daily-reading-20260319&#34;&gt;Daily Reading 20260319&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://simonwillison.net/guides/agentic-engineering-patterns/how-coding-agents-work/&#34;&gt;How coding agents work&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;虽然相关的内容都已经掌握了, 还是重新review了下有没有什么概念是遗漏的.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.jim-nielsen.com/2026/opacity-of-generative-tools/&#34;&gt;You Might Debate It — If You Could See It&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这个说了个有意思的现象, 如果你能够看到, 你就可能会质疑合理性. 但如果你看不到, 你可能会选择默默接受. 这个本身适合解释很多社会现象, 这里就不讨论了.
+回到编程上, 就变成了, 如果给你制定规范, 你可能会质疑合理性, 但如果我说我给你提供了一个Skill, 你可能就高高兴兴的接受了我制定的规范. 我们在使用开源的Skill时候,
+很多时候都默认的接受了Skill开发者的品味和审美, 无论好坏.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://haskellforall.com/2026/03/a-sufficiently-detailed-spec-is-code&#34;&gt;A sufficiently detailed spec is code&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;作者通过OpenAI的&lt;a href=&#34;https://github.com/openai/symphony&#34;&gt;Symphony&lt;/a&gt;例子指出, 最好的规范文档是代码本身. 我最近在现有项目上使用claude code
+还是倾向性于拆小需求给他, 因为我之前追求构建好完整的项目理解(references)后再试试能不能让他自动修改完整需求.
+但我发现, 要在一个已有的项目上构建完整的, 用于LLM理解的规范, 本身就是一件麻烦的事.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Daily Reading 20260311</title>
       <link>https://www.sdlinks.net/posts/2026/03/daily-reading0311/</link>
