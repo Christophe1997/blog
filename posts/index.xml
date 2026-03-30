@@ -4,10 +4,26 @@
     <title>Posts on Neo VRAINS</title>
     <link>https://www.sdlinks.net/posts/</link>
     <description>Recent content in Posts on Neo VRAINS</description>
-    <generator>Hugo -- 0.158.0</generator>
+    <generator>Hugo -- 0.159.1</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 19 Mar 2026 19:14:02 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 30 Mar 2026 23:14:02 +0800</lastBuildDate>
     <atom:link href="https://www.sdlinks.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Daily Reading 20260330</title>
+      <link>https://www.sdlinks.net/posts/2026/03/daily-reading0330/</link>
+      <pubDate>Mon, 30 Mar 2026 23:14:02 +0800</pubDate>
+      <guid>https://www.sdlinks.net/posts/2026/03/daily-reading0330/</guid>
+      <description>&lt;h2 id=&#34;daily-reading-20260330&#34;&gt;Daily Reading 20260330&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://mariozechner.at/posts/2026-03-25-thoughts-on-slowing-the-fuck-down/&#34;&gt;Thoughts on slowing the fuck down&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;fuck 含量极高的一篇文章~, 探讨了agent带来的技术负债. 过去我们人开发项目的时候, 会由于技术负债的痛苦不得不对项目进行迭代/重构来减少负债. 但现在
+完全由AI开发, 由于AI只做风格迁移, 也会产生技术负债, 只是这种负债的痛苦我们不再需要感知, 最后的结果就是改不动, 无法继续迭代. 当然这里有人会说, 现在有
+很多工具, 像&lt;a href=&#34;https://github.com/obra/superpowers&#34;&gt;superpowers&lt;/a&gt;, &lt;a href=&#34;https://github.com/EveryInc/compound-engineering-plugin&#34;&gt;ce&lt;/a&gt;,
+&lt;a href=&#34;https://github.com/garrytan/gstack&#34;&gt;gstack&lt;/a&gt;, 都可以来工程化, 更好的理解, 迭代项目. 这些工具都能很好的教LLM基于你的项目来写需求, 但我觉得这里有个问题,
+我们使用的时候不得不维护大量的文档来构建项目的知识, 但实际上&amp;quot;A sufficiently detailed spec is code&amp;quot;, 代码永远都是最新的规范, 而我们维护的大量md其实存在新鲜
+度的问题. 当然, 我们可以做一个post-hook来更新, 但这里也正是问题可能出现的地方. 另外, 最近nodejs社区也有关于拒绝在node.js core中使用AI生成的提交的&lt;a href=&#34;https://github.com/indutny/no-ai-in-nodejs-core&#34;&gt;请愿&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Daily Reading 20260319</title>
       <link>https://www.sdlinks.net/posts/2026/03/daily-reading0319/</link>
