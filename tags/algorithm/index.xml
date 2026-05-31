@@ -4,7 +4,7 @@
     <title>Algorithm on Neo VRAINS</title>
     <link>https://www.sdlinks.net/tags/algorithm/</link>
     <description>Recent content in Algorithm on Neo VRAINS</description>
-    <generator>Hugo -- 0.159.1</generator>
+    <generator>Hugo -- 0.162.1</generator>
     <language>en</language>
     <lastBuildDate>Wed, 06 May 2020 20:06:38 +0800</lastBuildDate>
     <atom:link href="https://www.sdlinks.net/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
@@ -120,38 +120,38 @@
 &lt;/ul&gt;
 &lt;p&gt;常见实现的性能比较(V表示结点数, E表示边数):&lt;/p&gt;
 &lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;数据结构&lt;/th&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;所需空间&lt;/th&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;添加边&lt;/th&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;检查顶点是否相邻&lt;/th&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;遍历所有相邻顶点&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;边的列表&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;E&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;1&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;E&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;E&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;邻接矩阵&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;$ V^2 $&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;1&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;1&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;V&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;邻接表&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;E+V&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;1&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;degree(V)&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;degree(V)&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th style=&#34;text-align: center&#34;&gt;数据结构&lt;/th&gt;
+					&lt;th style=&#34;text-align: center&#34;&gt;所需空间&lt;/th&gt;
+					&lt;th style=&#34;text-align: center&#34;&gt;添加边&lt;/th&gt;
+					&lt;th style=&#34;text-align: center&#34;&gt;检查顶点是否相邻&lt;/th&gt;
+					&lt;th style=&#34;text-align: center&#34;&gt;遍历所有相邻顶点&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;边的列表&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;E&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;1&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;E&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;E&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;邻接矩阵&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;$ V^2 $&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;1&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;1&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;V&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;邻接表&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;E+V&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;1&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;degree(V)&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;degree(V)&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;非稠密图的标准表示是邻接表, 这种表示具有以下特性:&lt;/p&gt;
 &lt;ul&gt;

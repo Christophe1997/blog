@@ -1,26 +1,36 @@
+
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.sdlinks.net/tags/ai/</loc>
+    <lastmod>2026-05-31T22:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/categories/</loc>
+    <lastmod>2026-05-31T22:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/tags/claude-code/</loc>
+    <lastmod>2026-05-31T22:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/categories/daily-reading/</loc>
+    <lastmod>2026-05-31T22:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/posts/2026/05/daily-reading0302/</loc>
+    <lastmod>2026-05-31T22:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/</loc>
+    <lastmod>2026-05-31T22:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/posts/</loc>
+    <lastmod>2026-05-31T22:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.sdlinks.net/tags/</loc>
+    <lastmod>2026-05-31T22:00:00+08:00</lastmod>
+  </url><url>
     <loc>https://www.sdlinks.net/tags/agents/</loc>
     <lastmod>2026-03-30T23:14:02+08:00</lastmod>
   </url><url>
-    <loc>https://www.sdlinks.net/categories/</loc>
-    <lastmod>2026-03-30T23:14:02+08:00</lastmod>
-  </url><url>
-    <loc>https://www.sdlinks.net/categories/daily-reading/</loc>
-    <lastmod>2026-03-30T23:14:02+08:00</lastmod>
-  </url><url>
     <loc>https://www.sdlinks.net/posts/2026/03/daily-reading0330/</loc>
-    <lastmod>2026-03-30T23:14:02+08:00</lastmod>
-  </url><url>
-    <loc>https://www.sdlinks.net/</loc>
-    <lastmod>2026-03-30T23:14:02+08:00</lastmod>
-  </url><url>
-    <loc>https://www.sdlinks.net/posts/</loc>
-    <lastmod>2026-03-30T23:14:02+08:00</lastmod>
-  </url><url>
-    <loc>https://www.sdlinks.net/tags/</loc>
     <lastmod>2026-03-30T23:14:02+08:00</lastmod>
   </url><url>
     <loc>https://www.sdlinks.net/tags/coding-agents/</loc>
@@ -64,9 +74,6 @@
   </url><url>
     <loc>https://www.sdlinks.net/tags/redis/</loc>
     <lastmod>2026-03-02T20:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://www.sdlinks.net/tags/ai/</loc>
-    <lastmod>2026-03-02T14:30:00+08:00</lastmod>
   </url><url>
     <loc>https://www.sdlinks.net/tags/ai-generated/</loc>
     <lastmod>2026-03-02T14:30:00+08:00</lastmod>
